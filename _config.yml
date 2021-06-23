@@ -37,7 +37,7 @@ url: "https://Outsiders17711.github.io" # the base hostname & protocol for your 
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/Fastpages.Massively.Oriol" # the subpath of your site, e.g. "/blog".
+baseurl: "/FastPages" # the subpath of your site, e.g. "/blog".
 
 twitter_username: 
 orcid_id: 
@@ -124,4 +124,4 @@ defaults:
       twitter_large_image: false
       use_math: false
 
-# permalink: /blog/:title/
+permalink: /blog/:title/
