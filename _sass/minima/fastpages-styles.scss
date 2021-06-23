@@ -28,15 +28,46 @@ img.emoji{
 
 // make non-headings slightly lighter
 .post-content p, .post-content li {
-   color: #515151;
+  font-size: 20px;
+  color: #515151;
 }
 
 .post-link{
     font-weight: normal;
-}
+  }
 
-// make sure the post title doesn't have too much spacing
-.post-title { margin-top: .5rem !important; }
+  // change padding of headings
+  h1 {
+      margin-top:2.5rem !important;
+  }
+  
+  h2 {
+      margin-top:2rem !important;      
+  }
+  
+  h3, h4 {
+      margin-top:1.5rem !important;      
+  }
+  
+  p {
+      margin-top:1rem !important; 
+      margin-bottom:1rem !important;   
+  }
+  
+  h1, h2, h3, h4 {
+      font-weight: normal !important;
+      margin-bottom:0.5rem !important;  
+      code {
+        font-size: 100%;
+      }
+  }
+  
+  pre {
+      margin-bottom:1.5rem !important; 
+  }
+  
+  // make sure the post title doesn't have too much spacing
+  .post-title { margin-top: .5rem !important; }
 
 li {
   h3, h4 {
@@ -68,10 +99,18 @@ details.description:not([open]) summary::after {
 
 // Adjust font size for footnotes.
 .footnotes {
-  font-size: .9rem !important;
-  p, li {
-    font-size: .9rem !important;
- }
+  font-size: 12px !important;
+  p, li{
+    font-size: 12px !important;
+ } 
+}
+
+// Adjust with of social media icons were getting cut off
+.social-media-list{
+  .svg-icon {
+    width: 25px !important;
+    height: 23px !important;
+  }
 }
 
 // Make Anchor Links Appear Only on Hover
@@ -206,16 +245,20 @@ table {
 // Handling large charts on mobile devices
 // @media only screen and (max-width: 1200px) {
 //   /* for mobile phone and tablet devices */
-//   .output_wrapper{
-//     overflow: scroll;
-//   }
+.output_wrapper{
+  overflow: auto;
+}
 // }
 
-.output_wrapper{
-  overflow: scroll;
+.svg-icon.orange{
+width: 30px;
+height: 23px;
 }
 
-.svg-icon.orange{
-  width: 30px;
-  height: 23px;
+.code_cell {
+margin: 1.5rem 0px !important;
+}
+
+pre code {
+font-size: 15px !important;
 }
