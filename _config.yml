@@ -37,11 +37,11 @@ url: "https://Outsiders17711.github.io" # the base hostname & protocol for your 
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/FastPages" # the subpath of your site, e.g. "/blog".
+baseurl: "Fastpages.Massively.Oriol" # the subpath of your site, e.g. "/blog".
 
-twitter_username: 
-orcid_id: 
-google_scholar_id: 
+# twitter_username: 
+# orcid_id: 
+# google_scholar_id: 
 
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true
@@ -53,7 +53,7 @@ show_image: false
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics: 
+# google_analytics: 
 
 exclude:
   - docker-compose.yml
@@ -94,8 +94,8 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
-feed:
-  path: atom.xml
+# feed:
+#   path: atom.xml
 
 remote_theme: jekyllup/jekyll-theme-massively
 
