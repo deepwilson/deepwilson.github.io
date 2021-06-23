@@ -12,5 +12,12 @@ _notebooks/.ipynb_checkpoints
 .tweet-cache
 __pycache__
 
-# mypy
+# my additions
 .mypy_cache
+_stashedPosts
+_posts\2020-01-14-test-markdown-post.md
+_notebooks\2020-02-20-test.ipynb
+.scrapcode.ipynb
+*/.ipynb_checkpoints/*
+**/*.ipynb_checkpoints/
+
