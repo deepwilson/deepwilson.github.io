@@ -26,9 +26,12 @@
         <div id="main">
 
           <!-- Post -->
+          <!-- Hide posts if front matter flag hide:true -->
           <section class="posts">
             {% for post in site.posts %}
-              {% include entry_square.html %}
+              {% if post.hide != true %}
+                {% include entry_square.html %}
+              {% endif %}
             {% endfor %}
 
           </section>

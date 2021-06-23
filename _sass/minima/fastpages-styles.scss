@@ -1,4 +1,4 @@
-//Default Overrides For Styles In theme used
+//Default Overrides For Styles In Minima/Massively
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
 
 .post img {
@@ -28,11 +28,42 @@ img.emoji{
 
 // make non-headings slightly lighter
 .post-content p, .post-content li {
+   font-size: 20px;
    color: #515151;
 }
 
 .post-link{
     font-weight: normal;
+}
+
+// change padding of headings
+h1 {
+  margin-top:2.5rem !important;
+}
+
+h2 {
+  margin-top:2rem !important;      
+}
+
+h3, h4 {
+  margin-top:1.5rem !important;      
+}
+
+p {
+  margin-top:1rem !important; 
+  margin-bottom:1rem !important;   
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal !important;
+  margin-bottom:0.5rem !important;  
+  code {
+    font-size: 100%;
+  }
+}
+
+pre {
+  margin-bottom:1.5rem !important; 
 }
 
 // make sure the post title doesn't have too much spacing
@@ -45,6 +76,7 @@ li {
   }
   .post-meta-description {
     color: rgb(88, 88, 88);
+    font-size: 15px;
     margin-top:.05rem !important;
     margin-bottom:.05rem !important;
   }
@@ -71,7 +103,15 @@ details.description:not([open]) summary::after {
   font-size: .9rem !important;
   p, li {
     font-size: .9rem !important;
- }
+  } 
+}
+
+// Adjust with of social media icons were getting cut off
+.social-media-list{
+  .svg-icon {
+    width: 25px !important;
+    height: 23px !important;
+  }
 }
 
 // Make Anchor Links Appear Only on Hover
@@ -218,4 +258,12 @@ table {
 .svg-icon.orange{
   width: 30px;
   height: 23px;
+}
+
+.code_cell {
+  margin: 1.5rem 0px !important;
+}
+
+pre code {
+  font-size: 15px !important;
 }
