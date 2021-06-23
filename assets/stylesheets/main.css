@@ -141,6 +141,8 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .nb-badges > div { margin: 3px; /* and that, will result in a 10px gap */ }
 
+.output_area pre { border-left: none; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; }
+
 .ai { border-bottom: none; }
 
 .ai > .label { display: none; }
@@ -512,7 +514,7 @@ html[theme=dark], body.vscode-dark { --xr-font-color0: rgba(255, 255, 255, 1); -
 
 .output_area pre .xr-var-name, .output_area pre .xr-var-dims, .output_area pre .xr-var-dtype, .output_area pre .xr-preview, .output_area pre .xr-attrs dt, .output_area div .xr-var-name, .output_area div .xr-var-dims, .output_area div .xr-var-dtype, .output_area div .xr-preview, .output_area div .xr-attrs dt { white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; padding-right: 10px !important; }
 
-.output_area pre .xr-var-name:hover, .output_area pre .xr-var-dims:hover, .output_area pre .xr-var-dtype:hover, .output_area pre .xr-attrs dt:hover, .output_area div .xr-var-name:hover, .output_area div .xr-var-dims:hover, .output_area div .xr-var-dtype:hover, .output_area div .xr-attrs dt:hover { overflow: visible !important; width: auto !important; z-index: 1 !important; }
+.output_area pre .xr-var-name:hover, .output_area pre .xr-var-dims:hover, .output_area pre .xr-var-dtype:hover, .output_area pre .xr-attrs dt:hover, .output_area div .xr-var-name:hover, .output_area div .xr-var-dims:hover, .output_area div .xr-var-dtype:hover, .output_area div .xr-attrs dt:hover { overflow: auto !important; width: auto !important; z-index: 1 !important; }
 
 .output_area pre .xr-var-attrs, .output_area pre .xr-var-data, .output_area div .xr-var-attrs, .output_area div .xr-var-data { display: none !important; background-color: var(--xr-background-color) !important; padding-bottom: 5px !important; }
 
