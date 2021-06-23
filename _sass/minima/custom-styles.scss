@@ -108,6 +108,18 @@ body.vscode-dark {
   max-width: 700px !important;
 }
 
+.input_area pre, .input_area div {
+  margin-bottom:2rem !important;
+  margin-top:1.5rem !important;
+  padding-bottom:0 !important;
+  padding-top:0 !important;
+  background: #323443 !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: DejaVu Sans Mono, monospace;
+  border-radius: 5px;
+  font-size: 100%;
+}
 
 .xr-text-repr-fallback {
   /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
