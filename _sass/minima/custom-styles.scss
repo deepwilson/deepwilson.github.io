@@ -20,12 +20,12 @@
 }
 
 // make code output wrap text
-// .output_area pre {
-//   border-left: none;
-//   overflow-x: auto;
-//   white-space: pre-wrap;
-//   word-wrap: break-word;
-// }
+.output_area pre {
+  border-left: none;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
 // copy icon behaviour to ai (for academicons)
 .ai {
@@ -349,7 +349,7 @@ body.vscode-dark {
 .xr-var-dims:hover,
 .xr-var-dtype:hover,
 .xr-attrs dt:hover {
-  overflow: visible !important;
+  overflow: auto !important;
   width: auto !important;
   z-index: 1 !important;
 }
