@@ -6,10 +6,10 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: "Fastpages.Massively.Oriol"
+title: "HighLord @Outsiders17711"
 description: "testing"
 logo: images/logo.png
-background_image:   "/oriol_unraveled/images/bg.jpg"
+background_image:   "/oriol_unraveled/images/bg1.jpg"
 copyright: "testing"
 github_username: Outsiders17711
 # you can comment the below line out if your repo name is not different than your baseurl
@@ -39,7 +39,7 @@ url: "https://Outsiders17711.github.io" # the base hostname & protocol for your 
 #
 baseurl: "Fastpages.Massively.Oriol" # the subpath of your site, e.g. "/blog".
 
-# twitter_username: 
+twitter_username: Twitter
 # orcid_id: 
 # google_scholar_id: 
 
@@ -124,4 +124,4 @@ defaults:
       twitter_large_image: false
       use_math: false
 
-# permalink: /blog/:title/
+permalink: /:title/
