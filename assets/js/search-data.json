@@ -58,9 +58,6 @@
   
 
   
-  
-
-  
 
   
   
@@ -80,7 +77,7 @@
   
 
   
-      ,"page14": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://outsiders17711.github.io/Mein.Platz/robots.txt",
@@ -88,9 +85,6 @@
           "date": ""
       }
       
-  
-
-  
   
 
 }
