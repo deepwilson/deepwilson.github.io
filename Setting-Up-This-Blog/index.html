@@ -312,28 +312,9 @@
 <p>The initial setup is totally straightforeward and effortless. The <a href="https://github.com/fastai/fastpages#setup-instructions">setup instructions</a> are detailed and there is even a <a href="https://youtu.be/L0boq3zqazI">walkthrough on YouTube</a> if that wasn't enough.</p>
 <blockquote>
 <p>It wasn't enough for me. There was part of the setup where I needed to merge a pull request but I somehow didn't see that line in the instructions.</p>
+<p>youtube:<a href="https://www.youtube.com/embed/L0boq3zqazI">https://www.youtube.com/embed/L0boq3zqazI</a>
+With the setup instructions and YouTube walkthrough, you can't go wrong. If you, go through either of them again, slowly. You most definitely missed something.</p>
 </blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>
-</p>
-<center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/L0boq3zqazI" frameborder="0" allowfullscreen=""></iframe>
-</center>
-
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>With the setup instructions and YouTube walkthrough, you can't go wrong. If you, go through either of them again, slowly. You most definitely missed something.</p>
 <p>If at any point you come across build issues, refer to the fastpages <a href="https://github.com/fastai/fastpages/blob/master/_fastpages_docs/TROUBLESHOOTING.md">Troubleshooting Guide</a>.</p>
 
 </div>
@@ -379,25 +360,16 @@
 <p><em>Line 4</em>: The blog logo by sepecified by a file placed in the <code>images</code> folder of the base directory. This is the image preview automatically shown with your blog URL on social media sites. You can either:</p>
 <ul>
 <li>replace the fastpages logo with one of your own choosing, leaving <code>Line 4</code> as it is; or</li>
-<li>add you own file to the <code>images</code> folder and edit the filename in <code>Line 4</code>.</li>
-</ul>
-</li>
-<li>
-<p><em>Lines 6-14</em>: Everything here can be removed and replaced with content of your choosing. From my experience, the content can be in html format or markdown format or a mix of both formats.</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p></p>
+<li>add you own file to the <code>images</code> folder and edit the filename in <code>Line 4</code>.
 <div class="flash flash-warn">
     <svg class="octicon octicon-zap octicon octicon-zap" viewbox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"></path></svg>
     <strong>Important: </strong>The image for the blog logo MUST be in the <strong>images</strong> folder (or subfolders) for your blog to render correctly.
-</div>
+</div>    </li>
+</ul>
+</li>
+<li>
+<em>Lines 6-14</em>: Everything here can be removed and replaced with content of your choosing. From my experience, the content can be in html format or markdown format or a mix of both formats.</li>
+</ol>
 
 </div>
 </div>
@@ -415,8 +387,8 @@
 <li>
 <p><em>Line 6</em>: You can totally remove that line, thus removing the <code>View Demo Site</code> badge. On the other hand, you might want to change it to one of your choosing and make it point to another link.</p>
 <p>This is quite simple. The <a href="https://shields.io/">shields.io</a> developer site contains example code on how to create your own custom badges. If you want to use a shield logo other than the ones available, you need to convert your .png to base64 code, you can't just specify a path to the .png file. <a href="https://b64.io/">b64.io</a> is a free resource for converting images to base64 format. The logo is then specified in the badge code using the snippet below.</p>
-
-<pre><code> ?logo=data:image/png;base64,…</code></pre>
+<div class="highlight"><pre><span></span>?logo=data:image/png;base64,…
+</pre></div>
 <p>You can consult the answers provided to this <a href="https://stackoverflow.com/questions/38985050/how-do-i-use-the-logo-option-in-shields-io-badges">stackoverflow question</a> if you have any difficulty creating you custom badge. You can create any number of badges this way, all with different attributes.</p>
 </li>
 <li>
@@ -584,57 +556,37 @@
 <ul>
 <li>
 <p><strong>GITIGNORING .IPYNB_CHECKPOINTS</strong>: In order to ignore those pesky <code>.ipynb_checkpoints/</code> folders everywhere in your blog repository, add the following lines to your <code>.gitignore</code> file:</p>
-
-<pre><code>  .ipynb_checkpoints
-  */.ipynb_checkpoints/*</code></pre>
+<div class="highlight"><pre><span></span>.ipynb_checkpoints
+  */.ipynb_checkpoints/*
+</pre></div>
 <p>and you should be good to go. Courtesy of <a href="https://stackoverflow.com/questions/35916658/how-to-git-ignore-ipython-notebook-checkpoints-anywhere-in-repository">stackoverflow</a>.</p>
-<p>Alternatively, you can use the python code below to delete all auto-generated temporary folders. You can place the code in a python file and run that file before pushing your code to GitHub</p>
+<p>Alternatively, you can use the python code below to delete all auto-generated temporary folders. You can place the code in a python file and run that file before pushing your code to GitHub:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+  <span class="kn">import</span> <span class="nn">shutil</span>
+  <span class="kn">from</span> <span class="nn">win32com.shell</span> <span class="kn">import</span> <span class="n">shell</span><span class="p">,</span> <span class="n">shellcon</span>
+
+  <span class="n">local_repository_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"local/repository/path"</span>
+
+  <span class="k">def</span> <span class="nf">delPycacheFolders</span><span class="p">(</span><span class="n">targetFolder</span><span class="o">=</span><span class="n">local_repository_path</span><span class="p">):</span>
+      <span class="n">flaggedFolders</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">for</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">targetFolder</span><span class="p">):</span>
+          <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">dirnames</span><span class="p">:</span>
+              <span class="k">if</span> <span class="n">folder</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"__pycache__"</span><span class="p">,</span> <span class="s2">"__MACOSX"</span><span class="p">,</span> <span class="s2">".ipynb_checkpoints"</span><span class="p">]:</span>
+                  <span class="n">folderpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirpath</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
+                  <span class="n">flaggedFolders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">folderpath</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+                  <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">folderpath</span><span class="p">)</span>
+
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"deleted temp folders:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flaggedFolders</span><span class="p">))</span>
+
+  <span class="n">delPycacheFolders</span><span class="p">()</span>
+</pre></div>
 </li>
 </ul>
 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p></p>
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">from</span> <span class="nn">win32com.shell</span> <span class="kn">import</span> <span class="n">shell</span><span class="p">,</span> <span class="n">shellcon</span>
-
-<span class="n">local_repository_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"local/repository/path"</span>
-
-<span class="k">def</span> <span class="nf">delPycacheFolders</span><span class="p">(</span><span class="n">targetFolder</span><span class="o">=</span><span class="n">local_repository_path</span><span class="p">):</span>
-    <span class="n">flaggedFolders</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">for</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">targetFolder</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">dirnames</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">folder</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"__pycache__"</span><span class="p">,</span> <span class="s2">"__MACOSX"</span><span class="p">,</span> <span class="s2">".ipynb_checkpoints"</span><span class="p">]:</span>
-                <span class="n">folderpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirpath</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
-                <span class="n">flaggedFolders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">folderpath</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-                <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">folderpath</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"deleted temp folders:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flaggedFolders</span><span class="p">))</span>
-
-<span class="n">delPycacheFolders</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-    </details>
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
