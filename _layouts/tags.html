@@ -35,9 +35,7 @@ layout: default
       <h2 class="taxonomy-title">{{ tag[0] }}</h2>
       <section id="{{ tag[0] | slugify | downcase }}" class="posts">
           {% for post in tag.last %}
-            {% if post.hide != true %}
-              {% include entry_small.html %}
-            {% endif %}
+            {% include entry_small.html %}
           {% endfor %}
       </section>
       <a href="#header" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>

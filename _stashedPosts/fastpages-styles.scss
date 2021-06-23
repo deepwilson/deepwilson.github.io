@@ -1,8 +1,9 @@
-//Default Overrides For Styles In theme used
+//Default Overrides For Styles In Minima 
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
 
 .post img {
         display: block;
+        // border:1px solid #021a40;
         vertical-align: top;
         margin-left: auto;
         margin-right: auto;
@@ -28,11 +29,42 @@ img.emoji{
 
 // make non-headings slightly lighter
 .post-content p, .post-content li {
+   font-size: 20px;
    color: #515151;
 }
 
 .post-link{
     font-weight: normal;
+}
+
+// change padding of headings
+h1 {
+    margin-top:2.5rem !important;
+}
+
+h2 {
+    margin-top:2rem !important;      
+}
+
+h3, h4 {
+    margin-top:1.5rem !important;      
+}
+
+p {
+    margin-top:1rem !important; 
+    margin-bottom:1rem !important;   
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal !important;
+    margin-bottom:0.5rem !important;  
+    code {
+      font-size: 100%;
+    }
+}
+
+pre {
+    margin-bottom:1.5rem !important; 
 }
 
 // make sure the post title doesn't have too much spacing
@@ -45,6 +77,7 @@ li {
   }
   .post-meta-description {
     color: rgb(88, 88, 88);
+    font-size: 15px;
     margin-top:.05rem !important;
     margin-bottom:.05rem !important;
   }
@@ -68,10 +101,18 @@ details.description:not([open]) summary::after {
 
 // Adjust font size for footnotes.
 .footnotes {
-  font-size: .9rem !important;
-  p, li {
-    font-size: .9rem !important;
- }
+  font-size: 12px !important;
+  p, li{
+    font-size: 12px !important;
+ } 
+}
+
+// Adjust with of social media icons were getting cut off
+.social-media-list{
+  .svg-icon {
+    width: 25px !important;
+    height: 23px !important;
+  }
 }
 
 // Make Anchor Links Appear Only on Hover
@@ -124,14 +165,14 @@ h6:hover .anchor-link {
 }
 .category-tags-link {
   color:rgb(187, 129, 129) !important;
-  font-size: 1rem !important;
+  font-size: 13px !important;
 }
 
 // Search Page Styles
 .js-search-results {padding-top: 0.2rem;}
 .search-results-list-item {padding-bottom: 1rem;}
 .search-results-list-item .search-result-title {
-  font-size: 1rem;
+  font-size: 16px;
   color: #d9230f;
 }
 .search-result-rel-url {color: silver;}
@@ -141,12 +182,12 @@ h6:hover .anchor-link {
 
 .search-result-rel-date {
   color: rgb(109, 120, 138);
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .search-result-preview {
   color: #777;
-  font-size: 1rem;
+  font-size: 16px;
   margin-top:.02rem !important;
   margin-bottom:.02rem !important;
 }
@@ -155,21 +196,13 @@ h6:hover .anchor-link {
   font-weight:bold;
 }
 
-// Handle Overflow With Table Output
-
 table {
-  display: block !important;
-  overflow-x: auto;
-  white-space: nowrap;
-  font-size: 75%;
+  white-space: normal;
+  max-width: 100%;
+  font-size: 100%;
   border:none;
   th{
     text-align: center! important;
-  }
-  td{
-    text-overflow:ellipsis;
-    overflow:hidden;
-    max-width: 15em;
   }
 }
 
@@ -207,15 +240,19 @@ table {
 // @media only screen and (max-width: 1200px) {
 //   /* for mobile phone and tablet devices */
   .output_wrapper{
-    overflow: scroll;
+    overflow: auto;
   }
 // }
-
-.output_wrapper{
-  overflow: scroll;
-}
 
 .svg-icon.orange{
   width: 30px;
   height: 23px;
+}
+
+.code_cell {
+  margin: 1.5rem 0px !important;
+}
+
+pre code {
+  font-size: 15px !important;
 }

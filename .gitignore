@@ -22,5 +22,4 @@ _notebooks\2020-02-20-test.ipynb
 **/*.ipynb_checkpoints/
 .vscode
 *.diff
-_temp
 

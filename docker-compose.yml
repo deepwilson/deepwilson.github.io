@@ -21,12 +21,6 @@ services:
     <<: *fastpages
     command: /fastpages/action_entrypoint.sh
 
-  notebook:
-    <<: *fastpages
-    command: jupyter notebook --allow-root --no-browser --ip=0.0.0.0 --port=8080 --NotebookApp.token='' --NotebookApp.password=''
-    ports:
-      - "8080:8080"
-
   watcher:
     <<: *fastpages
     command: watchmedo shell-command --command /fastpages/action_entrypoint.sh --pattern *.ipynb --recursive --drop
@@ -34,11 +28,13 @@ services:
 
   jekyll:
     working_dir: /data
-    image: fastai/fastpages-jekyll
+    image: jekyll/jekyll:4.0.1
     restart: unless-stopped
     ports:
       - "4000:4000"
     volumes:
       - .:/data/
     command: >
-      bash -c "chmod -R u+rw . && jekyll serve --host 0.0.0.0 --trace --strict_front_matter"
+     bash -c "gem install bundler
+     && jekyll serve --trace --strict_front_matter"
+
