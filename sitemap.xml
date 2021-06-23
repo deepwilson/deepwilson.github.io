@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://outsiders17711.github.io/FastPages/blog/test-markdown-post/</loc>
+<loc>https://outsiders17711.github.io/FastPages/fastpages%20examples/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://outsiders17711.github.io/FastPages/blog/test/</loc>
+<loc>https://outsiders17711.github.io/FastPages/fastpages%20examples/2020/02/20/test.html</loc>
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
 </url>
 <url>
@@ -13,7 +13,7 @@
 <lastmod>2021-06-14T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://outsiders17711.github.io/FastPages/blog/Setting-Up-This-Blog/</loc>
+<loc>https://outsiders17711.github.io/FastPages/fastpages%20examples/2021/06/14/Setting-Up-This-Blog.html</loc>
 <lastmod>2021-06-14T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -33,13 +33,5 @@
 </url>
 <url>
 <loc>https://outsiders17711.github.io/FastPages/tags/</loc>
-</url>
-<url>
-<loc>https://outsiders17711.github.io/FastPages/about/index%20(1).html</loc>
-<lastmod>2021-06-23T03:50:52-05:00</lastmod>
-</url>
-<url>
-<loc>https://outsiders17711.github.io/FastPages/blog/index%20(1).html</loc>
-<lastmod>2021-06-23T03:50:52-05:00</lastmod>
 </url>
 </urlset>
