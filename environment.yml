@@ -1,9 +1,5 @@
-name: oriol-unraveled
+name: Mein.Platz
 channels:
   - conda-forge
 dependencies:
-  - numpy
-  - matplotlib
-  - pandas
-  - pymc3
-  - arviz
+
