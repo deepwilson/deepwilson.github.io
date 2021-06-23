@@ -4,4 +4,4 @@
 
 Checkout the blog at:
 
- https://outsiders17711.github.io/tempClone/
+https://outsiders17711.github.io/Fastpages.Massively.Oriol/
