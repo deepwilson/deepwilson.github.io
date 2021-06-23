@@ -424,6 +424,8 @@ html[theme=dark], body.vscode-dark { --xr-font-color0: rgba(255, 255, 255, 1); -
 
 .output_area pre .xr-wrap, .output_area div .xr-wrap { display: block !important; min-width: 300px !important; max-width: 700px !important; }
 
+.output_area pre .input_area pre, .output_area pre .input_area div, .output_area div .input_area pre, .output_area div .input_area div { margin-bottom: 2rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #323443 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: DejaVu Sans Mono, monospace; border-radius: 5px; font-size: 100%; }
+
 .output_area pre .xr-text-repr-fallback, .output_area div .xr-text-repr-fallback { /* fallback to plain text repr when CSS is not injected (untrusted notebook) */ display: none !important; }
 
 .output_area pre .xr-header, .output_area div .xr-header { padding-top: 6px !important; padding-bottom: 6px !important; margin-bottom: 4px !important; border-bottom: solid 1px var(--xr-border-color) !important; }
