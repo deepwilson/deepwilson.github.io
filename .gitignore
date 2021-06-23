@@ -5,8 +5,8 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-# vendor
-_notebooks/.ipynb_checkpoints
+# vendor #this might be why search is not working
+
 # Local Netlify folder
 .netlify
 .tweet-cache
@@ -14,11 +14,12 @@ __pycache__
 
 # my additions
 .mypy_cache
-_stashedPosts
+# _stashedPosts #i ll push for now
 _posts\2020-01-14-test-markdown-post.md
 _notebooks\2020-02-20-test.ipynb
 .scrapcode.ipynb
 */.ipynb_checkpoints/*
 **/*.ipynb_checkpoints/
 .vscode
+*.diff
 

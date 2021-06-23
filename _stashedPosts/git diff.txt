@@ -1,0 +1,8 @@
+getting the difference between two repositories
+https://stackoverflow.com/questions/1968512/getting-the-difference-between-two-repositories
+
+
+git remote add -f b https://github.com/OriolAbril/oriol_unraveled.git
+git remote update
+git diff main remotes/b/main > changes.diff
+git remote rm b
