@@ -3,54 +3,17 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+[![](https://img.shields.io/static/v1?label=Link%20To%20Blog:&message=Outsiders17711.FastPages&labelColor=2f363d&color=blue&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAAAAADmVT4XAAAAAXNCSVQI5gpbmQAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAABJ0AAASdAHeZh94AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABBZJREFUeNrt201IFVEUAOAjBqFhaWApCGFB8sCy0EwzpRKCUoIWEgUFLVKEbCUtSmghSAv78yf7sQxXBZpgBKmIYj+ElrkQLTBwZS8trTYhiaeF78299829t/ec44zEPas3Z4Zzvnk/d37eXECPA1YXwD82/GGFY3jMrwBMVSSCS5FYMWUDTKaBq5E2KQLOgOtxhgckgAeRwABR4ElEBQEp4FGkLAGqwLOoQgRcAA9jAQFLvASUIKCQ2LY7w0lkbhWqpSfbW4bkEDq5pQbHI3slV+0VIuJJsb0t1wllbOGT80PLOm7flqJa2F9brgyyrNcXKI5tVrwOppK0uSyIt17POO//07aziM3aXDxE21cvP0bZd83KDWlz0QCUgHGrWLKV69HmgBbwS1KtVJ+jBXBfwlP2lDRHDMhl5aolvap1/UkAHVy9pOahntD3WpYzYcKECRNWuHpXwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAD+P8CVgoLLn70DDAZKnO7zBsD9UwMHWj0AFImFUmumXQbYa0WXv/MWAABQ/NQ1wCbVjbf0VncA5ep7f2tdAbyM+PYj9TgQ8Q1QakBmpAJqQC1EKKAG+FmV7WGVJj8YsSot2Hb037XJASesKhmIiINlUfriVj6GCNBhK+O/qhP4gumDVOcDrExfMPVDIxgIZt9RAbZYZUoxHEHgaZdKpAJcYp8qS87p3gMfgG8AyQDs4Q2YD09g/z04AnCFmrnsbCRjojNAoVWnECMRkAGaFYW+hz8mOgPMs0JZkQjoLkxiVYJv4Y2JjgH8oyF7whfQAfpBKZjRCAivDYUm2cKqabWAEPBaaLI3TAHl1fEjjeCrSkAJCBHkhCUgBWCLRuCXC2gB+FBokius+yIVEAO0AumnQA3ABxrBDomAHMAflQBgH7cmRXYaDLHUALwvNMlT94dkRITN1uJXKsE9qUD2DP8lRMizlpqoAHhXIpDPIfiDwA5iPjIA3hG67Ff2hxKEJ2xpfKUEBeo5FAjcmcx6OgA2aS6W+W/pM+Cf/T5EKLit7N+LE2yhHIQts1wQ9CLieXbmAiEnEu10gkZlf+4UaSMg1otbnG3tH1nmNLKR34KgQdWf2+k1gMKsBKeRMMEL6lX9GWAdoPBIuvN4zwvqFP1fWJlUQERspxQIn8It+ZEpzkoVLW1fQwh4rhEEjs5sWgnUBsA36ADV4m/hZsjaN2+EaS9TwXeslwxQH/Jr1O5bDDfj0kcEmA0dD65rNn7MzzntjqPof8Q+Il1TbrwhZNLr22OO+++UjYnKO7lz9mm/HxvPHc5e7lSzXcd75aOyQtCGrs07rpP1b0T3ANht79+NbgJwMUNsn7GI7gIQR/NZ+/zRYNbdueddF4tzcoovdnGpVTb53YP4C/mdX/Tfh4hkAAAAAElFTkSuQmCC&logoColor=959da5&logoWidth=20)](https://Outsiders17711.github.io/Outsiders17711.FastPages/)
 
-I'm a rebel physicist/engineer who loves statistical data analysis. By day,
-I am currently a Research Assistant on Bayesian Model Selection with
-[David Rossell](https://sites.google.com/site/rosselldavid/) at UPF,
-Barcelona. By night I am a core developer of
-[ArviZ](https://arviz-devs.github.io/arviz/) a Python package for exploratory
-analysis of Bayesian models. In addition to data analysis probabilistic
-modeling, I also love programming and teaching.
+My name is HighLord @Outsiders17711.
+  > [GitHub Repository](https://github.com/Outsiders17711/Outsiders17711.FastPages)
+  >
+  > > [/actions](https://github.com/Outsiders17711/Outsiders17711.FastPages/actions)
 
-I think that the culture in scientific research needs deep changes towards a
-more collaborative, open and diverse model. I am interested in open science,
-reproducible research and science communication. I want to pursue a career in
-probabilistic modeling and statistical research with special emphasis on
-openness and reproducibility.
+---
 
-In my spare time, I like playing board games and going to the beach to do
-water activities. I have been sailing and snorkeling regularly since I was
-little and more recently I added kayaking to the mix too! I generally spend
-the summer at the _Costa Brava_. Here I leave you a sneak peak of the views
-when nobody is around
+This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1] [^2].  An easy to use blogging platform from FastAI FastPages with support for Jupyter Notebooks.
 
-![cala_costa_brava]({{ site.baseurl }}/images/cala_costa_brava.jpg)
-
-## Projects
-* [**PyMCon 2020**](https://pymc-devs.github.io/pymcon//): PyMCon 2020 is an
-  asynchronous-first virtual conference for the Bayesian community
-
-## Open source work
-Here are highlighted some open source projects I contribute to, check out my
-[GitHub profile](https://github.com/OriolAbril) for a complete list
-of the projects I contribute to.
-
-* [**ArviZ**](https://github.com/arviz-devs/arviz): Exploratory analysis of
-  Bayesian models in [Python](https://arviz-devs.github.io/arviz/index.html)
-  or [Julia](https://arviz-devs.github.io/ArviZ.jl/stable/)
-* [**mombf**](https://github.com/davidrusi/mombf): Bayesian model selection and
-  averaging for regression and mixtures for non-local and local priors.
-* [**exosherlock**](https://github.com/mbadenas/exosherlock): Smooth
-  your interactions with the NASA Exoplanet Archive using Python and pandas.
-* [**PyMC**](https://github.com/pymc-devs)[**3**](https://github.com/pymc-devs/pymc3)/[**4**](https://github.com/pymc-devs/pymc4): Friendly probabilistic programming in Python.
-
-## Talks and conferences
-* PROBPROG 2020: _Coming on autumn 2020_
-* StanCon 2020: _ArviZ, InferenceData, and NetCDF: A unified file format for Bayesians._
-  Slides and video presentation are available at [GitHub](https://github.com/arviz-devs/arviz_misc/tree/master/stancon_2020),
-  the slides are executable thanks to Binder!
-
-## Publications
-* M. Badenas-Agusti, M. N. Günther, T. Daylan, et al., 2020, HD 191939: _Three Sub-Neptunes Transiting a Sun-like Star Only 54 pc Away_
-* D. Foreman-Mackey, W. Farr, M. Sinha, A. Archibald, et al., 2019, _emcee v3: A Python ensemble sampling toolkit for affine-invariant MCMC._
-  - Get the [emcee package code](https://github.com/dfm/emcee)!
+[^1]: a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+    
+[^2]: [fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).
