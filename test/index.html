@@ -20,7 +20,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-20T00:00:00-06:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-02-20T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/test/"},"image":"https://outsiders17711.github.io/Mein.Platz/images/ipynb/chart-preview.png","description":"A tutorial of fastpages for Jupyter notebooks.","@type":"BlogPosting","url":"https://outsiders17711.github.io/Mein.Platz/test/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"}},"headline":"Fastpages Notebook Blog Post","dateModified":"2020-02-20T00:00:00-06:00","@context":"https://schema.org"}</script>
+{"description":"A tutorial of fastpages for Jupyter notebooks.","headline":"Fastpages Notebook Blog Post","@type":"BlogPosting","dateModified":"2020-02-20T00:00:00-06:00","datePublished":"2020-02-20T00:00:00-06:00","image":"https://outsiders17711.github.io/Mein.Platz/images/ipynb/chart-preview.png","url":"https://outsiders17711.github.io/Mein.Platz/test/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/test/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Feed --><link type="application/atom+xml" rel="alternate" href="https://outsiders17711.github.io/Mein.Platz/feed.xml" title="HighLord @Outsiders17711" /><!-- CSS --><link rel="shortcut icon" type="image/x-icon" href="/Mein.Platz/images/favicon.ico"><link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://outsiders17711.github.io/Mein.Platz/assets/css/main.css" />
@@ -94,7 +94,7 @@
 
 <span class="read-time" title="Estimated read time">
 
-  5 min read
+  6 min read
 
 </span>
 
@@ -1013,18 +1013,22 @@
 </p>
 <div class="flash flash-error">
     <svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <button class="flash-close js-flash-close" type="button">&lt;%= octicon "x", :"aria-label" =&gt; "Close" %&gt;</button>
     <strong>Warning: </strong>There will be no second warning!
 </div>
 <p>Typing <code>&gt; Important: Pay attention! It's important.</code> will render this:
 </p>
 <div class="flash flash-warn">
     <svg class="octicon octicon-zap" viewbox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"></path></svg>
+    <button class="flash-close js-flash-close" type="button">&lt;%= octicon "x", :"aria-label" =&gt; "Close" %&gt;</button>
     <strong>Important: </strong>Pay attention! It’s important.
 </div>
+
 <p>Typing <code>&gt; Tip: This is my tip.</code> will render this:
 </p>
 <div class="flash flash-success">
     <svg class="octicon octicon-checklist" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"></path></svg>
+    <button class="flash-close js-flash-close" type="button">&lt;%= octicon "x", :"aria-label" =&gt; "Close" %&gt;</button>
     <strong>Tip: </strong>This is my tip.
 </div>
 <p>Typing <code>&gt; Note: Take note of this.</code> will render this:
