@@ -5,6 +5,7 @@ description: A minimal example of using markdown with fastpages.
 categories: [notebook, fastpages]
 tags: [fastpages examples]
 hide: true
+search_exclude: false
 title: An Example Markdown Post
 ---
 # Example Markdown Post
