@@ -1,11 +1,13 @@
 //Default Overrides For Styles In theme used
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
 
+// edit the look of images, i added borders
 .post img {
-        display: block;
-        vertical-align: top;
-        margin-left: auto;
-        margin-right: auto;
+  display: block;
+  vertical-align: top;
+  margin-left: auto;
+  border: groove;
+  margin-right: auto;
 }
 
 img.emoji{
@@ -49,8 +51,6 @@ li {
     margin-bottom:.05rem !important;
   }
 }
-
-
 
 //  Code Folding
  details.description[open] summary::after {
