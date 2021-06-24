@@ -85,6 +85,8 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .svg-icon.orange { width: 30px; height: 23px; }
 
+.flash { position: relative; padding: 10px 10px; border-style: solid; border-width: 4px; border-radius: 10px; }
+
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 /* Dracula Theme v1.2.5 https://github.com/zenorocha/dracula-theme Copyright 2016, All rights reserved Code licensed under the MIT license */
