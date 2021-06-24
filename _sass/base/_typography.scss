@@ -27,6 +27,7 @@
   }
 
   body, input, select, textarea {
+    // controls the font type of the blog text (unformatted markdowns)
     font-family: _font(family);
     font-weight: _font(weight);
     font-size: 1rem;
@@ -136,17 +137,13 @@
     font-family: _font(family-fixed);
     font-size: 0.9rem;
     margin: 0 0 _size(element-margin) 0;
+    // this fixed the issue with scrollbars
     overflow: auto !important;
-    overflow-x: auto !important;
-    overflow-y: auto !important;
 
     code {
       display: block;
       line-height: 1.75;
       padding: 1rem 1.5rem;
-      overflow: auto !important;
-      overflow-x: auto !important;
-      overflow-y: auto !important;
     }
   }
 
