@@ -42,9 +42,9 @@ $dt-green-light: rgb(172, 229, 145);
     text-rendering: optimizeLegibility;
     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;
     border-radius: 5px;
-    overflow: auto;
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow: auto !important;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
     font-size: 90%;
 }
 .output_area pre, .output_area div {
