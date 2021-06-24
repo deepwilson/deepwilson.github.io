@@ -200,7 +200,7 @@ code { font-family: "Courier New", monospace; font-size: 80%; margin: 0 0.1rem; 
 
 pre { -webkit-overflow-scrolling: touch; font-family: "Courier New", monospace; font-size: 0.9rem; margin: 0 0 2rem 0; }
 
-pre code { display: block; line-height: 1.75; padding: 1rem 1.5rem; overflow-x: auto; }
+pre code { display: block; line-height: 1.75; padding: 1rem 1.5rem; overflow-x: auto !important; }
 
 hr { border: 0; border-bottom: solid 2px; margin: 3rem 0; }
 
