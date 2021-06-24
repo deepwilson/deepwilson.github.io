@@ -88,7 +88,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 /* Dracula Theme v1.2.5 https://github.com/zenorocha/dracula-theme Copyright 2016, All rights reserved Code licensed under the MIT license */
-.highlight { background: #323443 !important; color: #f8f8f2 !important; }
+.highlight { color: #f8f8f2 !important; }
 
 .highlight pre, .highlight code { background: #323443; color: #f8f8f2; }
 
@@ -129,7 +129,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 .language-python + .language-plaintext pre { background-color: white !important; }
 
 /* .output_area pre, .output_area div { margin-bottom: 1rem; margin-top: 1rem; padding-bottom: 0; padding-top: 0; } */
-.input_area pre { border-left: 5px solid #323443; }
+.input_area pre { border-left: 10px solid #323443; border-left: 10px solid #323443; border-top: 10px solid #323443; border-bottom: 2px solid #323443; border-radius: 15px !important; }
 
 .output_area pre { border-left: 1px solid grey; margin-left: 1rem !important; }
 
