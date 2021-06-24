@@ -1,4 +1,5 @@
 <div class="flash flash-error">
     {% octicon alert %}
+    <button class="flash-close js-flash-close" type="button"><%= octicon "x", :"aria-label" => "Close" %></button>
     <strong>Warning: </strong>{{ include.content }}
 </div>

@@ -33,6 +33,11 @@ $dt-darkish-orange: rgb(231, 153, 122);
     pre, code {
      background: $dt-code-cell-background;
      color: $dt-gray-light;
+     border-left: 10px solid $dt-code-cell-background;
+     border-left: 10px solid $dt-code-cell-background;
+     border-top: 10px solid $dt-code-cell-background;
+     border-bottom: 10px solid $dt-code-cell-background;
+     border-radius: 15px !important;
     }
 
     .hll,
