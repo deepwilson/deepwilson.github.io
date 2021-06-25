@@ -80,9 +80,7 @@
           <!-- Post -->
           <section class="post">
             
-            <p><script src="/assets/scripts/copyCode.js"></script>
-
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+            <p><article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Change Log</h1><p class="page-description">A log of changes and personalizations I've made to the blog after incoporating the default fastpages Minima and Oriol's Mssively.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-25T00:00:00-05:00" itemprop="datePublished">
@@ -107,7 +105,8 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <!-- omit in toc -->
-<h2 id="div-aligncenter-change-log-div">&lt;div align="center"&gt;— Change Log —&lt;/div&gt;</h2>
+<!-- this will only work in .md, it wont render on the blog -->
+<!-- ## <div align="center">--- Change Log ---</div> -->
 
 <!-- omit in toc -->
 <div align="right">
@@ -116,6 +115,7 @@
 
 <!-- omit in toc -->
 ### TOC
+
 - [Editing The Look Of Flash Alerts](#editing-the-look-of-flash-alerts)
 - [Editing The Look Of Inline Markdown Code](#editing-the-look-of-inline-markdown-code)
 - [Editing The Look Of Jupyter Code Cells](#editing-the-look-of-jupyter-code-cells)
@@ -134,15 +134,15 @@
 <details>
 <summary>code:</summary> 
 
-```scss
-.flash {
-position: relative;
-padding: 10px 10px;
-border-style: solid;
-border-width: 4px;
-border-radius: 10px;
-}
-```
+    ```scss
+    .flash {
+    position: relative;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    }
+    ```
 </details>
 
 <h3 id="editing-the-look-of-inline-markdown-code">Editing The Look Of Inline Markdown Code</h3>
@@ -152,22 +152,22 @@ border-radius: 10px;
 <details open="">
 <summary>code:</summary>
 
-```scss
-.highlight {
-    ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
+    ```scss
+    .highlight {
+        ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
-    // background: $dt-code-cell-background !important;
-    color: $dt-gray-light !important;
-    pre, code {
-    background: $dt-code-cell-background;
-    color: $dt-gray-light;
-    border-left: 10px solid $dt-code-cell-background;
-    border-left: 10px solid $dt-code-cell-background;
-    border-top: 10px solid $dt-code-cell-background;
-    border-bottom: 10px solid $dt-code-cell-background;
-    border-radius: 15px !important;
-    }
-```
+        // background: $dt-code-cell-background !important;
+        color: $dt-gray-light !important;
+        pre, code {
+        background: $dt-code-cell-background;
+        color: $dt-gray-light;
+        border-left: 10px solid $dt-code-cell-background;
+        border-left: 10px solid $dt-code-cell-background;
+        border-top: 10px solid $dt-code-cell-background;
+        border-bottom: 10px solid $dt-code-cell-background;
+        border-radius: 15px !important;
+        }
+    ```
 </details>
 
 <h3 id="editing-the-look-of-jupyter-code-cells">Editing The Look Of Jupyter Code Cells</h3>
@@ -307,7 +307,10 @@ file:
 
 
   </div><a class="u-url" href="/Mein.Platz/Change-Log/" hidden></a>
-</article></p>
+</article>
+<script src="/assets/scripts/copyCode.js"></script>
+
+</p>
           </section>
 
           <!-- Footer -->
