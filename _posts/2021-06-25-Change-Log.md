@@ -154,9 +154,10 @@ file: _action_files\hide.tpl
 <summary>code:</summary> 
 replace the pertinent block
 
+<!-- {% raw %} & {% endraw %} disables tag processing -->
+{% raw %}
 ```scss
-// {% raw %} & {% endraw %} disables tag processing
-{% raw %}{% block output_group -%}{% endraw %}
+{% block output_group -%}
 {%- if cell.metadata.collapse_output -%}
     <details class="description">
     <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
@@ -166,8 +167,9 @@ replace the pertinent block
 {%- else -%}
     {{ super()  }}
 {%- endif -%}
-{% raw %}{% endblock output_group %}{% endraw %}
+{% endblock output_group %}
 ```
+{% endraw %}
 </details>
 
 ### Editing The Look Of Images
