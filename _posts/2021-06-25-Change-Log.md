@@ -7,7 +7,9 @@ search_exclude: false
 ---
 
 <!-- omit in toc -->
-## <div align="center">--- Change Log ---</div>
+<!-- this will only work in .md, it wont render on the blog -->
+<!-- ## <div align="center">--- Change Log ---</div> -->
+
 
 <!-- omit in toc -->
 <div align="right">
@@ -16,6 +18,7 @@ search_exclude: false
 
 <!-- omit in toc -->
 ### TOC
+
 - [Editing The Look Of Flash Alerts](#editing-the-look-of-flash-alerts)
 - [Editing The Look Of Inline Markdown Code](#editing-the-look-of-inline-markdown-code)
 - [Editing The Look Of Jupyter Code Cells](#editing-the-look-of-jupyter-code-cells)
@@ -34,15 +37,15 @@ file: _sass\minima\fastpages-styles.scss
 <details>
 <summary>code:</summary> 
 
-```scss
-.flash {
-position: relative;
-padding: 10px 10px;
-border-style: solid;
-border-width: 4px;
-border-radius: 10px;
-}
-```
+    ```scss
+    .flash {
+    position: relative;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    }
+    ```
 </details>
 
 ### Editing The Look Of Inline Markdown Code
@@ -52,22 +55,22 @@ file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss
 <details open>
 <summary>code:</summary>
 
-```scss
-.highlight {
-    ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
+    ```scss
+    .highlight {
+        ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
-    // background: $dt-code-cell-background !important;
-    color: $dt-gray-light !important;
-    pre, code {
-    background: $dt-code-cell-background;
-    color: $dt-gray-light;
-    border-left: 10px solid $dt-code-cell-background;
-    border-left: 10px solid $dt-code-cell-background;
-    border-top: 10px solid $dt-code-cell-background;
-    border-bottom: 10px solid $dt-code-cell-background;
-    border-radius: 15px !important;
-    }
-```
+        // background: $dt-code-cell-background !important;
+        color: $dt-gray-light !important;
+        pre, code {
+        background: $dt-code-cell-background;
+        color: $dt-gray-light;
+        border-left: 10px solid $dt-code-cell-background;
+        border-left: 10px solid $dt-code-cell-background;
+        border-top: 10px solid $dt-code-cell-background;
+        border-bottom: 10px solid $dt-code-cell-background;
+        border-radius: 15px !important;
+        }
+    ```
 </details>
 
 ### Editing The Look Of Jupyter Code Cells

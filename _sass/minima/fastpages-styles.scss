@@ -238,37 +238,49 @@ center {
 
 // adding a copy button to code cells
 .code-header {
-  display: flex;
-  justify-content: flex-end;
+  height: 0;
+  z-index: 2;
+  position: relative;
+
 }
 
+
 .copy-code-button {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  grid-column-gap: 4px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 4px 8px;
+  --copy-code-bg-color: #404040;
+  --copy-code-text-color: #e6e6e6;
+  position: absolute;
+  right: 2.4rem;
+  top: 2.4rem;
+  display: none;
+  color: var(--copy-code-text-color);
+  background-color: var(--copy-code-bg-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  --line-height: 1.83;
+  --font-size: 1.6rem;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 
   &::before {
-    content: "Copy";
+    content: 'Copy 📋';
   }
 
-  &::after {
-    content: "📋";
-    display: block;
+
+  &.copied,
+  &:focus,
+  &:hover {
+    color: black;
+    background-color: #b3b3b3;
   }
 
-  // This class will be toggled via JavaScript
+  &:not(.copied):not(:hover):focus:not(:focus-visible) {
+    color: var(--copy-code-text-color);
+    background-color: var(--copy-code-bg-color);
+  }
+
   &.copied {
     &::before {
-      content: "Copied!";
-    }
-
-    &::after {
-      content: "✔️";
+      content: 'Copied! ✔️';
     }
   }
 }

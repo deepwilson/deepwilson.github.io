@@ -70,7 +70,9 @@ search_exclude: true
             <!-- Posts -->
               <section class="posts">
                 {% for post in site.posts %}
-                  {% include entry_square.html %}
+                  {% if post.hide != true %}
+                    {% include entry_square.html %}
+                  {% endif %}
                 {% endfor %}
 
               </section>
