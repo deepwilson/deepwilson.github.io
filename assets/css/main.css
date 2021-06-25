@@ -240,29 +240,29 @@ hr { border-bottom-color: #eeeeee; }
 /* Button */
 input[type="submit"], input[type="reset"], input[type="button"], button, .button { -moz-appearance: none; -webkit-appearance: none; -ms-appearance: none; appearance: none; -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; border: 0; cursor: pointer; display: inline-block; font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 0.8rem; font-weight: 900; letter-spacing: 0.075em; height: 3rem; line-height: 3rem; padding: 0 2rem; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
 
-input[type="submit"].icon:before, input[type="reset"].icon:before, input[type="button"].icon:before, button.icon:before, .button.icon:before { margin-right: 0.5rem; }
+input.icon[type="submit"]:before, input.icon[type="reset"]:before, input.icon[type="button"]:before, button.icon:before, .button.icon:before { margin-right: 0.5rem; }
 
-input[type="submit"].icon.solo, input[type="reset"].icon.solo, input[type="button"].icon.solo, button.icon.solo, .button.icon.solo { position: relative; width: 4rem; height: 4rem; line-height: 4rem; border-radius: 4rem; text-indent: 4rem; overflow: hidden; padding: 0; white-space: nowrap; }
+input.icon.solo[type="submit"], input.icon.solo[type="reset"], input.icon.solo[type="button"], button.icon.solo, .button.icon.solo { position: relative; width: 4rem; height: 4rem; line-height: 4rem; border-radius: 4rem; text-indent: 4rem; overflow: hidden; padding: 0; white-space: nowrap; }
 
-input[type="submit"].icon.solo:before, input[type="reset"].icon.solo:before, input[type="button"].icon.solo:before, button.icon.solo:before, .button.icon.solo:before { position: absolute; display: block; top: 0; left: 0; width: inherit; height: inherit; line-height: inherit; font-size: 1.25rem; margin-right: 0; text-align: center; text-indent: 0; }
+input.icon.solo[type="submit"]:before, input.icon.solo[type="reset"]:before, input.icon.solo[type="button"]:before, button.icon.solo:before, .button.icon.solo:before { position: absolute; display: block; top: 0; left: 0; width: inherit; height: inherit; line-height: inherit; font-size: 1.25rem; margin-right: 0; text-align: center; text-indent: 0; }
 
-input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit, button.fit, .button.fit { display: block; margin: 0 0 1rem 0; width: 100%; }
+input.fit[type="submit"], input.fit[type="reset"], input.fit[type="button"], button.fit, .button.fit { display: block; margin: 0 0 1rem 0; width: 100%; }
 
-input[type="submit"].small, input[type="reset"].small, input[type="button"].small, button.small, .button.small { font-size: 0.7rem; height: 2.5rem; line-height: 2.5rem; padding: 0 1.5rem; }
+input.small[type="submit"], input.small[type="reset"], input.small[type="button"], button.small, .button.small { font-size: 0.7rem; height: 2.5rem; line-height: 2.5rem; padding: 0 1.5rem; }
 
-input[type="submit"].big, input[type="reset"].big, input[type="button"].big, button.big, .button.big { font-size: 0.9rem; height: 3.5rem; line-height: 3.5rem; padding: 0 2.75rem; }
+input.big[type="submit"], input.big[type="reset"], input.big[type="button"], button.big, .button.big { font-size: 0.9rem; height: 3.5rem; line-height: 3.5rem; padding: 0 2.75rem; }
 
-@media screen and (max-width: 980px) { input[type="submit"], input[type="reset"], input[type="button"], button, .button { font-size: 0.9rem; height: 3.25rem; line-height: 3.25rem; } input[type="submit"].big, input[type="reset"].big, input[type="button"].big, button.big, .button.big { font-size: 1rem; height: 3.75rem; line-height: 3.75rem; } }
+@media screen and (max-width: 980px) { input[type="submit"], input[type="reset"], input[type="button"], button, .button { font-size: 0.9rem; height: 3.25rem; line-height: 3.25rem; } input.big[type="submit"], input.big[type="reset"], input.big[type="button"], button.big, .button.big { font-size: 1rem; height: 3.75rem; line-height: 3.75rem; } }
 
-input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled, input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled, button.disabled, button:disabled, .button.disabled, .button:disabled { -moz-pointer-events: none; -webkit-pointer-events: none; -ms-pointer-events: none; pointer-events: none; opacity: 0.25; }
+input.disabled[type="submit"], input[type="submit"]:disabled, input.disabled[type="reset"], input[type="reset"]:disabled, input.disabled[type="button"], input[type="button"]:disabled, button.disabled, button:disabled, .button.disabled, .button:disabled { -moz-pointer-events: none; -webkit-pointer-events: none; -ms-pointer-events: none; pointer-events: none; opacity: 0.25; }
 
 input[type="submit"], input[type="reset"], input[type="button"], button, .button { background-color: transparent; box-shadow: inset 0 0 0 2px #212931; color: #212931 !important; }
 
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover { box-shadow: inset 0 0 0 2px #18bfef; color: #18bfef !important; }
 
-input[type="submit"].special, input[type="reset"].special, input[type="button"].special, button.special, .button.special { background-color: #212931; box-shadow: none; color: #ffffff !important; }
+input.special[type="submit"], input.special[type="reset"], input.special[type="button"], button.special, .button.special { background-color: #212931; box-shadow: none; color: #ffffff !important; }
 
-input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, button.special:hover, .button.special:hover { background-color: #18bfef; }
+input.special[type="submit"]:hover, input.special[type="reset"]:hover, input.special[type="button"]:hover, button.special:hover, .button.special:hover { background-color: #18bfef; }
 
 /* Form */
 form { display: -moz-flex; display: -webkit-flex; display: -ms-flex; display: flex; -moz-flex-wrap: wrap; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; width: calc(100% + 3rem); margin: -1.5rem 0 2rem -1.5rem; }
@@ -607,9 +607,9 @@ body.is-loading #wrapper.fade-in:before { opacity: 1; }
 
 #intro input[type="submit"]:hover, #intro input[type="reset"]:hover, #intro input[type="button"]:hover, #intro button:hover, #intro .button:hover { box-shadow: inset 0 0 0 2px #18bfef; color: #18bfef !important; }
 
-#intro input[type="submit"].special, #intro input[type="reset"].special, #intro input[type="button"].special, #intro button.special, #intro .button.special { background-color: #ffffff; box-shadow: none; color: #1e252d !important; }
+#intro input.special[type="submit"], #intro input.special[type="reset"], #intro input.special[type="button"], #intro button.special, #intro .button.special { background-color: #ffffff; box-shadow: none; color: #1e252d !important; }
 
-#intro input[type="submit"].special:hover, #intro input[type="reset"].special:hover, #intro input[type="button"].special:hover, #intro button.special:hover, #intro .button.special:hover { background-color: #18bfef; }
+#intro input.special[type="submit"]:hover, #intro input.special[type="reset"]:hover, #intro input.special[type="button"]:hover, #intro button.special:hover, #intro .button.special:hover { background-color: #18bfef; }
 
 #intro h1 { font-size: 5rem; line-height: 1; }
 
@@ -775,9 +775,9 @@ body.is-loading #intro:not(.hidden) + #header + #nav { -moz-transform: translate
 
 #footer input[type="submit"]:hover, #footer input[type="reset"]:hover, #footer input[type="button"]:hover, #footer button:hover, #footer .button:hover { box-shadow: inset 0 0 0 2px #18bfef; color: #18bfef !important; }
 
-#footer input[type="submit"].special, #footer input[type="reset"].special, #footer input[type="button"].special, #footer button.special, #footer .button.special { background-color: #717981; box-shadow: none; color: #f5f5f5 !important; }
+#footer input.special[type="submit"], #footer input.special[type="reset"], #footer input.special[type="button"], #footer button.special, #footer .button.special { background-color: #717981; box-shadow: none; color: #f5f5f5 !important; }
 
-#footer input[type="submit"].special:hover, #footer input[type="reset"].special:hover, #footer input[type="button"].special:hover, #footer button.special:hover, #footer .button.special:hover { background-color: #18bfef; }
+#footer input.special[type="submit"]:hover, #footer input.special[type="reset"]:hover, #footer input.special[type="button"]:hover, #footer button.special:hover, #footer .button.special:hover { background-color: #18bfef; }
 
 #footer label { color: #717981; }
 
