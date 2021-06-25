@@ -155,7 +155,8 @@ file: _action_files\hide.tpl
 replace the pertinent block
 
 ```scss
-// >{% block output_group -%} uncomment!<
+// {% raw %} & {% endraw %} disables tag processing
+{% raw %}{% block output_group -%}{% endraw %}
 {%- if cell.metadata.collapse_output -%}
     <details class="description">
     <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
@@ -165,7 +166,7 @@ replace the pertinent block
 {%- else -%}
     {{ super()  }}
 {%- endif -%}
-// >{% endblock output_group %} uncomment!<
+{% raw %}{% endblock output_group %}{% endraw %}
 ```
 </details>
 
