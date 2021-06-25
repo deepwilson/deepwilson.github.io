@@ -2,7 +2,11 @@ getting the difference between two repositories
 https://stackoverflow.com/questions/1968512/getting-the-difference-between-two-repositories
 
 
-git remote add -f b https://github.com/OriolAbril/oriol_unraveled.git
+git remote add -f oriol_unraveled https://github.com/OriolAbril/oriol_unraveled.git
+git remote add -f fastpages https://github.com/fastai/fastpages.git
 git remote update
-git diff main remotes/b/main > changes.diff
-git remote rm b
+
+git diff remotes/fastpages/master remotes/oriol_unraveled/main > fastpages_oriol_unraveled.diff
+
+git remote rm oriol_unraveled
+git remote rm fastpages
