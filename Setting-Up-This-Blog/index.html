@@ -82,7 +82,9 @@
           <!-- Post -->
           <section class="post">
             
-            <p><article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+            <p><script src="/assets/scripts/copyCode.js"></script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Setting Up This Blog</h1><p class="page-description">A somewhat comprehensive record of the steps I took to set up this blog; upgrades I made to the original fastpages setup; issues I faced and how I resolved them (or not); and references to resources I found useful.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-14T00:00:00-05:00" itemprop="datePublished">
@@ -174,13 +176,6 @@
 
 <div class="container" id="notebook-container">
         
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -558,6 +553,11 @@
 </pre></div>
 <p>and you should be good to go. Courtesy of <a href="https://stackoverflow.com/questions/35916658/how-to-git-ignore-ipython-notebook-checkpoints-anywhere-in-repository">stackoverflow</a>.</p>
 <p>Alternatively, you can use the python code below to delete all auto-generated temporary folders. You can place the code in a python file and run that file before pushing your code to GitHub:</p>
+<p></p>
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
   <span class="kn">import</span> <span class="nn">shutil</span>
   <span class="kn">from</span> <span class="nn">win32com.shell</span> <span class="kn">import</span> <span class="n">shell</span><span class="p">,</span> <span class="n">shellcon</span>
