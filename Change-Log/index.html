@@ -19,7 +19,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-25T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"A log of changes and personalizations I’ve made to the blog after incoporating the default fastpages Minima and Oriol’s Mssively.","headline":"Change Log","dateModified":"2021-06-25T00:00:00-05:00","datePublished":"2021-06-25T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/Change-Log/"},"url":"https://outsiders17711.github.io/Mein.Platz/Change-Log/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"}},"@context":"https://schema.org"}</script>
+{"description":"A log of changes and personalizations I’ve made to the blog after incoporating the default fastpages Minima and Oriol’s Mssively.","@type":"BlogPosting","headline":"Change Log","dateModified":"2021-06-25T00:00:00-05:00","url":"https://outsiders17711.github.io/Mein.Platz/Change-Log/","datePublished":"2021-06-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/Change-Log/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"}},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Feed --><link type="application/atom+xml" rel="alternate" href="https://outsiders17711.github.io/Mein.Platz/feed.xml" title="HighLord @Outsiders17711" /><!-- CSS --><link rel="shortcut icon" type="image/x-icon" href="/Mein.Platz/images/favicon.ico"><link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://outsiders17711.github.io/Mein.Platz/assets/css/main.css" />
@@ -98,224 +98,272 @@
     </p>
 
     
+      <p class="category-tags"><i class="fa fa-folder category-tags-icon"></i></i>
+      
+        <a class="category-tags-link" href="/Mein.Platz/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
 
     
 
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!-- omit in toc -->
-<!-- this will only work in .md, it wont render on the blog -->
-<!-- ## <div align="center">--- Change Log ---</div> -->
+    <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#editing-the-look-of-flash-alerts">Editing The Look Of Flash Alerts</a></li>
+<li class="toc-entry toc-h3"><a href="#editing-the-look-of-inline-markdown-code">Editing The Look Of Inline Markdown Code</a></li>
+<li class="toc-entry toc-h3"><a href="#editing-the-look-of-jupyter-code-cells">Editing The Look Of Jupyter Code Cells</a></li>
+<li class="toc-entry toc-h3"><a href="#fix-scrollbars-not-showing-for-overflowing-notebook-cells">Fix Scrollbars Not Showing For Overflowing Notebook Cells</a></li>
+<li class="toc-entry toc-h3"><a href="#editing-the-size-of-normal-text">Editing The Size Of Normal Text</a></li>
+<li class="toc-entry toc-h3"><a href="#fix-collapse-output-not-working-for-notebooks">Fix #Collapse-Output Not Working For Notebooks</a></li>
+<li class="toc-entry toc-h3"><a href="#editing-the-look-of-images">Editing The Look Of Images</a></li>
+<li class="toc-entry toc-h3"><a href="#fix-posts-not-hiding">Fix posts not Hiding</a></li>
+</ul><!--  -->
+<!--  -->
 
-<!-- omit in toc -->
-<div align="right">
-
----
-
-<!-- omit in toc -->
-### TOC
-
-- [Editing The Look Of Flash Alerts](#editing-the-look-of-flash-alerts)
-- [Editing The Look Of Inline Markdown Code](#editing-the-look-of-inline-markdown-code)
-- [Editing The Look Of Jupyter Code Cells](#editing-the-look-of-jupyter-code-cells)
-- [Fix Scrollbars Not Showing For Overflowing Notebook Cells](#fix-scrollbars-not-showing-for-overflowing-notebook-cells)
-- [Editing The Size Of Normal Text](#editing-the-size-of-normal-text)
-- [Fix #Collapse-Output Not Working For Notebooks](#fix-collapse-output-not-working-for-notebooks)
-- [Editing The Look Of Images](#editing-the-look-of-images)
-
-</div>
-
-<hr />
-
-<h3 id="editing-the-look-of-flash-alerts">Editing The Look Of Flash Alerts</h3>
+<h3 id="editing-the-look-of-flash-alerts">
+<a class="anchor" href="#editing-the-look-of-flash-alerts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Look Of Flash Alerts</h3>
 <p>file: _sass\minima\fastpages-styles.scss</p>
-
-<details>
-<summary>code:</summary> 
-
-```scss
-.flash {
-position: relative;
-padding: 10px 10px;
-border-style: solid;
-border-width: 4px;
-border-radius: 10px;
-}
-```
-
-</details>
-
-<h3 id="editing-the-look-of-inline-markdown-code">Editing The Look Of Inline Markdown Code</h3>
-
-<p>file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss</p>
 
 <details open="">
-<summary>code:</summary>
+  <summary>
+    <p>code:&lt;/summary&gt;</p>
 
-```scss
-.highlight {
-    ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
+    <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nc">.flash</span> <span class="p">{</span>
+<span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span><span class="p">;</span>
+<span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+<span class="nl">border-width</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+<span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
 
-    // background: $dt-code-cell-background !important;
-    color: $dt-gray-light !important;
-    pre, code {
-    background: $dt-code-cell-background;
-    color: $dt-gray-light;
-    border-left: 10px solid $dt-code-cell-background;
-    border-left: 10px solid $dt-code-cell-background;
-    border-top: 10px solid $dt-code-cell-background;
-    border-bottom: 10px solid $dt-code-cell-background;
-    border-radius: 15px !important;
-    }
-```
+    <p>&lt;/details&gt;</p>
 
-</details>
+    <h3 id="editing-the-look-of-inline-markdown-code">
+<a class="anchor" href="#editing-the-look-of-inline-markdown-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Look Of Inline Markdown Code</h3>
 
-<h3 id="editing-the-look-of-jupyter-code-cells">Editing The Look Of Jupyter Code Cells</h3>
+    <p>file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss</p>
 
-<p>file: _sass\minima\syntax_highlight_base.scss</p>
+    <details open="">
+      <summary>
+        <p>code:&lt;/summary&gt;</p>
 
-<details>
-<summary>code:</summary> 
+        <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nc">.highlight</span> <span class="p">{</span>
+    <span class="err">✒ </span><span class="na">sass</span><span class="err">\</span><span class="na">minima</span><span class="err">\</span><span class="na">colorschemes</span><span class="err">\</span><span class="na">fastpages-dracula-highlight</span><span class="err">.</span><span class="na">scss</span><span class="err">
 
-some code needed to be commented out due to style conflicts in other .scss files
+    // </span><span class="nl">background</span><span class="p">:</span> <span class="nv">$dt-code-cell-background</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$dt-gray-light</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+    <span class="nt">pre</span><span class="o">,</span> <span class="nt">code</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$dt-gray-light</span><span class="p">;</span>
+    <span class="nl">border-left</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-left</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-top</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">15px</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div>        </div>
 
-```scss
-// .input_area pre, .input_area div {
-//     margin-bottom: 2rem !important;
-//     margin-top: 1.5rem !important;
-//     padding-bottom: 0 !important;
-//     padding-top: 0 !important;
-//     background: $dt-code-cell-background;
-//     -webkit-font-smoothing: antialiased;
-//     text-rendering: optimizeLegibility;
-//     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;
-//     border-radius: 5px;
-//     font-size: 100%;
-//     font-weight: 350; // make code have slightly more weight than text
-// }
+        <p>&lt;/details&gt;</p>
 
-.input_area pre {
-    border-left: 10px solid $dt-code-cell-background;
-    border-left: 10px solid $dt-code-cell-background;
-    border-top: 10px solid $dt-code-cell-background;
-    border-bottom: 10px solid $dt-code-cell-background;
-    border-radius: 10px !important;
-}
-```
+        <h3 id="editing-the-look-of-jupyter-code-cells">
+<a class="anchor" href="#editing-the-look-of-jupyter-code-cells" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Look Of Jupyter Code Cells</h3>
 
-</details>
+        <p>file: _sass\minima\syntax_highlight_base.scss</p>
 
-<h3 id="fix-scrollbars-not-showing-for-overflowing-notebook-cells">Fix Scrollbars Not Showing For Overflowing Notebook Cells</h3>
+        <details open="">
+          <summary>
+            <p>code:&lt;/summary&gt;</p>
 
-<p>file: _sass\base_typography.scss</p>
+            <p>some code needed to be commented out due to style conflicts in other .scss files</p>
 
-<details>
-<summary>code:</summary>
+            <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// .input_area pre, .input_area div {</span>
+<span class="c1">//     margin-bottom: 2rem !important;</span>
+<span class="c1">//     margin-top: 1.5rem !important;</span>
+<span class="c1">//     padding-bottom: 0 !important;</span>
+<span class="c1">//     padding-top: 0 !important;</span>
+<span class="c1">//     background: $dt-code-cell-background;</span>
+<span class="c1">//     -webkit-font-smoothing: antialiased;</span>
+<span class="c1">//     text-rendering: optimizeLegibility;</span>
+<span class="c1">//     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;</span>
+<span class="c1">//     border-radius: 5px;</span>
+<span class="c1">//     font-size: 100%;</span>
+<span class="c1">//     font-weight: 350; // make code have slightly more weight than text</span>
+<span class="c1">// }</span>
 
-```scss
-.re {
-    -webkit-overflow-scrolling: touch;
-    font-family: _font(family-fixed);
-    font-size: 0.9rem;
-    margin: 0 0 _size(element-margin) 0;
-    // this fixed the issue with scrollbars
-    overflow: auto !important;
+<span class="nc">.input_area</span> <span class="nt">pre</span> <span class="p">{</span>
+    <span class="nl">border-left</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-left</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-top</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>            </div>
 
-    code {
-    display: block;
-    line-height: 1.75;
-    padding: 1rem 1.5rem;
-    }
-}
-```
+            <p>&lt;/details&gt;</p>
 
-</details>
+            <h3 id="fix-scrollbars-not-showing-for-overflowing-notebook-cells">
+<a class="anchor" href="#fix-scrollbars-not-showing-for-overflowing-notebook-cells" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fix Scrollbars Not Showing For Overflowing Notebook Cells</h3>
 
-<h3 id="editing-the-size-of-normal-text">Editing The Size Of Normal Text</h3>
+            <p>file: _sass\base_typography.scss</p>
 
-<p>file: _sass\base_typography.scss</p>
+            <details open="">
+              <summary>
+                <p>code:&lt;/summary&gt;</p>
 
-<details>
-<summary>code:</summary>
+                <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nc">.re</span> <span class="p">{</span>
+    <span class="na">-webkit-overflow-scrolling</span><span class="p">:</span> <span class="n">touch</span><span class="p">;</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="nf">_font</span><span class="p">(</span><span class="n">family-fixed</span><span class="p">);</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">0</span><span class="mi">.9rem</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="nf">_size</span><span class="p">(</span><span class="n">element-margin</span><span class="p">)</span> <span class="m">0</span><span class="p">;</span>
+    <span class="c1">// this fixed the issue with scrollbars</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">auto</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
 
-```scss
-body, input, select, textarea {
-    // controls the font type of the blog text (unformatted markdowns)
-    font-family: _font(family);
-    font-weight: _font(weight);
-    font-size: 1rem;
-    line-height: 2.375;
-}
-```
+    <span class="nt">code</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.75</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">1rem</span> <span class="m">1</span><span class="mi">.5rem</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>                </div>
 
-</details>
+                <p>&lt;/details&gt;</p>
 
-<h3 id="fix-collapse-output-not-working-for-notebooks">Fix #Collapse-Output Not Working For Notebooks</h3>
+                <h3 id="editing-the-size-of-normal-text">
+<a class="anchor" href="#editing-the-size-of-normal-text" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Size Of Normal Text</h3>
 
-<p>file: _action_files\hide.tpl</p>
+                <p>file: _sass\base_typography.scss</p>
 
-<details>
-<summary>code:</summary> 
+                <details open="">
+                  <summary>
+                    <p>code:&lt;/summary&gt;</p>
 
-replace the pertinent block
+                    <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nt">body</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span><span class="o">,</span> <span class="nt">textarea</span> <span class="p">{</span>
+    <span class="c1">// controls the font type of the blog text (unformatted markdowns)</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="nf">_font</span><span class="p">(</span><span class="n">family</span><span class="p">);</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nf">_font</span><span class="p">(</span><span class="n">weight</span><span class="p">);</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">2</span><span class="mi">.375</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>                    </div>
 
-<!--  &  disables tag processing -->
+                    <p>&lt;/details&gt;</p>
 
-```scss
-{% block output_group -%}
-{%- if cell.metadata.collapse_output -%}
-    <details class="description">
-    <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>{{ super() }}</p>
-    </details>
-{%- elif cell.metadata.hide_output -%}
-{%- else -%}
-    {{ super()  }}
-{%- endif -%}
-{% endblock output_group %}
-```
+                    <h3 id="fix-collapse-output-not-working-for-notebooks">
+<a class="anchor" href="#fix-collapse-output-not-working-for-notebooks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fix #Collapse-Output Not Working For Notebooks</h3>
 
+                    <p>file: _action_files\hide.tpl</p>
 
-</details>
+                    <details open="">
+                      <summary>
+                        <p>code:&lt;/summary&gt;</p>
 
-<h3 id="editing-the-look-of-images">Editing The Look Of Images</h3>
+                        <p>replace the pertinent block</p>
 
-<p>file: _sass\minima\fastpages-styles.scss</p>
+                        <!--  &  disables tag processing -->
 
-<details>
-<summary>code:</summary>
+                        <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nv">%</span> <span class="nt">block</span> <span class="nt">output_group</span> <span class="nt">-</span><span class="nv">%</span><span class="p">}</span>
+<span class="p">{</span><span class="nv">%-</span> <span class="nt">if</span> <span class="nt">cell</span><span class="nc">.metadata.collapse_output</span> <span class="nt">-</span><span class="nv">%</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="nt">details</span> <span class="nt">class</span><span class="o">=</span><span class="s2">"description"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">summary</span> <span class="nt">class</span><span class="o">=</span><span class="s2">"btn btn-sm"</span> <span class="nt">data-open</span><span class="o">=</span><span class="s2">"Hide Output"</span> <span class="nt">data-close</span><span class="o">=</span><span class="s2">"Show Output"</span><span class="o">&gt;&lt;/</span><span class="nt">summary</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="nt">super</span><span class="o">()</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">details</span><span class="o">&gt;</span>
+<span class="p">{</span><span class="nv">%-</span> <span class="nt">elif</span> <span class="nt">cell</span><span class="nc">.metadata.hide_output</span> <span class="nt">-</span><span class="nv">%</span><span class="p">}</span>
+<span class="p">{</span><span class="nv">%-</span> <span class="nt">else</span> <span class="nt">-</span><span class="nv">%</span><span class="p">}</span>
+    <span class="p">{{</span> <span class="nt">super</span><span class="o">()</span>  <span class="p">}}</span>
+<span class="p">{</span><span class="nv">%-</span> <span class="nt">endif</span> <span class="nt">-</span><span class="nv">%</span><span class="p">}</span>
+<span class="p">{</span><span class="nv">%</span> <span class="nt">endblock</span> <span class="nt">output_group</span> <span class="nv">%</span><span class="p">}</span>
+</code></pre></div>                        </div>
 
-```scss
-.post img {
-    display: block;
-    vertical-align: top;
-    margin-left: auto;
-    border: groove;
-    margin-right: auto;
-}
-```
+                        <p>&lt;/details&gt;</p>
 
-</details>
+                        <h3 id="editing-the-look-of-images">
+<a class="anchor" href="#editing-the-look-of-images" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Look Of Images</h3>
 
-<hr />
-<p><strong>template</strong></p>
+                        <p>file: _sass\minima\fastpages-styles.scss</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### editing ...
+                        <details open="">
+                          <summary>
+                            <p>code:&lt;/summary&gt;</p>
+
+                            <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nc">.post</span> <span class="nt">img</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">top</span><span class="p">;</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="nb">groove</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>                            </div>
+
+                            <p>&lt;/details&gt;</p>
+
+                            <h3 id="fix-posts-not-hiding">
+<a class="anchor" href="#fix-posts-not-hiding" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fix posts not Hiding</h3>
+
+                            <p>files: index.html; _layouts\blog.html; _layouts\categories.html; _layouts\tags.html</p>
+
+                            <p>add <code class="language-plaintext highlighter-rouge">hide: true</code> to the <code class="language-plaintext highlighter-rouge">front matter</code> of the post; you could also set <code class="language-plaintext highlighter-rouge">search_exclude = true</code> but that means the only way the hidden post can be accessed is through its permalink (for example, setting <code class="language-plaintext highlighter-rouge">permalink: /hidden/:title/</code>)</p>
+
+                            <details open="">
+                              <summary>
+                                <p>code:&lt;/summary&gt;</p>
+
+                                <div class="language-scss highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nv">%</span> <span class="nt">for</span> <span class="nt">post</span> <span class="nt">in</span> <span class="o">*****</span> <span class="nv">%</span><span class="p">}</span>
+  <span class="p">{</span><span class="nv">%</span> <span class="nt">if</span> <span class="nt">post</span><span class="nc">.hide</span> <span class="o">!=</span> <span class="nt">true</span> <span class="nv">%</span><span class="p">}</span>
+    <span class="o">*****</span>
+  <span class="p">{</span><span class="nv">%</span> <span class="nt">endif</span> <span class="nv">%</span><span class="p">}</span>
+<span class="p">{</span><span class="nv">%</span> <span class="nt">endfor</span> <span class="nv">%</span><span class="p">}</span>
+</code></pre></div>                                </div>
+
+                                <p>&lt;/details&gt;</p>
+
+                                <!--  -->
+                                <!--  -->
+                                <hr>
+                                <p><strong>template</strong></p>
+
+                                <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>### editing ...
 
 file:
 
-&lt;details&gt;
+&lt;details open&gt;
 &lt;summary&gt;code:&lt;/summary&gt;
 
 ```scss
 **code**
 ```
 
-&lt;\details&gt; ---
-</code></pre></div></div>
+&lt;/details&gt; ---
+</code></pre></div>                                </div>
 
+                              </summary>
+                            </details>
+                          </summary>
+                        </details>
+                      </summary>
+                    </details>
+                  </summary>
+                </details>
+              </summary>
+            </details>
+          </summary>
+        </details>
+      </summary>
+    </details>
+  </summary>
+</details>
 
   </div><a class="u-url" href="/Mein.Platz/Change-Log/" hidden></a>
 </article>

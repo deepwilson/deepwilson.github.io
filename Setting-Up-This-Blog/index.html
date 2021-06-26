@@ -21,7 +21,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-14T00:00:00-05:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Oluwaleke Umar Yusuf"},"description":"A somewhat comprehensive record of the steps I took to set up this blog; upgrades I made to the original fastpages setup; issues I faced and how I resolved them (or not); and references to resources I found useful.","headline":"Setting Up This Blog","dateModified":"2021-06-14T00:00:00-05:00","datePublished":"2021-06-14T00:00:00-05:00","@type":"BlogPosting","image":"https://outsiders17711.github.io/Mein.Platz/images/ipynb/blog_creation.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/Setting-Up-This-Blog/"},"url":"https://outsiders17711.github.io/Mein.Platz/Setting-Up-This-Blog/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"},"name":"Oluwaleke Umar Yusuf"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Oluwaleke Umar Yusuf"},"description":"A somewhat comprehensive record of the steps I took to set up this blog; upgrades I made to the original fastpages setup; issues I faced and how I resolved them (or not); and references to resources I found useful.","@type":"BlogPosting","headline":"Setting Up This Blog","dateModified":"2021-06-14T00:00:00-05:00","url":"https://outsiders17711.github.io/Mein.Platz/Setting-Up-This-Blog/","datePublished":"2021-06-14T00:00:00-05:00","image":"https://outsiders17711.github.io/Mein.Platz/images/ipynb/blog_creation.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/Setting-Up-This-Blog/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"},"name":"Oluwaleke Umar Yusuf"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Feed --><link type="application/atom+xml" rel="alternate" href="https://outsiders17711.github.io/Mein.Platz/feed.xml" title="HighLord @Outsiders17711" /><!-- CSS --><link rel="shortcut icon" type="image/x-icon" href="/Mein.Platz/images/favicon.ico"><link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://outsiders17711.github.io/Mein.Platz/assets/css/main.css" />
@@ -551,32 +551,32 @@
 </pre></div>
 <p>and you should be good to go. Courtesy of <a href="https://stackoverflow.com/questions/35916658/how-to-git-ignore-ipython-notebook-checkpoints-anywhere-in-repository">stackoverflow</a>.</p>
 <p>Alternatively, you can use the python code below to delete all auto-generated temporary folders. You can place the code in a python file and run that file before pushing your code to GitHub:</p>
-</li>
-</ul>
 <p></p>
 <div class="code-header">
   <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
 </div>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">from</span> <span class="nn">win32com.shell</span> <span class="kn">import</span> <span class="n">shell</span><span class="p">,</span> <span class="n">shellcon</span>
+  <span class="kn">import</span> <span class="nn">shutil</span>
+  <span class="kn">from</span> <span class="nn">win32com.shell</span> <span class="kn">import</span> <span class="n">shell</span><span class="p">,</span> <span class="n">shellcon</span>
 
-<span class="n">local_repository_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"local/repository/path"</span>
+  <span class="n">local_repository_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"local/repository/path"</span>
 
-<span class="k">def</span> <span class="nf">delPycacheFolders</span><span class="p">(</span><span class="n">targetFolder</span><span class="o">=</span><span class="n">local_repository_path</span><span class="p">):</span>
-    <span class="n">flaggedFolders</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">def</span> <span class="nf">delPycacheFolders</span><span class="p">(</span><span class="n">targetFolder</span><span class="o">=</span><span class="n">local_repository_path</span><span class="p">):</span>
+      <span class="n">flaggedFolders</span> <span class="o">=</span> <span class="p">[]</span>
 
-    <span class="k">for</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">targetFolder</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">dirnames</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">folder</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"__pycache__"</span><span class="p">,</span> <span class="s2">"__MACOSX"</span><span class="p">,</span> <span class="s2">".ipynb_checkpoints"</span><span class="p">]:</span>
-                <span class="n">folderpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirpath</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
-                <span class="n">flaggedFolders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">folderpath</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-                <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">folderpath</span><span class="p">)</span>
+      <span class="k">for</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">targetFolder</span><span class="p">):</span>
+          <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">dirnames</span><span class="p">:</span>
+              <span class="k">if</span> <span class="n">folder</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"__pycache__"</span><span class="p">,</span> <span class="s2">"__MACOSX"</span><span class="p">,</span> <span class="s2">".ipynb_checkpoints"</span><span class="p">]:</span>
+                  <span class="n">folderpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirpath</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
+                  <span class="n">flaggedFolders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">folderpath</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+                  <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">folderpath</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"deleted temp folders:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flaggedFolders</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"deleted temp folders:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flaggedFolders</span><span class="p">))</span>
 
-<span class="n">delPycacheFolders</span><span class="p">()</span>
+  <span class="n">delPycacheFolders</span><span class="p">()</span>
 </pre></div>
+</li>
+</ul>
 
 </div>
 </div>
