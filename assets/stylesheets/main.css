@@ -144,18 +144,6 @@ center { overflow: auto; /* width: -webkit-fill-available; */ }
 
 .highlight .gd { color: #ff5555; }
 
-.copy-code-container { display: flex; justify-content: flex-end; padding: 1em; background: #222c32; }
-
-.copy-code-button { display: flex; align-items: center; justify-content: center; border: none; cursor: pointer; font-size: 1rem; background-color: #616161; color: #e7e7e7; padding: 0.4em 0.5em; border-radius: 5px; }
-
-.copy-code-button::before { content: "Copy"; }
-
-.copy-code-button::after { margin-left: 4px; content: "📋"; width: 1em; }
-
-.copy-code-button.copied::before { content: "Copied!"; }
-
-.copy-code-button.copied::after { content: "✔️"; }
-
 .nb-badges { padding: 3px; /* this */ }
 
 .nb-badges > div { margin: 3px; /* and that, will result in a 10px gap */ }
@@ -554,17 +542,5 @@ html[theme=dark], body.vscode-dark { --xr-font-color0: rgba(255, 255, 255, 1); -
 .output_area pre .xr-attrs dd, .output_area div .xr-attrs dd { grid-column: 2 !important; white-space: pre-wrap !important; word-break: break-all !important; }
 
 .output_area pre .xr-icon-database, .output_area pre .xr-icon-file-text2, .output_area div .xr-icon-database, .output_area div .xr-icon-file-text2 { display: inline-block !important; vertical-align: middle !important; width: 1em !important; height: 1.5em !important; stroke-width: 0 !important; stroke: currentColor !important; fill: currentColor !important; }
-
-.copy-code-container { display: flex; justify-content: flex-end; padding: 1em; background: #222c32; }
-
-.copy-code-button { display: flex; align-items: center; justify-content: center; border: none; cursor: pointer; font-size: 1rem; background-color: #616161; color: #e7e7e7; padding: 0.4em 0.5em; border-radius: 5px; }
-
-.copy-code-button::before { content: "Copy"; }
-
-.copy-code-button::after { margin-left: 4px; content: "📋"; width: 1em; }
-
-.copy-code-button.copied::before { content: "Copied!"; }
-
-.copy-code-button.copied::after { content: "✔️"; }
 
 /*# sourceMappingURL=main.css.map */
