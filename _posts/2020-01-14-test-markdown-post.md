@@ -7,6 +7,7 @@ tags: [fastpages examples]
 hide: true
 search_exclude: false
 title: An Example Markdown Post
+permalink: /drafts/:title/
 ---
 # Example Markdown Post
 
@@ -87,9 +88,9 @@ key: value
 ## Tables
 
 
-| Column 1 | Column 2 |
-| - | - |
-| A thing | Another thing |
+| Column 1 | Column 2      |
+| -------- | ------------- |
+| A thing  | Another thing |
 
 ## Tweetcards
 

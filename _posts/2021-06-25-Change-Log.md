@@ -2,39 +2,19 @@
 title: "Change Log"
 description: "A log of changes and personalizations I've made to the blog after incoporating the default fastpages Minima and Oriol's Mssively."
 layout: post
+toc: true
+categories: [markdown]
 comments: false
 search_exclude: false
 ---
-
-<!-- omit in toc -->
-<!-- this will only work in .md, it wont render on the blog -->
-<!-- ## <div align="center">--- Change Log ---</div> -->
-
-
-<!-- omit in toc -->
-<div align="right">
-
----
-
-<!-- omit in toc -->
-### TOC
-
-- [Editing The Look Of Flash Alerts](#editing-the-look-of-flash-alerts)
-- [Editing The Look Of Inline Markdown Code](#editing-the-look-of-inline-markdown-code)
-- [Editing The Look Of Jupyter Code Cells](#editing-the-look-of-jupyter-code-cells)
-- [Fix Scrollbars Not Showing For Overflowing Notebook Cells](#fix-scrollbars-not-showing-for-overflowing-notebook-cells)
-- [Editing The Size Of Normal Text](#editing-the-size-of-normal-text)
-- [Fix #Collapse-Output Not Working For Notebooks](#fix-collapse-output-not-working-for-notebooks)
-- [Editing The Look Of Images](#editing-the-look-of-images)
-
-</div>
-
----
+<!--  -->
+{::options parse_block_html="true" /}
+<!--  -->
 
 ### Editing The Look Of Flash Alerts
 file: _sass\minima\fastpages-styles.scss
 
-<details>
+<details open>
 <summary>code:</summary> 
 
 ```scss
@@ -79,7 +59,7 @@ file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
 file: _sass\minima\syntax_highlight_base.scss
 
-<details>
+<details open>
 <summary>code:</summary> 
 
 some code needed to be commented out due to style conflicts in other .scss files
@@ -114,7 +94,7 @@ some code needed to be commented out due to style conflicts in other .scss files
 
 file: _sass\base\_typography.scss
 
-<details>
+<details open>
 <summary>code:</summary>
 
 ```scss
@@ -140,7 +120,7 @@ file: _sass\base\_typography.scss
 
 file: _sass\base\_typography.scss
 
-<details>
+<details open>
 <summary>code:</summary>
 
 ```scss
@@ -159,7 +139,7 @@ body, input, select, textarea {
 
 file: _action_files\hide.tpl
 
-<details>
+<details open>
 <summary>code:</summary> 
 
 replace the pertinent block
@@ -187,7 +167,7 @@ replace the pertinent block
 
 file: _sass\minima\fastpages-styles.scss
 
-<details>
+<details open>
 <summary>code:</summary>
 
 ```scss
@@ -202,6 +182,30 @@ file: _sass\minima\fastpages-styles.scss
 
 </details>
 
+### Fix posts not Hiding
+
+files: index.html; _layouts\blog.html; _layouts\categories.html; _layouts\tags.html
+
+add `hide: true` to the `front matter` of the post; you could also set `search_exclude = true` but that means the only way the hidden post can be accessed is through its permalink (for example, setting `permalink: /hidden/:title/`)
+
+<details open>
+<summary>code:</summary>
+
+{% raw %}
+```scss
+{% for post in ***** %}
+  {% if post.hide != true %}
+    *****
+  {% endif %}
+{% endfor %}
+```
+{% endraw %}
+
+</details>
+
+<!--  -->
+{::options parse_block_html="false" /}  
+<!--  -->
 ---
 **template**
 
@@ -209,14 +213,14 @@ file: _sass\minima\fastpages-styles.scss
 
     file:
 
-    <details>
+    <details open>
     <summary>code:</summary>
-    
+
     ```scss
     **code**
     ```
 
-    <\details>
+    </details>
 ---
 
 
