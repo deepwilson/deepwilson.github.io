@@ -14,8 +14,8 @@ search_exclude: false
 ### Editing The Look Of Flash Alerts
 file: _sass\minima\fastpages-styles.scss
 
-<details open>
-<summary>code:</summary> 
+<details>
+<summary markdown="span">code:</summary> 
 
 ```scss
 .flash {
@@ -33,8 +33,8 @@ border-radius: 10px;
 
 file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
-<details open>
-<summary>code:</summary>
+<details>
+<summary markdown="span">code:</summary>
 
 ```scss
 .highlight {
@@ -59,8 +59,8 @@ file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
 file: _sass\minima\syntax_highlight_base.scss
 
-<details open>
-<summary>code:</summary> 
+<details>
+<summary markdown="span">code:</summary> 
 
 some code needed to be commented out due to style conflicts in other .scss files
 
@@ -94,8 +94,8 @@ some code needed to be commented out due to style conflicts in other .scss files
 
 file: _sass\base\_typography.scss
 
-<details open>
-<summary>code:</summary>
+<details>
+<summary markdown="span">code:</summary>
 
 ```scss
 .re {
@@ -120,8 +120,8 @@ file: _sass\base\_typography.scss
 
 file: _sass\base\_typography.scss
 
-<details open>
-<summary>code:</summary>
+<details>
+<summary markdown="span">code:</summary>
 
 ```scss
 body, input, select, textarea {
@@ -139,8 +139,8 @@ body, input, select, textarea {
 
 file: _action_files\hide.tpl
 
-<details open>
-<summary>code:</summary> 
+<details>
+<summary markdown="span">code:</summary> 
 
 replace the pertinent block
 
@@ -167,8 +167,8 @@ replace the pertinent block
 
 file: _sass\minima\fastpages-styles.scss
 
-<details open>
-<summary>code:</summary>
+<details>
+<summary markdown="span">code:</summary>
 
 ```scss
 .post img {
@@ -188,8 +188,8 @@ files: index.html; _layouts\blog.html; _layouts\categories.html; _layouts\tags.h
 
 add `hide: true` to the `front matter` of the post; you could also set `search_exclude = true` but that means the only way the hidden post can be accessed is through its permalink (for example, setting `permalink: /hidden/:title/`)
 
-<details open>
-<summary>code:</summary>
+<details>
+<summary markdown="span">code:</summary>
 
 {% raw %}
 ```scss
@@ -213,8 +213,8 @@ add `hide: true` to the `front matter` of the post; you could also set `search_e
 
     file:
 
-    <details open>
-    <summary>code:</summary>
+    <details>
+    <summary markdown="span">code:</summary>
 
     ```scss
     **code**
