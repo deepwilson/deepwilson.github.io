@@ -134,15 +134,16 @@
 <details>
 <summary>code:</summary> 
 
-    ```scss
-    .flash {
-    position: relative;
-    padding: 10px 10px;
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 10px;
-    }
-    ```
+```scss
+.flash {
+position: relative;
+padding: 10px 10px;
+border-style: solid;
+border-width: 4px;
+border-radius: 10px;
+}
+```
+
 </details>
 
 <h3 id="editing-the-look-of-inline-markdown-code">Editing The Look Of Inline Markdown Code</h3>
@@ -152,22 +153,23 @@
 <details open="">
 <summary>code:</summary>
 
-    ```scss
-    .highlight {
-        ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
+```scss
+.highlight {
+    ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
-        // background: $dt-code-cell-background !important;
-        color: $dt-gray-light !important;
-        pre, code {
-        background: $dt-code-cell-background;
-        color: $dt-gray-light;
-        border-left: 10px solid $dt-code-cell-background;
-        border-left: 10px solid $dt-code-cell-background;
-        border-top: 10px solid $dt-code-cell-background;
-        border-bottom: 10px solid $dt-code-cell-background;
-        border-radius: 15px !important;
-        }
-    ```
+    // background: $dt-code-cell-background !important;
+    color: $dt-gray-light !important;
+    pre, code {
+    background: $dt-code-cell-background;
+    color: $dt-gray-light;
+    border-left: 10px solid $dt-code-cell-background;
+    border-left: 10px solid $dt-code-cell-background;
+    border-top: 10px solid $dt-code-cell-background;
+    border-bottom: 10px solid $dt-code-cell-background;
+    border-radius: 15px !important;
+    }
+```
+
 </details>
 
 <h3 id="editing-the-look-of-jupyter-code-cells">Editing The Look Of Jupyter Code Cells</h3>
@@ -176,6 +178,7 @@
 
 <details>
 <summary>code:</summary> 
+
 some code needed to be commented out due to style conflicts in other .scss files
 
 ```scss
@@ -201,6 +204,7 @@ some code needed to be commented out due to style conflicts in other .scss files
     border-radius: 10px !important;
 }
 ```
+
 </details>
 
 <h3 id="fix-scrollbars-not-showing-for-overflowing-notebook-cells">Fix Scrollbars Not Showing For Overflowing Notebook Cells</h3>
@@ -226,6 +230,7 @@ some code needed to be commented out due to style conflicts in other .scss files
     }
 }
 ```
+
 </details>
 
 <h3 id="editing-the-size-of-normal-text">Editing The Size Of Normal Text</h3>
@@ -244,6 +249,7 @@ body, input, select, textarea {
     line-height: 2.375;
 }
 ```
+
 </details>
 
 <h3 id="fix-collapse-output-not-working-for-notebooks">Fix #Collapse-Output Not Working For Notebooks</h3>
@@ -252,6 +258,7 @@ body, input, select, textarea {
 
 <details>
 <summary>code:</summary> 
+
 replace the pertinent block
 
 <!--  &  disables tag processing -->
@@ -269,6 +276,7 @@ replace the pertinent block
 {%- endif -%}
 {% endblock output_group %}
 ```
+
 
 </details>
 
@@ -288,6 +296,7 @@ replace the pertinent block
     margin-right: auto;
 }
 ```
+
 </details>
 
 <hr />
@@ -299,9 +308,11 @@ file:
 
 &lt;details&gt;
 &lt;summary&gt;code:&lt;/summary&gt;
+
 ```scss
 **code**
 ```
+
 &lt;\details&gt; ---
 </code></pre></div></div>
 
@@ -362,3 +373,4 @@ file:
 
   </body>
 </html>
+<script src="/assets/scripts/copyCode.js"></script>
