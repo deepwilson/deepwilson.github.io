@@ -103,6 +103,24 @@ center { overflow: auto; /* width: -webkit-fill-available; */ }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
+.language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
+
+[class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
+
+.language-python + .language-plaintext code { background-color: white !important; }
+
+.language-python + .language-plaintext pre { background-color: white !important; }
+
+.input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #323443 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace; border-radius: 5px; font-size: 105%; }
+
+.output_area pre, .output_area div { margin-bottom: 1rem !important; margin-top: 0rem !important; padding-bottom: 0 !important; padding-top: 0 !important; }
+
+.input_area pre { border-left: 1px solid lightcoral; border-left: 10px solid #323443; border-left: 10px solid #323443; border-top: 10px solid #323443; border-bottom: 10px solid #323443; border-radius: 15px !important; }
+
+.output_area pre { border-left: 1px solid grey; margin-left: 1rem !important; font-size: 16px; }
+
+.code_cell table { width: auto; }
+
 /* Dracula Theme v1.2.5 https://github.com/zenorocha/dracula-theme Copyright 2016, All rights reserved Code licensed under the MIT license */
 .highlight { color: #f8f8f2 !important; }
 
@@ -120,9 +138,11 @@ center { overflow: auto; /* width: -webkit-fill-available; */ }
 
 .highlight .bp { font-style: italic; }
 
-.highlight .c, .highlight .ch, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs { color: #8292d4; font-style: italic; }
+.highlight .c, .highlight .ch, .highlight .cm, .highlight .cpf, .highlight .cs { color: #6272a4; font-style: italic; }
 
-.highlight .kd, .highlight .kt, .highlight .nb, .highlight .nl, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm { color: #7bd9ed; }
+.highlight .c1 { color: gray; }
+
+.highlight .kd, .highlight .kt, .highlight .nb, .highlight .nl, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm { color: #8be9fd; }
 
 .highlight .kd, .highlight .nb, .highlight .nl, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm { font-style: italic; }
 
@@ -136,20 +156,7 @@ center { overflow: auto; /* width: -webkit-fill-available; */ }
 
 .highlight .gd { color: #ff5555; }
 
-.language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
-
-[class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443; color: #f8f8f2; }
-
-.language-python + .language-plaintext code { background-color: white !important; }
-
-.language-python + .language-plaintext pre { background-color: white !important; }
-
-/* .output_area pre, .output_area div { margin-bottom: 1rem; margin-top: 1rem; padding-bottom: 0; padding-top: 0; } */
-.input_area pre { border-left: 10px solid #323443; border-left: 10px solid #323443; border-top: 10px solid #323443; border-bottom: 10px solid #323443; border-radius: 10px !important; }
-
-.output_area pre { border-left: 1px solid grey; margin-left: 1rem !important; }
-
-.code_cell table { width: auto; }
+p code { font-size: 19px; }
 
 .nb-badges { padding: 3px; /* this */ }
 

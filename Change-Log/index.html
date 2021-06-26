@@ -82,7 +82,9 @@
           <!-- Post -->
           <section class="post">
             
-            <p><article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+            <p><script src="/assets/scripts/copyCode.js"></script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Change Log</h1><p class="page-description">A log of changes and personalizations I've made to the blog after incoporating the default fastpages Minima and Oriol's Mssively.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-25T00:00:00-05:00" itemprop="datePublished">
@@ -130,7 +132,7 @@
 <p>file: _sass\minima\fastpages-styles.scss</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong><br></summary>
 
   <div class="language-scss highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nc">.flash</span> <span class="p">{</span>
@@ -143,6 +145,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <h3 id="editing-the-look-of-inline-markdown-code">
 <a class="anchor" href="#editing-the-look-of-inline-markdown-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Look Of Inline Markdown Code</h3>
@@ -150,13 +154,11 @@
 <p>file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong></summary>
 
   <div class="language-scss highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nc">.highlight</span> <span class="p">{</span>
-    <span class="err">✒ </span><span class="na">sass</span><span class="err">\</span><span class="na">minima</span><span class="err">\</span><span class="na">colorschemes</span><span class="err">\</span><span class="na">fastpages-dracula-highlight</span><span class="err">.</span><span class="na">scss</span><span class="err">
-
-    // </span><span class="nl">background</span><span class="p">:</span> <span class="nv">$dt-code-cell-background</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+    <span class="c1">// background: $dt-code-cell-background !important;</span>
     <span class="nl">color</span><span class="p">:</span> <span class="nv">$dt-gray-light</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
     <span class="nt">pre</span><span class="o">,</span> <span class="nt">code</span> <span class="p">{</span>
     <span class="nl">background</span><span class="p">:</span> <span class="nv">$dt-code-cell-background</span><span class="p">;</span>
@@ -170,6 +172,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <h3 id="editing-the-look-of-jupyter-code-cells">
 <a class="anchor" href="#editing-the-look-of-jupyter-code-cells" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Look Of Jupyter Code Cells</h3>
@@ -177,7 +181,7 @@
 <p>file: _sass\minima\syntax_highlight_base.scss</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong></summary>
 
   <p>some code needed to be commented out due to style conflicts in other .scss files</p>
 
@@ -206,6 +210,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <h3 id="fix-scrollbars-not-showing-for-overflowing-notebook-cells">
 <a class="anchor" href="#fix-scrollbars-not-showing-for-overflowing-notebook-cells" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fix Scrollbars Not Showing For Overflowing Notebook Cells</h3>
@@ -213,7 +219,7 @@
 <p>file: _sass\base_typography.scss</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong></summary>
 
   <div class="language-scss highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nc">.re</span> <span class="p">{</span>
@@ -233,6 +239,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <h3 id="editing-the-size-of-normal-text">
 <a class="anchor" href="#editing-the-size-of-normal-text" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Size Of Normal Text</h3>
@@ -240,7 +248,7 @@
 <p>file: _sass\base_typography.scss</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong></summary>
 
   <div class="language-scss highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nt">body</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span><span class="o">,</span> <span class="nt">textarea</span> <span class="p">{</span>
@@ -253,6 +261,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <h3 id="fix-collapse-output-not-working-for-notebooks">
 <a class="anchor" href="#fix-collapse-output-not-working-for-notebooks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fix #Collapse-Output Not Working For Notebooks</h3>
@@ -260,7 +270,7 @@
 <p>file: _action_files\hide.tpl</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong></summary>
 
   <p>replace the pertinent block</p>
 
@@ -273,6 +283,8 @@
     <span class="o">&lt;</span><span class="nt">summary</span> <span class="nt">class</span><span class="o">=</span><span class="s2">"btn btn-sm"</span> <span class="nt">data-open</span><span class="o">=</span><span class="s2">"Hide Output"</span> <span class="nt">data-close</span><span class="o">=</span><span class="s2">"Show Output"</span><span class="o">&gt;&lt;/</span><span class="nt">summary</span><span class="o">&gt;</span>
         <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="nt">super</span><span class="o">()</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
     <span class="o">&lt;/</span><span class="nt">details</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">br</span><span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="nt">br</span><span class="o">/&gt;</span>
 <span class="p">{</span><span class="nv">%-</span> <span class="nt">elif</span> <span class="nt">cell</span><span class="nc">.metadata.hide_output</span> <span class="nt">-</span><span class="nv">%</span><span class="p">}</span>
 <span class="p">{</span><span class="nv">%-</span> <span class="nt">else</span> <span class="nt">-</span><span class="nv">%</span><span class="p">}</span>
     <span class="p">{{</span> <span class="nt">super</span><span class="o">()</span>  <span class="p">}}</span>
@@ -281,6 +293,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <h3 id="editing-the-look-of-images">
 <a class="anchor" href="#editing-the-look-of-images" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing The Look Of Images</h3>
@@ -288,7 +302,7 @@
 <p>file: _sass\minima\fastpages-styles.scss</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong></summary>
 
   <div class="language-scss highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nc">.post</span> <span class="nt">img</span> <span class="p">{</span>
@@ -301,6 +315,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <h3 id="fix-posts-not-hiding">
 <a class="anchor" href="#fix-posts-not-hiding" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fix posts not Hiding</h3>
@@ -310,7 +326,7 @@
 <p>add <code class="language-plaintext highlighter-rouge">hide: true</code> to the <code class="language-plaintext highlighter-rouge">front matter</code> of the post; you could also set <code class="language-plaintext highlighter-rouge">search_exclude = true</code> but that means the only way the hidden post can be accessed is through its permalink (for example, setting <code class="language-plaintext highlighter-rouge">permalink: /hidden/:title/</code>)</p>
 
 <details>
-  <summary>code:</summary>
+  <summary><strong>code:</strong></summary>
 
   <div class="language-scss highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nv">%</span> <span class="nt">for</span> <span class="nt">post</span> <span class="nt">in</span> <span class="o">*****</span> <span class="nv">%</span><span class="p">}</span>
@@ -321,6 +337,8 @@
 </code></pre></div>  </div>
 
 </details>
+<p><br>
+<br></p>
 
 <!--  -->
 <!--  -->
@@ -332,13 +350,13 @@
 file:
 
 &lt;details&gt;
-&lt;summary markdown="span"&gt;code:&lt;/summary&gt;
+&lt;summary markdown="span"&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/summary&gt;
 
 ```scss
 **code**
 ```
 
-&lt;/details&gt; ---
+&lt;/details&gt; &lt;br/&gt; &lt;br/&gt; ---
 </code></pre></div></div>
 
 
