@@ -176,17 +176,14 @@ table {
 // customize scrollbars
 ::-webkit-scrollbar {
   width: 12px;
-  height: 15px;
-  border: 1.5px solid rgb(0, 0, 0);
-  background-color: #f0f6fc;
-  border-color: #383838;
+  height: 12px;
 }
 ::-webkit-scrollbar-thumb {
   height: 6px;
   border: 2.5px solid rgba(0, 0, 0, 0);
   background-clip: padding-box;
   -webkit-border-radius: 7px;
-  background-color: #000000;
+  background-color: #ffffff;
   -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
 }
 ::-webkit-scrollbar-button {
