@@ -69,9 +69,9 @@ table th { text-align: center !important; }
 
 table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
-::-webkit-scrollbar { width: 14px; height: 18px; }
+::-webkit-scrollbar { width: 12px; height: 15px; border: 1.5px solid black; background-color: #f0f6fc; border-color: #383838; }
 
-::-webkit-scrollbar-thumb { height: 6px; border: 4px solid rgba(0, 0, 0, 0); background-clip: padding-box; -webkit-border-radius: 7px; background-color: #9D9D9D; -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05); }
+::-webkit-scrollbar-thumb { height: 6px; border: 2.5px solid rgba(0, 0, 0, 0); background-clip: padding-box; -webkit-border-radius: 7px; background-color: #000000; -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05); }
 
 ::-webkit-scrollbar-button { width: 0; height: 0; display: none; }
 
@@ -89,17 +89,17 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 center { overflow: auto; /* width: -webkit-fill-available; */ }
 
-.copy-code-container { display: flex; justify-content: flex-end; padding: 1em; background: #222c32; }
+.code-header { display: flex; justify-content: flex-end; }
 
-.copy-code-button { --copy-code-bg-color: #404040; --copy-code-text-color: #e6e6e6; position: absolute; right: 2.4rem; top: 2.4rem; display: none; color: var(--copy-code-text-color); background-color: var(--copy-code-bg-color); padding: 0.6rem 1.2rem; border-radius: 0.4rem; --line-height: 1.83; --font-size: 1.6rem; font-size: var(--font-size); line-height: var(--line-height); }
+.copy-code-button { display: grid; grid-auto-flow: column; align-items: center; grid-column-gap: 4px; border: none; cursor: pointer; font-size: 1rem; padding: 4px 8px; }
 
-.copy-code-button::before { content: 'Copy 📋'; }
+.copy-code-button::before { content: "Copy"; }
 
-.copy-code-button.copied, .copy-code-button:focus, .copy-code-button:hover { color: black; background-color: #b3b3b3; }
+.copy-code-button::after { content: "📋"; display: block; }
 
-.copy-code-button:not(.copied):not(:hover):focus:not(:focus-visible) { color: var(--copy-code-text-color); background-color: var(--copy-code-bg-color); }
+.copy-code-button.copied::before { content: "Copied!"; }
 
-.copy-code-button.copied::before { content: 'Copied! ✔️'; }
+.copy-code-button.copied::after { content: "✔️"; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
@@ -155,8 +155,6 @@ center { overflow: auto; /* width: -webkit-fill-available; */ }
 .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #bd93f9; }
 
 .highlight .gd { color: #ff5555; }
-
-p code { font-size: 19px; }
 
 .nb-badges { padding: 3px; /* this */ }
 
