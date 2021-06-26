@@ -196,7 +196,7 @@ file: _sass\minima\fastpages-styles.scss
 <br/>
 <br/>
 
-### Fix posts not Hiding
+### Fix Posts Not Hiding
 
 files: index.html; _layouts\blog.html; _layouts\categories.html; _layouts\tags.html
 

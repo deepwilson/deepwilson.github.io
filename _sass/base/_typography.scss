@@ -117,17 +117,25 @@
     position: relative;
     top: -0.5rem;
   }
-
+  
   blockquote {
     border-left: solid 4px;
     font-style: italic;
     margin: 0 0 _size(element-margin) 0;
     padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
   }
-
+  
   code {
     font-family: _font(family-fixed);
-    font-size: 105%;
+    font-size: 90%;
+    background: #24292e54;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    // background: _palette($p, border-bg);
+    // border-color: _palette($p, border);
     // margin: 0 0.1rem;
     // padding: 0.1rem 0.2rem;
   }
@@ -200,10 +208,6 @@
       border-left-color: _palette($p, border);
     }
 
-    code {
-      background: _palette($p, border-bg);
-      border-color: _palette($p, border);
-    }
 
     hr {
       border-bottom-color: _palette($p, border);
