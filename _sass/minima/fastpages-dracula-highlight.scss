@@ -14,6 +14,7 @@ $dt-purple: #bd93f9;
 $dt-red: #ff5555;
 $dt-yellow: #f1fa8c;
 $dt-green-light: rgb(172, 229, 145);
+$dt-darkish-orange: rgb(231, 153, 122);
 
 .language-python + .language-plaintext {
     border-left: 1px solid grey;
@@ -52,7 +53,13 @@ $dt-green-light: rgb(172, 229, 145);
 }
 .input_area pre {
     border-left: 1px solid lightcoral;
+    border-left: 10px solid $dt-code-cell-background;
+    border-left: 10px solid $dt-code-cell-background;
+    border-top: 10px solid $dt-code-cell-background;
+    border-bottom: 10px solid $dt-code-cell-background;
+    border-radius: 15px !important;
 }
+
 .output_area pre {
     border-left: 1px solid grey;
     margin-left: 1rem !important;
@@ -71,14 +78,18 @@ $dt-green-light: rgb(172, 229, 145);
  *
  */
 
-.highlight {
-    background: $dt-code-cell-background !important;
-    color: $dt-gray-light !important;
-    pre, code {
-     background: $dt-code-cell-background;
-     color: $dt-gray-light;
-     font-size: 110%;
-    }
+ .highlight {
+  // background: $dt-code-cell-background !important;
+  color: $dt-gray-light !important;
+  pre, code {
+   background: $dt-code-cell-background;
+   color: $dt-gray-light;
+   border-left: 10px solid $dt-code-cell-background;
+   border-left: 10px solid $dt-code-cell-background;
+   border-top: 10px solid $dt-code-cell-background;
+   border-bottom: 10px solid $dt-code-cell-background;
+   border-radius: 15px !important;
+  }
    
     .hll,
     .s,
@@ -95,7 +106,7 @@ $dt-green-light: rgb(172, 229, 145);
     .sr,
     .s1,
     .ss {
-         color:rgb(231, 153, 122);
+      color: $dt-darkish-orange;
     }
   
     .go {
@@ -132,7 +143,7 @@ $dt-green-light: rgb(172, 229, 145);
  
     .p {
          font-weight: bold;
-         color: rgb(102, 217, 239);
+         color: $dt-green !important;
  }
   
     .ge {
@@ -149,6 +160,7 @@ $dt-green-light: rgb(172, 229, 145);
     .cpf,
     .cs {
       color: $dt-blue;
+      font-style: italic;
     }
 
     .c1 {

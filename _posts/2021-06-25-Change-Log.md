@@ -15,7 +15,7 @@ search_exclude: false
 file: _sass\minima\fastpages-styles.scss
 
 <details>
-<summary markdown="span">code:</summary> 
+<summary markdown="span"><strong>code:</strong><br></summary> 
 
 ```scss
 .flash {
@@ -28,18 +28,18 @@ border-radius: 10px;
 ```
 
 </details>
+<br/>
+<br/>
 
 ### Editing The Look Of Inline Markdown Code
 
 file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
 <details>
-<summary markdown="span">code:</summary>
+<summary markdown="span"><strong>code:</strong></summary>
 
 ```scss
 .highlight {
-    ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
-
     // background: $dt-code-cell-background !important;
     color: $dt-gray-light !important;
     pre, code {
@@ -54,13 +54,15 @@ file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss
 ```
 
 </details>
+<br/>
+<br/>
 
 ### Editing The Look Of Jupyter Code Cells
 
 file: _sass\minima\syntax_highlight_base.scss
 
 <details>
-<summary markdown="span">code:</summary> 
+<summary markdown="span"><strong>code:</strong></summary> 
 
 some code needed to be commented out due to style conflicts in other .scss files
 
@@ -89,13 +91,15 @@ some code needed to be commented out due to style conflicts in other .scss files
 ```
 
 </details>
+<br/>
+<br/>
 
 ### Fix Scrollbars Not Showing For Overflowing Notebook Cells
 
 file: _sass\base\_typography.scss
 
 <details>
-<summary markdown="span">code:</summary>
+<summary markdown="span"><strong>code:</strong></summary>
 
 ```scss
 .re {
@@ -115,13 +119,15 @@ file: _sass\base\_typography.scss
 ```
 
 </details>
+<br/>
+<br/>
 
 ### Editing The Size Of Normal Text
 
 file: _sass\base\_typography.scss
 
 <details>
-<summary markdown="span">code:</summary>
+<summary markdown="span"><strong>code:</strong></summary>
 
 ```scss
 body, input, select, textarea {
@@ -134,13 +140,15 @@ body, input, select, textarea {
 ```
 
 </details>
+<br/>
+<br/>
 
 ### Fix #Collapse-Output Not Working For Notebooks
 
 file: _action_files\hide.tpl
 
 <details>
-<summary markdown="span">code:</summary> 
+<summary markdown="span"><strong>code:</strong></summary> 
 
 replace the pertinent block
 
@@ -153,6 +161,8 @@ replace the pertinent block
     <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
         <p>{{ super() }}</p>
     </details>
+<br/>
+<br/>
 {%- elif cell.metadata.hide_output -%}
 {%- else -%}
     {{ super()  }}
@@ -162,13 +172,15 @@ replace the pertinent block
 {% endraw %}
 
 </details>
+<br/>
+<br/>
 
 ### Editing The Look Of Images
 
 file: _sass\minima\fastpages-styles.scss
 
 <details>
-<summary markdown="span">code:</summary>
+<summary markdown="span"><strong>code:</strong></summary>
 
 ```scss
 .post img {
@@ -181,6 +193,8 @@ file: _sass\minima\fastpages-styles.scss
 ```
 
 </details>
+<br/>
+<br/>
 
 ### Fix posts not Hiding
 
@@ -189,7 +203,7 @@ files: index.html; _layouts\blog.html; _layouts\categories.html; _layouts\tags.h
 add `hide: true` to the `front matter` of the post; you could also set `search_exclude = true` but that means the only way the hidden post can be accessed is through its permalink (for example, setting `permalink: /hidden/:title/`)
 
 <details>
-<summary markdown="span">code:</summary>
+<summary markdown="span"><strong>code:</strong></summary>
 
 {% raw %}
 ```scss
@@ -202,6 +216,8 @@ add `hide: true` to the `front matter` of the post; you could also set `search_e
 {% endraw %}
 
 </details>
+<br/>
+<br/>
 
 <!--  -->
 {::options parse_block_html="false" /}  
@@ -214,13 +230,15 @@ add `hide: true` to the `front matter` of the post; you could also set `search_e
     file:
 
     <details>
-    <summary markdown="span">code:</summary>
+    <summary markdown="span"><strong>code:</strong></summary>
 
     ```scss
     **code**
     ```
 
     </details>
+<br/>
+<br/>
 ---
 
 
