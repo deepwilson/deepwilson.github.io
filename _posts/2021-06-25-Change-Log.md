@@ -37,15 +37,16 @@ file: _sass\minima\fastpages-styles.scss
 <details>
 <summary>code:</summary> 
 
-    ```scss
-    .flash {
-    position: relative;
-    padding: 10px 10px;
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 10px;
-    }
-    ```
+```scss
+.flash {
+position: relative;
+padding: 10px 10px;
+border-style: solid;
+border-width: 4px;
+border-radius: 10px;
+}
+```
+
 </details>
 
 ### Editing The Look Of Inline Markdown Code
@@ -55,22 +56,23 @@ file: _sass\minima\colorschemes\fastpages-dracula-highlight.scss
 <details open>
 <summary>code:</summary>
 
-    ```scss
-    .highlight {
-        ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
+```scss
+.highlight {
+    ✒ sass\minima\colorschemes\fastpages-dracula-highlight.scss
 
-        // background: $dt-code-cell-background !important;
-        color: $dt-gray-light !important;
-        pre, code {
-        background: $dt-code-cell-background;
-        color: $dt-gray-light;
-        border-left: 10px solid $dt-code-cell-background;
-        border-left: 10px solid $dt-code-cell-background;
-        border-top: 10px solid $dt-code-cell-background;
-        border-bottom: 10px solid $dt-code-cell-background;
-        border-radius: 15px !important;
-        }
-    ```
+    // background: $dt-code-cell-background !important;
+    color: $dt-gray-light !important;
+    pre, code {
+    background: $dt-code-cell-background;
+    color: $dt-gray-light;
+    border-left: 10px solid $dt-code-cell-background;
+    border-left: 10px solid $dt-code-cell-background;
+    border-top: 10px solid $dt-code-cell-background;
+    border-bottom: 10px solid $dt-code-cell-background;
+    border-radius: 15px !important;
+    }
+```
+
 </details>
 
 ### Editing The Look Of Jupyter Code Cells
@@ -79,6 +81,7 @@ file: _sass\minima\syntax_highlight_base.scss
 
 <details>
 <summary>code:</summary> 
+
 some code needed to be commented out due to style conflicts in other .scss files
 
 ```scss
@@ -104,6 +107,7 @@ some code needed to be commented out due to style conflicts in other .scss files
     border-radius: 10px !important;
 }
 ```
+
 </details>
 
 ### Fix Scrollbars Not Showing For Overflowing Notebook Cells
@@ -129,6 +133,7 @@ file: _sass\base\_typography.scss
     }
 }
 ```
+
 </details>
 
 ### Editing The Size Of Normal Text
@@ -147,6 +152,7 @@ body, input, select, textarea {
     line-height: 2.375;
 }
 ```
+
 </details>
 
 ### Fix #Collapse-Output Not Working For Notebooks
@@ -155,6 +161,7 @@ file: _action_files\hide.tpl
 
 <details>
 <summary>code:</summary> 
+
 replace the pertinent block
 
 <!-- {% raw %} & {% endraw %} disables tag processing -->
@@ -173,6 +180,7 @@ replace the pertinent block
 {% endblock output_group %}
 ```
 {% endraw %}
+
 </details>
 
 ### Editing The Look Of Images
@@ -191,6 +199,7 @@ file: _sass\minima\fastpages-styles.scss
     margin-right: auto;
 }
 ```
+
 </details>
 
 ---
@@ -202,9 +211,11 @@ file: _sass\minima\fastpages-styles.scss
 
     <details>
     <summary>code:</summary>
+    
     ```scss
     **code**
     ```
+
     <\details>
 ---
 

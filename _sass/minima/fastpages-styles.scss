@@ -237,13 +237,12 @@ center {
 }
 
 // adding a copy button to code cells
-.code-header {
-  height: 0;
-  z-index: 2;
-  position: relative;
-
+.copy-code-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  background: #222c32;
 }
-
 
 .copy-code-button {
   --copy-code-bg-color: #404040;
