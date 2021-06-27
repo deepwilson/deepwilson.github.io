@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /drafts/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://outsiders17711.github.io/Mein.Platz/sitemap.xml
