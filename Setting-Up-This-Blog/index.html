@@ -379,7 +379,7 @@
 <ul>
 <li>replace the fastpages logo with one of your own choosing, leaving <code>Line 4</code> as it is; or</li>
 <li>add you own file to the <code>images</code> folder and edit the filename in <code>Line 4</code>.
-<br>
+<code>`</code> `<br>
 <div class="flash flash-warn">
     <svg class="octicon octicon-zap octicon octicon-zap" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 00-.01.004L3.286 8.571A.25.25 0 003.462 9H6.75a.75.75 0 01.694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0012.538 7H9.25a.75.75 0 01-.683-1.06l2.008-4.418.003-.006a.02.02 0 00-.004-.009.02.02 0 00-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 012.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 01-.871.354h-.302a1.25 1.25 0 01-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"></path></svg>
     <strong>Important: </strong>The image for the blog logo MUST be in the <strong>images</strong> folder (or subfolders) for your blog to render correctly.
@@ -452,14 +452,15 @@
 <li>
 <em>logo.png</em>: As stated earlier, this specfies the image preview automatically shown with your URL on social media sites. This is freely customizable.</li>
 <li>
-<em>favicon.ico</em>: This controls the page icon shown on the browser tab when the site is opened in browser. There are lots of free resources for <a href="https://icon-icons.com/">downloading .ico files</a> or <a href="https://convertico.com/">converting your .png to .ico</a>.
-<br>
+<em>favicon.ico</em>: This controls the page icon shown on the browser tab when the site is opened in browser. There are lots of free resources for <a href="https://icon-icons.com/">downloading .ico files</a> or <a href="https://convertico.com/">converting your .png to .ico</a>.</li>
+</ul>
+<p><code>`</code> `<br>
+</p>
 <div class="flash flash-warn">
     <svg class="octicon octicon-zap octicon octicon-zap octicon octicon-zap" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 00-.01.004L3.286 8.571A.25.25 0 003.462 9H6.75a.75.75 0 01.694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0012.538 7H9.25a.75.75 0 01-.683-1.06l2.008-4.418.003-.006a.02.02 0 00-.004-.009.02.02 0 00-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 012.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 01-.871.354h-.302a1.25 1.25 0 01-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"></path></svg>
     <strong>Important: </strong>From my experience, the file name of the page icon MUST be <strong>favicon.ico</strong>.
 </div>
-</li>
-</ul>
+
 
 </div>
 </div>
@@ -751,11 +752,11 @@ However, it worked for me in flawlessly. So, I will advise that you still try th
 <ul>
 <li>
 <p><strong>RENDERING HTML IMAGES FROM JUPYTER NOTEBOOK</strong>: I had issues with images locally refernced images showing on the blog. I would link to an image using the usual syntax: <code>![](../path/to/image.png)</code> and the image will show up as expected in jupyter notebook. However, on the blog, nothing!</p>
-<p>I went through this <a href="https://forums.fast.ai/t/how-to-render-html-images-from-jupyter-notebook/64229/29">thread</a> on the fastai forum and its not just me. The best way to ensure that your images (or other data) render as expected on the blog is to remotely reference the image on GitHub. Thus:</p>
+<p>I went through this <a href="https://forums.fast.ai/t/how-to-render-html-images-from-jupyter-notebook/64229/29">thread</a> on the fastai forum and its not just me. The best way to ensure that your images (or other data) render as expected on the blog is to remotely reference the image on GitHub. Thus</p>
+<p><del><strong>Local Reference</strong>: <code>![](../path/to/image.png)</code></del></p>
+<p><strong>Remote Reference</strong>: <code>![](https://raw.githubusercontent.com/github-profile/blog-repo/default-branch/path/to/image.png)</code></p>
 <blockquote>
-<p>Local Reference:<code>![](../path/to/image.png)</code>    <br>
-Remote Reference:<code>![](https://raw.githubusercontent.com/github-profile/blog-repo/default-branch/path/to/image.png)</code>
-  Note that in my case, my default branch is <code>main</code>, yours may be <code>master</code>.</p>
+<p><strong>NOTE</strong>:In my case, my default branch is <code>main</code>, yours may be <code>master</code>.</p>
 </blockquote>
 </li>
 </ul>
