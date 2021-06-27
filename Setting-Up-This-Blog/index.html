@@ -108,7 +108,7 @@
 
 <span class="read-time" title="Estimated read time">
 
-  11 min read
+  13 min read
 
 </span>
 
@@ -174,9 +174,18 @@
 <li class="toc-entry toc-h4"><a href="#pages/about.md">pages/about.md </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#Further-Customizations">Further Customizations </a></li>
+<li class="toc-entry toc-h2"><a href="#Further-Customizations">Further Customizations </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Switching-To-Dark-Mode:">Switching To Dark Mode: </a></li>
+<li class="toc-entry toc-h3"><a href="#Making-Your-Blog-Appear-On-Google-Search">Making Your Blog Appear On Google Search </a></li>
+<li class="toc-entry toc-h3"><a href="#Adding-A-Copy-Button-To-Markdown-Code-Blocks">Adding A Copy Button To Markdown Code Blocks </a></li>
+<li class="toc-entry toc-h3"><a href="#Adding-Flash-Alerts-To-Your-Posts">Adding Flash Alerts To Your Posts </a></li>
+<li class="toc-entry toc-h3"><a href="#Dynamically-Run-Code-Written-On-Jupyter-Notebooks">Dynamically Run Code Written On Jupyter Notebooks </a></li>
+<li class="toc-entry toc-h3"><a href="#Creating-Permalinks">Creating Permalinks </a></li>
+<li class="toc-entry toc-h3"><a href="#Creating-Distinctive-README.md-and-about.md">Creating Distinctive README.md and about.md </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Miscellaneous-Issues">Miscellaneous Issues </a></li>
-<li class="toc-entry toc-h2"><a href="#Further-Links">Further Links </a></li>
 <li class="toc-entry toc-h2"><a href="#Conclusion">Conclusion </a></li>
 </ul><!--
 #################################################
@@ -507,6 +516,100 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Switching-To-Dark-Mode:">
+<a class="anchor" href="#Switching-To-Dark-Mode:" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Switching To Dark Mode</strong>:<a class="anchor-link" href="#Switching-To-Dark-Mode:"> </a>
+</h3>
+<p><a href="https://prudhvirampey.com/blog/colours/jekyll/css/fastpages/2020/10/30/hello-dark-mode.html">Prudhvi Rampey</a> provides a simple guide to being the darkmode experience to <code>fastpages</code>. All you have to do is add one file (available <a href="https://gist.github.com/prampey/aac8f8436827ea09f53a67873142706c">here</a>) to the <code>/_sass/minima/</code> folder and  add this import line in <code>custom-styles.scss</code> in the same folder.</p>
+<div class="highlight"><pre><span></span><span class="cm">/*-----------------------------------*/</span>
+<span class="cm">/*----- ADD YOUR STYLES BELOW -------*/</span>
+
+<span class="k">@import</span> <span class="s2">"minima/dark-mode"</span><span class="p">;</span>
+</pre></div>
+<p><a href="https://prrao87.github.io/blog/blogging-for-data-scientists/#appendix-examples-on-customizing-fastpages">Prashanth Rao's article</a> which talks generally about the advantages of using <code>fastpages</code> also contains a few tips on visual customizations in the appendix section.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Making-Your-Blog-Appear-On-Google-Search">
+<a class="anchor" href="#Making-Your-Blog-Appear-On-Google-Search" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Making Your Blog Appear On Google Search</strong><a class="anchor-link" href="#Making-Your-Blog-Appear-On-Google-Search"> </a>
+</h3>
+<p><a href="https://github.com/Victor2Code">Victor2Code</a> has a <a href="https://victor2code.github.io/blog/2019/07/04/jekyll-github-pages-appear-on-Google.html">post</a> on how to make your site and pages appear on Google search result. It only takes two steps.</p>
+<blockquote>
+<p><strong>NOTE</strong>:Victor notes in his <a href="https://victor2code.github.io/blog/2019/07/04/jekyll-github-pages-appear-on-Google.html">post</a> that amongst the ownership verification options provided by Google, he was unable to verify using the <a href="https://support.google.com/webmasters/answer/9008080#html_verification&amp;zippy=%2Chtml-file-upload">fist option</a> didn't woer for him.&gt;
+However, it worked for me in flawlessly. So, I will advise that you still try that option first (as it is by far the easiest).</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Adding-A-Copy-Button-To-Markdown-Code-Blocks">
+<a class="anchor" href="#Adding-A-Copy-Button-To-Markdown-Code-Blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Adding A Copy Button To Markdown Code Blocks</strong><a class="anchor-link" href="#Adding-A-Copy-Button-To-Markdown-Code-Blocks"> </a>
+</h3>
+<p><a href="https://www.github.com/SPDUK">Steve</a> provides a <a href="https://spdevuk.com/how-to-create-code-copy-button/">guide</a> on how to achieve this. <a href="https://www.aleksandrhovhannisyan.com/">Aleksandr Hovhannisyan</a> also has a <a href="https://www.aleksandrhovhannisyan.com/blog/how-to-add-a-copy-to-clipboard-button-to-your-jekyll-blog/">guide</a> which follows a slightly different implementation to acheive the same goal.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Adding-Flash-Alerts-To-Your-Posts">
+<a class="anchor" href="#Adding-Flash-Alerts-To-Your-Posts" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Adding Flash Alerts To Your Posts</strong><a class="anchor-link" href="#Adding-Flash-Alerts-To-Your-Posts"> </a>
+</h3>
+<div class="flash flash-success f4">
+  <svg class="octicon octicon-shield-check v-align-bottom" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24">  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9275 3.55567C11.9748 3.54134 12.0252 3.54134 12.0725 3.55567L19.3225 5.75264C19.4292 5.78497 19.5 5.88157 19.5 5.99039V11C19.5 13.4031 18.7773 15.3203 17.5164 16.847C16.246 18.3853 14.3925 19.5706 12.0703 20.4278C12.0253 20.4444 11.9746 20.4444 11.9297 20.4278C9.60747 19.5706 7.75398 18.3853 6.48358 16.847C5.2227 15.3203 4.5 13.4031 4.5 11L4.5 5.9904C4.5 5.88158 4.57082 5.78496 4.6775 5.75264L11.9275 3.55567ZM12.5075 2.12013C12.1766 2.01985 11.8234 2.01985 11.4925 2.12013L4.24249 4.3171C3.50587 4.54032 3 5.21807 3 5.9904L3 11C3 13.7306 3.83104 15.9908 5.32701 17.8022C6.81347 19.6021 8.91996 20.9157 11.4102 21.835C11.7904 21.9753 12.2095 21.9753 12.5897 21.835C15.08 20.9157 17.1865 19.6021 18.673 17.8022C20.169 15.9908 21 13.7306 21 11V5.99039C21 5.21804 20.4941 4.54031 19.7575 4.3171L12.5075 2.12013ZM16.2803 9.78033C16.5732 9.48744 16.5732 9.01256 16.2803 8.71967C15.9874 8.42678 15.5126 8.42678 15.2197 8.71967L11 12.9393L9.28033 11.2197C8.98744 10.9268 8.51256 10.9268 8.21967 11.2197C7.92678 11.5126 7.92678 11.9874 8.21967 12.2803L10.4697 14.5303C10.7626 14.8232 11.2374 14.8232 11.5303 14.5303L16.2803 9.78033Z"></path></svg>
+  Flash alerts like this can be used to highlight some information. A comprehensive guide on styling flash alerts can be found <a href="https://primer.style/css/components/alerts" target="_blank">here</a>. 
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Dynamically-Run-Code-Written-On-Jupyter-Notebooks">
+<a class="anchor" href="#Dynamically-Run-Code-Written-On-Jupyter-Notebooks" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Dynamically Run Code Written On Jupyter Notebooks</strong><a class="anchor-link" href="#Dynamically-Run-Code-Written-On-Jupyter-Notebooks"> </a>
+</h3>
+<p>If you have a post that contains charts or tables with data that changes over time, the default fastpages setup means you will have to manually re-run the source notebook and rebuild the site. <a href="https://github.com/Niegil-Francis">Niegil Francis</a> provides a <a href="https://niegil-francis.github.io/Personal_Blog/2020/11/14/A-starter-pack-on-dynamic-blogging.html">guide</a> on setting up your blog to automatically runs and updates itself so that your page is always up-to-date with the current data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Creating-Permalinks">
+<a class="anchor" href="#Creating-Permalinks" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Creating Permalinks</strong><a class="anchor-link" href="#Creating-Permalinks"> </a>
+</h3>
+<p>This <a href="https://jekyllrb.com/docs/permalinks/">Jekyll documentation</a> provides information on how to set up permalinks for you blog. However, I found that this <a href="https://docs.w3cub.com/jekyll/permalinks/">post</a> did a better job of explaining how Jekyll permalinks work and how to customize them to fit your blog. <a href="https://learn.cloudcannon.com/jekyll/permalinks/">This</a> is also useful.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Creating-Distinctive-README.md-and-about.md">
+<a class="anchor" href="#Creating-Distinctive-README.md-and-about.md" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Creating Distinctive <code>README.md</code> and <code>about.md</code></strong><a class="anchor-link" href="#Creating-Distinctive-README.md-and-about.md"> </a>
+</h3>
+<p>The <code>README.md</code> file in your blog repository's root directory  and the <code>about.md</code> file in the <code>_pages</code> folder are markdown files you can use to provide some information about your blog and yourself. The syntax for both files are the same (since they are both markdown files).</p>
+<p>Now you can get really inventive with the styling and content of these files, as some folks have. <a href="https://github.com/matiassingers">Matias Singers</a> has created a '<a href="https://github.com/matiassingers/awesome-readme">curated list of awesome READMEs</a>'. <a href="https://github.com/abhisheknaiidu">Abhishek Naidu</a> went some steps further by creating a more comprehensive '<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme">curated list of awesome Github Profile READMEs</a>' broken down into categories and adding references to tools, articles and YouTube tutorials.</p>
+<p>No use reinventing the wheel. Go through both lists and look at the README's. When you see a style that appeals to you, check out the raw file and steal shamelessly from the best!</p>
+<blockquote>
+<p>You can find markdown badges <a href="https://github.com/Ileriayo/markdown-badges">here</a> and github readme stats <a href="https://github.com/anuraghazra/github-readme-stats">here</a>.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 
 </div>
@@ -566,23 +669,25 @@
 <p>Alternatively, you can use the python code below to delete all auto-generated temporary folders. You can place the code in a python file and run that file before pushing your code to GitHub:</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
   <span class="kn">import</span> <span class="nn">shutil</span>
-  <span class="kn">from</span> <span class="nn">win32com.shell</span> <span class="kn">import</span> <span class="n">shell</span><span class="p">,</span> <span class="n">shellcon</span>
 
   <span class="n">local_repository_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"local/repository/path"</span>
 
-  <span class="k">def</span> <span class="nf">delPycacheFolders</span><span class="p">(</span><span class="n">targetFolder</span><span class="o">=</span><span class="n">local_repository_path</span><span class="p">):</span>
-      <span class="n">flaggedFolders</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">def</span> <span class="nf">clean_blog_repo</span><span class="p">(</span><span class="n">targetFolder</span><span class="o">=</span><span class="n">local_repository_path</span><span class="p">):</span>
+      <span class="n">deleted_folders</span> <span class="o">=</span> <span class="p">[]</span>
 
       <span class="k">for</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">targetFolder</span><span class="p">):</span>
           <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">dirnames</span><span class="p">:</span>
-              <span class="k">if</span> <span class="n">folder</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"__pycache__"</span><span class="p">,</span> <span class="s2">"__MACOSX"</span><span class="p">,</span> <span class="s2">".ipynb_checkpoints"</span><span class="p">]:</span>
+              <span class="k">if</span> <span class="n">folder</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"__pycache__"</span><span class="p">,</span> <span class="s2">".ipynb_checkpoints"</span><span class="p">]:</span> <span class="c1"># you can add more folders</span>
                   <span class="n">folderpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirpath</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
-                  <span class="n">flaggedFolders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">folderpath</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+                  <span class="n">deleted_folders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">folderpath</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
                   <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">folderpath</span><span class="p">)</span>
 
-      <span class="nb">print</span><span class="p">(</span><span class="s2">"deleted temp folders:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flaggedFolders</span><span class="p">))</span>
+       <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">deleted_folders</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">"The following folders were deleted:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">deleted_folders</span><span class="p">))</span>
+      <span class="k">else</span><span class="p">:</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">"No folders were found!"</span><span class="p">)</span>
 
-  <span class="n">delPycacheFolders</span><span class="p">()</span>
+  <span class="n">clean_blog_repo</span><span class="p">()</span>
 </pre></div>
 </li>
 </ul>
@@ -640,55 +745,13 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>
-<strong>CREATING PERMALINKS</strong>: This <a href="https://jekyllrb.com/docs/permalinks/">Jekyll documentation</a> provides information on how to set up permalinks for you blog. However, I found that this <a href="https://docs.w3cub.com/jekyll/permalinks/">post</a> did a better job of explaining how Jekyll permalinks work and how to customize them to fit your blog. <a href="https://learn.cloudcannon.com/jekyll/permalinks/">This</a> is also useful.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>
-<p><strong>SWITCHING TO DARK MODE</strong>: <a href="https://prudhvirampey.com/blog/colours/jekyll/css/fastpages/2020/10/30/hello-dark-mode.html">Prudhvi Rampey</a> provides a simple guide to being the darkmode experience to <code>fastpages</code>. All you have to do is add one file (available <a href="https://gist.github.com/prampey/aac8f8436827ea09f53a67873142706c">here</a>) to the <code>/_sass/minima/</code> folder and  add this import line in <code>custom-styles.scss</code> in the same folder.</p>
-<div class="highlight"><pre><span></span><span class="cm">/*-----------------------------------*/</span>
-  <span class="cm">/*----- ADD YOUR STYLES BELOW -------*/</span>
-
-  <span class="k">@import</span> <span class="s2">"minima/dark-mode"</span><span class="p">;</span>
-</pre></div>
+<p><strong>RENDERING HTML IMAGES FROM JUPYTER NOTEBOOK</strong>: I had issues with images locally refernced images showing on the blog. I would link to an image using the usual syntax: <code>![](../path/to/image.png)</code> and the image will show up as expected in jupyter notebook. However, on the blog, nothing!</p>
+<p>I went through this <a href="https://forums.fast.ai/t/how-to-render-html-images-from-jupyter-notebook/64229/29">thread</a> on the fastai forum and its not just me. The best way to ensure that your images (or other data) render as expected on the blog is to remotely reference the image on GitHub. Thus:</p>
+<blockquote>
+<p>Local Reference:<code>![](../path/to/image.png)</code>&gt; Remote Reference:<code>![](https://raw.githubusercontent.com/github-profile/blog-repo/default-branch/path/to/image.png)</code>
+  Note that in my case, my default branch is <code>main</code>, yours may be <code>master</code>.</p>
+</blockquote>
 </li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>
-<strong>FURTHER CUSTOMIZING THE LOOK OF FASTPAGES</strong>: <a href="https://prrao87.github.io/blog/blogging-for-data-scientists/#some-faqs-on-using-fastpages">Prashanth Rao's article</a> which talks generally about the advantages of using <code>fastpages</code> also contains a few tips on visual customization in the appendix section.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Further-Links">
-<a class="anchor" href="#Further-Links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Further Links<a class="anchor-link" href="#Further-Links"> </a>
-</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here are some useful links the I coudn't add in the main post:</p>
-<ul>
-<li>null</li>
 </ul>
 
 </div>
