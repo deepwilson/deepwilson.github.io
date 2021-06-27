@@ -7,14 +7,18 @@
 <img src="https://badges.pufler.dev/visits/Outsiders17711/Mein.Platz?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />&nbsp;
 <img src="https://badges.pufler.dev/updated/Outsiders17711/Mein.Platz?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />&nbsp;
 <img src="https://badges.pufler.dev/created/Outsiders17711/Mein.Platz?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />&nbsp;
-
 </p>
-
+<br/>
 
 # Hi <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> Welcome to Mein.Platz
 
+<br/>
+<br/>
 
 **This is the repository for my personal [![](https://img.shields.io/static/v1?label=GitHub%20Pages&message=Blog&labelColor=2f363d&color=blue&style=for-the-badge&logo=github)](https://outsiders17711.github.io/Mein.Platz/) where I detail my experiences and development with `Machine Learning`, `Computer Vision` and `Gesture Recognition`.**
+
+<br/>
+<br/>
 
 ---
 

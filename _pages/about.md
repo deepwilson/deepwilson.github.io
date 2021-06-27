@@ -86,3 +86,20 @@ permalink: /about/
 </p>
 
 <hr>
+
+<section>
+<h1>Learning and Reading</h1>
+<p>These are some books I've read. My review and opinion about some of them can be found in blog posts.</p>
+
+<div class="books">
+  <a href="https://www.jordanbpeterson.com/beyond-order/" class="no-underline"><img src="https://m.media-amazon.com/images/I/71xLmdLOQ0L.jpg" alt="Beyond Order: 12 More Rules for Life loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <a href="https://www.jordanbpeterson.com/12-rules-for-life/" class="no-underline"><img src="https://m.media-amazon.com/images/I/41LtJtWn9OL.jpg" alt="12 Rules for Life: An Antidote to Chaos" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <a href="https://www.goodreads.com/series/41526-the-wheel-of-time/" class="no-underline"><img src="https://static.macmillan.com/static/macmillan/2019-holiday-gift-guide/img/sf-08-9781250251510.jpg" alt="The Wheel of Time Series" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <a href="https://www.goodreads.com/book/show/662.Atlas_Shrugged" class="no-underline"><img src="https://images-na.ssl-images-amazon.com/images/I/612URtxh-qL.jpg" alt="Atlas Shrugged" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <a href="https://www.ynharari.com/book/sapiens-2/" class="no-underline"><img src="https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg" alt="Sapiens: A Brief History of Humankind" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <a href="https://www.goodreads.com/book/show/12158480-why-nations-fail" class="no-underline"><img src="https://images-na.ssl-images-amazon.com/images/I/A1qhBebbu6L.jpg" alt="Why Nations Fail: The Origins of Power, Prosperity, and Poverty" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <a href="https://www.basicbooks.com/titles/thomas-sowell/knowledge-and-decisions/9780465037384/" class="no-underline"><img src="https://www.basicbooks.com/wp-content/uploads/2017/06/9780465037384.jpg?fit=446%2C675" alt="Knowledge And Decisions" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <a href="https://www.goodreads.com/book/show/36064445-skin-in-the-game" class="no-underline"><img src="https://images-na.ssl-images-amazon.com/images/I/71dlDoPPyyL.jpg" alt="Skin in the Game: The Hidden Asymmetries in Daily Life" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp;
+  <!-- <a href="" class="no-underline"><img src="" alt="" loading="lazy" height="250" width="165"></a>&nbsp;&nbsp; -->
+</div>
+</section>
