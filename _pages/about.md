@@ -121,5 +121,13 @@ permalink: /about/
 </div>
 </section>
 
+<hr>
+
+<h2>My Favourites</h2>
+<p><strong>You can check out <a href="https://outsiders17711.github.io/Mein.Platz/favourites/">this page</a> for content that appeals to me personally. This includes music, books, movies, podcasts, links, all and everything.</strong></p>
+
+<hr>
+
+
 <!-- end of div style="font-family:Oxygen,monospace;" -->
 </div>
