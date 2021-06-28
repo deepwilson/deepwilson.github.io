@@ -2,8 +2,9 @@
 title: "Change Log"
 description: "A log of changes and personalizations I've made to the blog after incoporating the default fastpages Minima and Oriol's Mssively."
 layout: post
-toc: true
+toc: false
 categories: [markdown]
+image: images/md/change_log.png
 comments: false
 search_exclude: false
 ---

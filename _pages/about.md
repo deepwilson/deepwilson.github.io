@@ -126,6 +126,15 @@ permalink: /about/
 <h2>My Favourites</h2>
 <p><strong>You can check out <a href="https://outsiders17711.github.io/Mein.Platz/favourites/">this page</a> for content that appeals to me personally. This includes music, books, movies, podcasts, links, all and everything.</strong></p>
 
+<br/><div align="center">
+<a href="https://outsiders17711.github.io/Mein.Platz/favourites/" class="button special">FAVOURITES</a>
+<a href="https://outsiders17711.github.io/Mein.Platz/favourites/" class="button">FAVOURITES</a>
+
+<a href="https://outsiders17711.github.io/Mein.Platz/favourites/" class="button special fit">FAVOURITES</a>
+<a href="https://outsiders17711.github.io/Mein.Platz/favourites/" class="button fit">FAVOURITES</a>
+</div><br/>
+
+
 <hr>
 
 
