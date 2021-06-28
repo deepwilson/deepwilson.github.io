@@ -197,6 +197,27 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<style>
+  .custom-images-style {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none !important;
+  }
+  .custom-images-style img {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+</style>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="kNN-&amp;-Linear-Regression-From-Scratch:-Iris-Dataset">
 <a class="anchor" href="#kNN-&amp;-Linear-Regression-From-Scratch:-Iris-Dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>kNN &amp; Linear Regression From Scratch: Iris Dataset<a class="anchor-link" href="#kNN-&amp;-Linear-Regression-From-Scratch:-Iris-Dataset"> </a>
 </h1>
@@ -255,10 +276,18 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="custom-images-style">
 
-  <a><img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_001.png" title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html" style="height:250px"></a>
-  <a><img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_002.png" title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html" style="height:250px"></a>
+  <a><img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_001.png" title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html" style="height:300px"></a>
+  <a><img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_002.png" title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html" style="height:300px"></a>
 
 </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
 </div>
 </div>
 </div>
@@ -274,7 +303,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k-Nearest Neighbours</a> algorithm is a non-parametric classification method used for classification and regression. In kNN classification, an object being assigned to the class most common among its <code>k</code> nearest neighbors (k is a positive integer, typically small). If <code>k = 1</code>, then the object is simply assigned to the class of that single nearest neighbor.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k-Nearest Neighbours</a> algorithm is a non-parametric classification method used for classification and regression. In kNN classification, an object is assigned to the class most common among its <code>k</code> nearest neighbors (k is a positive integer, typically small). If <code>k = 1</code>, then the object is simply assigned to the class of that single nearest neighbor.</p>
 <p><img src="https://i.ibb.co/VQMh7p4/knn.png" alt="k-Nearest Neighbours" title="Credit: http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1531424125/KNN_final1_ibdm8a.png"> </p>
 
 </div>
@@ -305,7 +334,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <a href="https://en.wikipedia.org/wiki/Linear_regression">Linear Regression</a> algorithm is a linear approach to modelling the relationship between a scalar response (y — dependent variables) and one or more explanatory variables (X — independent variables). Linear Regression fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Linear_regression">Linear Regression</a> algorithm is a linear approach to modelling the relationship between a scalar response <code>(y — dependent variables)</code> and one or more explanatory variables <code>(X — independent variables)</code>. Linear Regression fits a linear model with coefficients <code>w = (w1, w2, … , wn)</code> to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.</p>
 
 </div>
 </div>
@@ -313,7 +342,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a><img src="https://wiki.aalto.fi/download/attachments/155464048/linreg.png?version=1&amp;modificationDate=1565612055936&amp;api=v2" title="Credit: https://wiki.aalto.fi/display/ITSP/Linear+regression" style="height:250px;"></a></p>
+<p><a><img src="https://wiki.aalto.fi/download/attachments/155464048/linreg.png?version=1&amp;modificationDate=1565612055936&amp;api=v2" title="Credit: https://wiki.aalto.fi/display/ITSP/Linear+regression" style="height:300px;"></a></p>
 
 </div>
 </div>
@@ -321,9 +350,11 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote>
-<p>Info:Jump to <strong><a href="#linear-regression-from-scratch">Linear Regression implementation</a></strong>.</p>
-</blockquote>
+<p></p>
+<div class="flash">
+    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    <strong>Note: </strong>Jump to <strong><a href="#Linear-Regression-From-Scratch">Linear Regression implementation</a></strong>.
+</div>
 
 </div>
 </div>
@@ -343,13 +374,14 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importing required libraries</span>
+<span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">statistics</span>
 <span class="kn">import</span> <span class="nn">copy</span>
 
-<span class="c1"># set ramdom seed</span>
+<span class="c1"># set random seed</span>
 <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="s1">'iris dataset'</span><span class="p">)</span>
 </pre></div>
 
@@ -456,6 +488,14 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Clean-Data">
 <a class="anchor" href="#Clean-Data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clean Data<a class="anchor-link" href="#Clean-Data"> </a>
 </h2>
@@ -523,7 +563,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Furthermore, in machine learning, it is preferred that all data be numeric (floats or integers). Thus, we need convert each unique class values (species) to integer and create a map between the integer values and the actual string values. We'll create a function called <code>_map_classes()</code> to acheieve this.</p>
+<p>Furthermore, in machine learning, it is preferred that all data be numeric (floats or integers). Thus, we need convert each unique class values (species) to integers and create a map between the integer values and the actual string values. We'll create a function called <code>_map_classes()</code> to acheive this.</p>
 
 </div>
 </div>
@@ -595,7 +635,7 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <p></p>
 <div class="flash">
-    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
     <strong>Note: </strong>Now we have successfully cleaned out data and mapped the classes.
 </div>
 <br>
@@ -615,10 +655,10 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In Machine Learning, two data scaling methods are most commonly discussed: <a href="https://en.wikipedia.org/wiki/Feature_scaling#Rescaling_(min-max_normalization">Normalization</a>) and <a href="https://en.wikipedia.org/wiki/Feature_scaling#Standardization_(Z-score_Normalization">Standardization</a>).</p>
-<p>Normalization typically means rescales the values into a range of [0,1]. Standardization typically means rescales data to have a mean of 0 and a standard deviation of 1 (unit variance). This <a href="https://towardsdatascience.com/normalization-vs-standardization-quantitative-analysis-a91e8a79cebf">article</a> analyzes the empirical results of applying different scaling methods on features in multiple experiments settings.</p>
+<p>In Machine Learning, two data scaling methods are most commonly discussed: <a href="%22https://en.wikipedia.org/wiki/Feature_scaling#Rescaling_(min-max_normalization">Normalization</a>") and <a href="%22https://en.wikipedia.org/wiki/Feature_scaling#Standardization_(Z-score_Normalization">Standardization</a>").</p>
+<p>Normalization typically means rescaling the data into a range of [0,1]. Standardization typically means rescaling the data to have a mean of 0 and a standard deviation of 1 (unit variance). This <a href="https://towardsdatascience.com/normalization-vs-standardization-quantitative-analysis-a91e8a79cebf">article</a> analyzes the empirical results of applying different scaling methods on features in multiple experiments settings.</p>
 <p>Distance-based algorithms (such as kNN) are affected by the scale of the variables and will give higher weightage to variables which have higher magnitude. To prevent the algorithm from being biased towards variables with higher magnitude, we can bring down all the variables to the same scale.</p>
-<p>In our case, we will make use of Normalization (also known as min-max scaling) as it limits the range of the data and thus, a better option for kNN. Let's create a function called <code>_normalize_data()</code> The Normalization formula is shown below.</p>
+<p>In our case, we will make use of Normalization (also known as min-max scaling) as it limits the range of the data and thus, a better option for kNN. Let's create a function called <code>_normalize_data()</code>, based on the Normalization formula shown below.</p>
 
 </div>
 </div>
@@ -745,6 +785,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, we're done preparing the dataset for the classification using the kNN algorithm. Next, we implement the algorithm itself in a main function <code>kNN_Algorithm</code> that calls several child functions.</p>
+<p><br></p>
 
 </div>
 </div>
@@ -761,7 +802,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We need to create a function that calculates the distance between two sets of data features. THere are different distance formulas availabe but the <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> is most commonly used for kNN classification problems.</p>
+<p>We need to create a function that calculates the distance between two sets of data features. There are different distance formulas available but the <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> is most commonly used for kNN classification problems.</p>
 <p>In mathematics, the Euclidean distance between two points in Euclidean space is the length of a line segment between the two points. The formula is shown below and is implemented with the <code>_euclidean_distance()</code> function.</p>
 
 </div>
@@ -836,7 +877,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next, we need to get the k nearest neighbours of a given (test) row (set of features) amongst a larger sample of (training) rows (sets of features). What we do is simply calculate the distances between the test row and the all the training rows and get the <code>k</code> training rows with the smallest Euclidean distances. Let's create a function <code>get_k_neighbours()</code>.</p>
+<p>Next, we need to get the k nearest neighbours of a given (test) row (set of features) amongst a larger sample of (training) rows (sets of features). What we do is simply calculate the distances between the test row and all the training rows to get the <code>k</code> training rows with the smallest Euclidean distances. Let's create a function <code>get_k_neighbours()</code>.</p>
 
 </div>
 </div>
@@ -912,6 +953,14 @@
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1008,7 +1057,15 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now we can go ahead and evaluate the performance of the algorithm against the dataset. The evaluation will be  implemented using the function <code>Evaluate_kNN_Algorithm</code> that calls several child functions.</p>
+<p>Now, we can go ahead and evaluate the performance of the algorithm against the dataset. The evaluation will be implemented using the function <code>Evaluate_kNN_Algorithm</code> which calls several child functions to split the dataset into test/train samples and calculate accuracies.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
 
 </div>
 </div>
@@ -1028,7 +1085,7 @@
 <p>We will try two popular methods for splitting the dataset in training and testing samples:</p>
 <ul>
 <li>
-<em>Test/Train Split</em>: The dataset is shuffled and a percentage is used for training and the rest for testing. The algorithm is then trained on the training sample and evaluated it's performance evalauted with the testing sample. This is implemented in the <code>_test_train_split()</code> function.</li>
+<em>Test/Train Split</em>: The dataset is shuffled and a percentage is used for training and the rest for testing. The algorithm is then trained on the training sample and it's performance evaluated using the testing sample. This is implemented in the <code>_test_train_split()</code> function.</li>
 </ul>
 
 </div>
@@ -1038,25 +1095,6 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a><img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/07/15185319/blogs-15-7-2020-02-1024x565.jpg" title="Credit: https://www.analyticsvidhya.com/blog/2021/05/importance-of-cross-validation-are-evaluation-metrics-enough/" style="height:300px;"></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>
-<em>Cross Validation Split</em>: The dataset is split into k groups. The algorithm is then trained and evaluated k times and the performance summarized by taking the mean performance score. During each training and evaluation step, one of the k groups is used as the testing sample and the remaining groups as the training sample.  This is implemented in the <code>_cross_validation_split()</code> function.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a><img src="https://zitaoshen.rbind.io/project/machine_learning/machine-learning-101-cross-vaildation/featured.png" title="Credit: https://www.analyticsvidhya.com/blog/2021/05/importance-of-cross-validation-are-evaluation-metrics-enough/" style="height:300px;"></a></p>
 
 </div>
 </div>
@@ -1088,6 +1126,25 @@
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<em>Cross Validation Split</em>: The dataset is shuffled and split into k groups. The algorithm is then trained and evaluated k times and the performance summarized by taking the mean performance score. During each training and evaluation step, one of the k groups is used as the testing sample and the remaining groups as the training sample.  This is implemented in the <code>_cross_validation_split()</code> function.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a><img src="https://zitaoshen.rbind.io/project/machine_learning/machine-learning-101-cross-vaildation/featured.png" title="Credit: https://www.analyticsvidhya.com/blog/2021/05/importance-of-cross-validation-are-evaluation-metrics-enough/" style="height:300px;"></a></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1120,6 +1177,14 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Define-Accuracy-Metric">
 <a class="anchor" href="#Define-Accuracy-Metric" aria-hidden="true"><span class="octicon octicon-link"></span></a>Define Accuracy Metric<a class="anchor-link" href="#Define-Accuracy-Metric"> </a>
 </h2>
@@ -1129,7 +1194,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next, we create a simple function <code>_get_accuracy</code> that returns the percentage of the test classes correctly predicted by the algorithm.</p>
+<p>Next, we create a simple function <code>_get_accuracy()</code> that returns the percentage of the test classes correctly predicted by the algorithm.</p>
 
 </div>
 </div>
@@ -1180,7 +1245,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Due to the different manner in which Test/Train Split &amp; Cross Validation Split divide the dataset, we will create two separate functions for the final algorithm evaluation:</p>
+<p>Due to the different manners in which Test/Train Split &amp; Cross Validation Split divide the dataset, we will create two separate functions for the final algorithm evaluation:</p>
 <ol>
 <li>
 <p><code>tts_Evaluate_kNN_Algorithm</code>: kNN algorithm evaluation using the Test/Train Split method; and</p>
@@ -1291,6 +1356,14 @@ A:Iris-virginica | P:Iris-versicolor
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1418,11 +1491,20 @@ A:Iris-virginica | P:Iris-versicolor
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see that the kNN algorithm evaluation using the Cross Validation Split and Test/Train Split method give similar results. A <strong>maximum accuracy of 100%</strong> and an <strong>average accuracy of ~95%</strong> across <strong>100 iterations</strong> using <strong>k=3 neighbours</strong>.</p>
+<p>We can see that the kNN algorithm evaluation using the Cross Validation Split and Test/Train Split method give similar results: <strong>maximum accuracy of 100%</strong> and an <strong>average accuracy of ~95%</strong> across <strong>100 iterations</strong> using <strong>k=3 neighbours</strong>.</p>
 <p>A closer look at the randomly printed wrong classifications shows that the algorithm only has porblems differentiating between <code>Iris-virginica</code> and <code>Iris-versicolor</code>. It has no problem correctly classifying <code>Iris-setosa</code>.</p>
 <blockquote>
-<p>Recall:<strong> Class Mappings = {'Iris-setosa': 0, 'Iris-versicolor': 1, 'Iris-virginica': 2} </strong>
-This confirms the statement in the Iris Dataset description that:</p>
+<p>Recall:<strong> Class Mappings = {'Iris-setosa': 0, 'Iris-versicolor': 1, 'Iris-virginica': 2} </strong></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This confirms the statement in the Iris Dataset description that:</p>
+<blockquote>
 <p>"<strong>One class (specie) is linearly separable from the other 2; the latter are NOT linearly separable from each other...</strong>"</p>
 </blockquote>
 
@@ -1504,7 +1586,7 @@ This confirms the statement in the Iris Dataset description that:</p>
 <p></p>
 <div class="flash flash-success">
     <svg class="octicon octicon-checklist octicon octicon-checklist octicon octicon-checklist" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v7.736a.75.75 0 101.5 0V1.75A1.75 1.75 0 0011.25 0h-8.5A1.75 1.75 0 001 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 000-1.5H2.75a.25.25 0 01-.25-.25V1.75zM4.75 4a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM4 7.75A.75.75 0 014.75 7h2a.75.75 0 010 1.5h-2A.75.75 0 014 7.75zm11.774 3.537a.75.75 0 00-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 00-1.062 1.058l1.943 1.95a.75.75 0 001.055.008l4.557-4.45z"></path></svg>
-    <strong>Tip: </strong><strong><a href="#kNN-Linear-Regression-From-Scratch-Iris-Dataset">Jump To Top</a></strong>
+    <strong>Tip: </strong><strong><a href="#kNN-&amp;-Linear-Regression-From-Scratch:-Iris-Dataset">Jump To Top</a></strong>
 </div>
 
 </div>
