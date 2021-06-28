@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="twitter:card" content="summary" /><title>kNN & Linear Regression From Scratch: Iris Dataset | Oluwaleke Umar Yusuf</title>
-<meta name="description" content="A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using just the standard Python libaries.">
+<meta name="description" content="A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using the standard Python libaries.">
 
 <!-- SEO and meta information for twitter/whatsupp cards --><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>kNN &amp; Linear Regression From Scratch: Iris Dataset | Oluwaleke Umar Yusuf</title>
@@ -13,8 +13,8 @@
 <meta property="og:title" content="kNN &amp; Linear Regression From Scratch: Iris Dataset" />
 <meta name="author" content="Oluwaleke Umar Yusuf" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using just the standard Python libaries." />
-<meta property="og:description" content="A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using just the standard Python libaries." />
+<meta name="description" content="A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using the standard Python libaries." />
+<meta property="og:description" content="A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using the standard Python libaries." />
 <link rel="canonical" href="https://outsiders17711.github.io/Mein.Platz/kNN-Linear-Regression-Iris_Dataset/" />
 <meta property="og:url" content="https://outsiders17711.github.io/Mein.Platz/kNN-Linear-Regression-Iris_Dataset/" />
 <meta property="og:site_name" content="Oluwaleke Umar Yusuf" />
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-27T00:00:00-05:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Oluwaleke Umar Yusuf"},"description":"A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using just the standard Python libaries.","@type":"BlogPosting","headline":"kNN &amp; Linear Regression From Scratch: Iris Dataset","dateModified":"2021-06-27T00:00:00-05:00","url":"https://outsiders17711.github.io/Mein.Platz/kNN-Linear-Regression-Iris_Dataset/","datePublished":"2021-06-27T00:00:00-05:00","image":"https://outsiders17711.github.io/Mein.Platz/images/ipynb/iris_dataset.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/kNN-Linear-Regression-Iris_Dataset/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"},"name":"Oluwaleke Umar Yusuf"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Oluwaleke Umar Yusuf"},"description":"A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using the standard Python libaries.","@type":"BlogPosting","headline":"kNN &amp; Linear Regression From Scratch: Iris Dataset","dateModified":"2021-06-27T00:00:00-05:00","url":"https://outsiders17711.github.io/Mein.Platz/kNN-Linear-Regression-Iris_Dataset/","datePublished":"2021-06-27T00:00:00-05:00","image":"https://outsiders17711.github.io/Mein.Platz/images/ipynb/iris_dataset.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://outsiders17711.github.io/Mein.Platz/kNN-Linear-Regression-Iris_Dataset/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://outsiders17711.github.io/Mein.Platz/images/logo.png"},"name":"Oluwaleke Umar Yusuf"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Feed --><link type="application/atom+xml" rel="alternate" href="https://outsiders17711.github.io/Mein.Platz/feed.xml" title="Oluwaleke Umar Yusuf" /><!-- CSS --><link rel="shortcut icon" type="image/x-icon" href="/Mein.Platz/images/favicon.ico"><link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://outsiders17711.github.io/Mein.Platz/assets/css/main.css" />
@@ -98,7 +98,7 @@
             <p><article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">kNN &amp; Linear Regression From Scratch: Iris Dataset</h1><p class="page-description">A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using just the standard Python libaries.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-27T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">kNN &amp; Linear Regression From Scratch: Iris Dataset</h1><p class="page-description">A step-by-step implementation of the k-Nearest Neighbours and Linear Regression algorithms using the standard Python libaries.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-27T00:00:00-05:00" itemprop="datePublished">
         Jun 27, 2021
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -171,21 +171,12 @@
 </li>
 <li class="toc-entry toc-h1"><a href="#k-Nearest-Neighbours-From-Scratch">k-Nearest Neighbours From Scratch </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#The-dataset-is-contained-in-.csv-file.-We-will-implement-a-main-function-DataLoader-that-calls-several-child-functions.">The dataset is contained in .csv file. We will implement a main function DataLoader that calls several child functions. </a></li>
 <li class="toc-entry toc-h2"><a href="#Read-Data">Read Data </a></li>
 <li class="toc-entry toc-h2"><a href="#Clean-Data">Clean Data </a></li>
-<li class="toc-entry toc-h2"><a href="#Normalize-Data">Normalize Data </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Now,-we're-done-preparing-the-dataset-for-the-classification-using-the-kNN-algorithm.-Next,-we-implement-the-algorithm-itself-in-a-main-function-kNN_Algorithm-that-calls-several-child-functions.">Now, we&#39;re done preparing the dataset for the classification using the kNN algorithm. Next, we implement the algorithm itself in a main function kNN_Algorithm that calls several child functions. </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#Normalize-Data">Normalize Data </a></li>
 <li class="toc-entry toc-h2"><a href="#Calculate-Euclidean-Distances">Calculate Euclidean Distances </a></li>
 <li class="toc-entry toc-h2"><a href="#Get-k-Nearest-Neighbours">Get k Nearest Neighbours </a></li>
-<li class="toc-entry toc-h2"><a href="#Predict-Classification">Predict Classification </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Now-we-can-go-ahead-and-evaluate-the-performance-of-the-algorithm-against-the-dataset.-The-evaluation-will-be--implemented-using-the-function-Evaluate_kNN_Algorithm-that-calls-several-child-functions.">Now we can go ahead and evaluate the performance of the algorithm against the dataset. The evaluation will be  implemented using the function Evaluate_kNN_Algorithm that calls several child functions. </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#Predict-Classification">Predict Classification </a></li>
 <li class="toc-entry toc-h2"><a href="#Split-Dataset-Into-Training-&-Testing-Samples">Split Dataset Into Training &amp; Testing Samples </a></li>
 <li class="toc-entry toc-h2"><a href="#Define-Accuracy-Metric">Define Accuracy Metric </a></li>
 <li class="toc-entry toc-h2"><a href="#Evaluate-Algorithm">Evaluate Algorithm </a></li>
@@ -218,7 +209,7 @@
 <p></p>
 <div class="flash">
     <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
-    <strong>Note: </strong>You can skip over the <strong>Introduction</strong> section. Jump to <strong><a href="#k-nearest-neighbours-from-scratch">k-Nearest Neighbours implementation</a></strong>.
+    <strong>Note: </strong>You can skip over the <strong>Introduction</strong> section. Jump to <strong><a href="#k-Nearest-Neighbours-From-Scratch">k-Nearest Neighbours implementation</a></strong>.
 </div>
 
 </div>
@@ -250,19 +241,27 @@
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris dataset</a> is perhaps the best known database to be found in the pattern recognition literature.</p>
 <p>The data set (available <a href="https://www.kaggle.com/uciml/iris">here</a>) consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. <strong>One class (specie) is linearly separable from the other 2; the latter are NOT linearly separable from each other, as seen in the plots below.</strong></p>
-<div align="center">
 
-<p><a title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html"><img align="center" src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_001.png%20" style="height:250px;"></a> 
-<a title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html"><img align="center" src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_002.png%20" style="height:250px;">&lt;/p&gt;
-<p>&lt;/div&gt; </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="custom-images-style">
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+  <a><img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_001.png" title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html" style="height:250px"></a>
+  <a><img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_dataset_002.png" title="Credit: https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html" style="height:250px"></a>
+
+</div>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -284,10 +283,12 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote>
-<p>Info:Jump to <strong><a href="#k-nearest-neighbours-from-scratch">k-Nearest Neighbours implementation</a></strong>.
-<br></p>
-</blockquote>
+<p></p>
+<div class="flash">
+    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    <strong>Note: </strong>Jump to <strong><a href="#k-Nearest-Neighbours-From-Scratch">k-Nearest Neighbours implementation</a></strong>.
+</div>
+<br>
 
 </div>
 </div>
@@ -301,14 +302,22 @@
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The <a href="https://en.wikipedia.org/wiki/Linear_regression">Linear Regression</a> algorithm is a linear approach to modelling the relationship between a scalar response (y — dependent variables) and one or more explanatory variables (X — independent variables). Linear Regression fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.</p>
-<p><a title="Credit: https://wiki.aalto.fi/display/ITSP/Linear+regression"><img align="center" src="https://wiki.aalto.fi/download/attachments/155464048/linreg.png?version=1&amp;modificationDate=1565612055936&amp;api=v2%20" style="height:300px;">&lt;/p&gt;
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a><img src="https://wiki.aalto.fi/download/attachments/155464048/linreg.png?version=1&amp;modificationDate=1565612055936&amp;api=v2" title="Credit: https://wiki.aalto.fi/display/ITSP/Linear+regression" style="height:250px;"></a></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -372,165 +381,16 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The flowchart for implementing the kNN algorithm is shown below. Each step in the implementation will be wrapped in its own function for clarity.</p>
+<p><img src="https://raw.githubusercontent.com/Outsiders17711/Mein.Platz/main/images/ipynb/knn_flowchart.png" alt="kNN Flowchart"></p>
 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_svg output_subarea output_execute_result">
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
- -->
-<!-- Title: G Pages: 1 -->
-<svg width="933pt" height="152pt" viewbox="0.00 0.00 932.64 152.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 148)">
-<title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-148 928.636,-148 928.636,4 -4,4"></polygon>
-<!-- 3 -->
-<g id="node1" class="node"><title>3</title>
-<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18"></ellipse>
-<text text-anchor="middle" x="27" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">3</text>
-</g>
-<!-- Split Data Into Training &amp; Testing -->
-<g id="node2" class="node"><title>Split Data Into Training &amp; Testing</title>
-<ellipse fill="none" stroke="black" cx="224.538" cy="-18" rx="134.576" ry="18"></ellipse>
-<text text-anchor="middle" x="224.538" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">Split Data Into Training &amp; Testing</text>
-</g>
-<!-- 3&#45;&gt;Split Data Into Training &amp; Testing -->
-<g id="edge1" class="edge"><title>3-&gt;Split Data Into Training &amp; Testing</title>
-<path fill="none" stroke="black" d="M54.3711,-18C61.7986,-18 70.4349,-18 79.7997,-18"></path>
-<polygon fill="black" stroke="black" points="79.8024,-21.5001 89.8023,-18 79.8023,-14.5001 79.8024,-21.5001"></polygon>
-</g>
-<!-- Define Metrics -->
-<g id="node3" class="node"><title>Define Metrics</title>
-<ellipse fill="none" stroke="black" cx="463.32" cy="-18" rx="63.8893" ry="18"></ellipse>
-<text text-anchor="middle" x="463.32" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">Define Metrics</text>
-</g>
-<!-- Split Data Into Training &amp; Testing&#45;&gt;Define Metrics -->
-<g id="edge2" class="edge"><title>Split Data Into Training &amp; Testing-&gt;Define Metrics</title>
-<path fill="none" stroke="black" d="M359.153,-18C369.399,-18 379.49,-18 389.112,-18"></path>
-<polygon fill="black" stroke="black" points="389.355,-21.5001 399.355,-18 389.355,-14.5001 389.355,-21.5001"></polygon>
-</g>
-<!-- Evaluate Algorithm -->
-<g id="node4" class="node"><title>Evaluate Algorithm</title>
-<ellipse fill="none" stroke="black" cx="655.306" cy="-18" rx="79.0865" ry="18"></ellipse>
-<text text-anchor="middle" x="655.306" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">Evaluate Algorithm</text>
-</g>
-<!-- Define Metrics&#45;&gt;Evaluate Algorithm -->
-<g id="edge3" class="edge"><title>Define Metrics-&gt;Evaluate Algorithm</title>
-<path fill="none" stroke="black" d="M527.055,-18C539.336,-18 552.433,-18 565.38,-18"></path>
-<polygon fill="black" stroke="black" points="565.712,-21.5001 575.712,-18 565.712,-14.5001 565.712,-21.5001"></polygon>
-</g>
-<!-- 2 -->
-<g id="node5" class="node"><title>2</title>
-<ellipse fill="none" stroke="black" cx="27" cy="-72" rx="27" ry="18"></ellipse>
-<text text-anchor="middle" x="27" y="-68.3" font-family="Times New Roman,serif" font-size="14.00">2</text>
-</g>
-<!-- Calculate Distances -->
-<g id="node6" class="node"><title>Calculate Distances</title>
-<ellipse fill="none" stroke="black" cx="224.538" cy="-72" rx="81.4863" ry="18"></ellipse>
-<text text-anchor="middle" x="224.538" y="-68.3" font-family="Times New Roman,serif" font-size="14.00">Calculate Distances</text>
-</g>
-<!-- 2&#45;&gt;Calculate Distances -->
-<g id="edge4" class="edge"><title>2-&gt;Calculate Distances</title>
-<path fill="none" stroke="black" d="M54.3711,-72C74.793,-72 104.353,-72 133.069,-72"></path>
-<polygon fill="black" stroke="black" points="133.174,-75.5001 143.174,-72 133.174,-68.5001 133.174,-75.5001"></polygon>
-</g>
-<!-- Get Neighbours -->
-<g id="node7" class="node"><title>Get Neighbours</title>
-<ellipse fill="none" stroke="black" cx="463.32" cy="-72" rx="68.4888" ry="18"></ellipse>
-<text text-anchor="middle" x="463.32" y="-68.3" font-family="Times New Roman,serif" font-size="14.00">Get Neighbours</text>
-</g>
-<!-- Calculate Distances&#45;&gt;Get Neighbours -->
-<g id="edge5" class="edge"><title>Calculate Distances-&gt;Get Neighbours</title>
-<path fill="none" stroke="black" d="M306.032,-72C331.484,-72 359.549,-72 384.789,-72"></path>
-<polygon fill="black" stroke="black" points="385.047,-75.5001 395.047,-72 385.047,-68.5001 385.047,-75.5001"></polygon>
-</g>
-<!-- Predict Classification -->
-<g id="node8" class="node"><title>Predict Classification</title>
-<ellipse fill="none" stroke="black" cx="655.306" cy="-72" rx="87.9851" ry="18"></ellipse>
-<text text-anchor="middle" x="655.306" y="-68.3" font-family="Times New Roman,serif" font-size="14.00">Predict Classification</text>
-</g>
-<!-- Get Neighbours&#45;&gt;Predict Classification -->
-<g id="edge6" class="edge"><title>Get Neighbours-&gt;Predict Classification</title>
-<path fill="none" stroke="black" d="M531.569,-72C539.932,-72 548.609,-72 557.309,-72"></path>
-<polygon fill="black" stroke="black" points="557.514,-75.5001 567.514,-72 557.514,-68.5001 557.514,-75.5001"></polygon>
-</g>
-<!-- Create Algorithm -->
-<g id="node9" class="node"><title>Create Algorithm</title>
-<ellipse fill="none" stroke="black" cx="851.842" cy="-72" rx="72.5877" ry="18"></ellipse>
-<text text-anchor="middle" x="851.842" y="-68.3" font-family="Times New Roman,serif" font-size="14.00">Create Algorithm</text>
-</g>
-<!-- Predict Classification&#45;&gt;Create Algorithm -->
-<g id="edge7" class="edge"><title>Predict Classification-&gt;Create Algorithm</title>
-<path fill="none" stroke="black" d="M743.049,-72C751.549,-72 760.157,-72 768.61,-72"></path>
-<polygon fill="black" stroke="black" points="768.826,-75.5001 778.826,-72 768.826,-68.5001 768.826,-75.5001"></polygon>
-</g>
-<!-- 1 -->
-<g id="node10" class="node"><title>1</title>
-<ellipse fill="none" stroke="black" cx="27" cy="-126" rx="27" ry="18"></ellipse>
-<text text-anchor="middle" x="27" y="-122.3" font-family="Times New Roman,serif" font-size="14.00">1</text>
-</g>
-<!-- Read Data -->
-<g id="node11" class="node"><title>Read Data</title>
-<ellipse fill="none" stroke="black" cx="224.538" cy="-126" rx="48.9926" ry="18"></ellipse>
-<text text-anchor="middle" x="224.538" y="-122.3" font-family="Times New Roman,serif" font-size="14.00">Read Data</text>
-</g>
-<!-- 1&#45;&gt;Read Data -->
-<g id="edge8" class="edge"><title>1-&gt;Read Data</title>
-<path fill="none" stroke="black" d="M54.3711,-126C82.6713,-126 128.52,-126 165.352,-126"></path>
-<polygon fill="black" stroke="black" points="165.479,-129.5 175.479,-126 165.479,-122.5 165.479,-129.5"></polygon>
-</g>
-<!-- Clean Data -->
-<g id="node12" class="node"><title>Clean Data</title>
-<ellipse fill="none" stroke="black" cx="463.32" cy="-126" rx="50.0912" ry="18"></ellipse>
-<text text-anchor="middle" x="463.32" y="-122.3" font-family="Times New Roman,serif" font-size="14.00">Clean Data</text>
-</g>
-<!-- Read Data&#45;&gt;Clean Data -->
-<g id="edge9" class="edge"><title>Read Data-&gt;Clean Data</title>
-<path fill="none" stroke="black" d="M273.454,-126C310.872,-126 363.057,-126 403.093,-126"></path>
-<polygon fill="black" stroke="black" points="403.254,-129.5 413.254,-126 403.254,-122.5 403.254,-129.5"></polygon>
-</g>
-<!-- Normalize Data -->
-<g id="node13" class="node"><title>Normalize Data</title>
-<ellipse fill="none" stroke="black" cx="655.306" cy="-126" rx="66.0889" ry="18"></ellipse>
-<text text-anchor="middle" x="655.306" y="-122.3" font-family="Times New Roman,serif" font-size="14.00">Normalize Data</text>
-</g>
-<!-- Clean Data&#45;&gt;Normalize Data -->
-<g id="edge10" class="edge"><title>Clean Data-&gt;Normalize Data</title>
-<path fill="none" stroke="black" d="M513.741,-126C533.483,-126 556.666,-126 578.45,-126"></path>
-<polygon fill="black" stroke="black" points="578.674,-129.5 588.674,-126 578.674,-122.5 578.674,-129.5"></polygon>
-</g>
-</g>
-</svg>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="The-dataset-is-contained-in-.csv-file.-We-will-implement-a-main-function-DataLoader-that-calls-several-child-functions.">
-<a class="anchor" href="#The-dataset-is-contained-in-.csv-file.-We-will-implement-a-main-function-DataLoader-that-calls-several-child-functions." aria-hidden="true"><span class="octicon octicon-link"></span></a>The dataset is contained in .csv file. We will implement a main function <code>DataLoader</code> that calls several child functions.<a class="anchor-link" href="#The-dataset-is-contained-in-.csv-file.-We-will-implement-a-main-function-DataLoader-that-calls-several-child-functions."> </a>
-</h3>
+<p>The dataset is contained in a .csv file. We will implement a function <code>DataLoader</code> that calls several child functions to load and cleanup the data.</p>
+
 </div>
 </div>
 </div>
@@ -735,7 +595,7 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <p></p>
 <div class="flash">
-    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
     <strong>Note: </strong>Now we have successfully cleaned out data and mapped the classes.
 </div>
 <br>
@@ -763,13 +623,14 @@
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a title="Credit: https://www.kdnuggets.com/2020/04/data-transformation-standardization-normalization.html"><img align="center" src="https://miro.medium.com/max/1400/1*GwcC80mDUyscDAWtwZSBdA.png%20" style="height:150px;">&lt;/p&gt;
+<p><a><img src="https://miro.medium.com/max/1400/1*GwcC80mDUyscDAWtwZSBdA.png" title="Credit: https://www.kdnuggets.com/2020/04/data-transformation-standardization-normalization.html" style="height:150px"></a></p>
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -883,9 +744,8 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Now,-we're-done-preparing-the-dataset-for-the-classification-using-the-kNN-algorithm.-Next,-we-implement-the-algorithm-itself-in-a-main-function-kNN_Algorithm-that-calls-several-child-functions.">
-<a class="anchor" href="#Now,-we're-done-preparing-the-dataset-for-the-classification-using-the-kNN-algorithm.-Next,-we-implement-the-algorithm-itself-in-a-main-function-kNN_Algorithm-that-calls-several-child-functions." aria-hidden="true"><span class="octicon octicon-link"></span></a>Now, we're done preparing the dataset for the classification using the kNN algorithm. Next, we implement the algorithm itself in a main function <code>kNN_Algorithm</code> that calls several child functions.<a class="anchor-link" href="#Now,-we're-done-preparing-the-dataset-for-the-classification-using-the-kNN-algorithm.-Next,-we-implement-the-algorithm-itself-in-a-main-function-kNN_Algorithm-that-calls-several-child-functions."> </a>
-</h3>
+<p>Now, we're done preparing the dataset for the classification using the kNN algorithm. Next, we implement the algorithm itself in a main function <code>kNN_Algorithm</code> that calls several child functions.</p>
+
 </div>
 </div>
 </div>
@@ -1148,9 +1008,8 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Now-we-can-go-ahead-and-evaluate-the-performance-of-the-algorithm-against-the-dataset.-The-evaluation-will-be--implemented-using-the-function-Evaluate_kNN_Algorithm-that-calls-several-child-functions.">
-<a class="anchor" href="#Now-we-can-go-ahead-and-evaluate-the-performance-of-the-algorithm-against-the-dataset.-The-evaluation-will-be--implemented-using-the-function-Evaluate_kNN_Algorithm-that-calls-several-child-functions." aria-hidden="true"><span class="octicon octicon-link"></span></a>Now we can go ahead and evaluate the performance of the algorithm against the dataset. The evaluation will be  implemented using the function <code>Evaluate_kNN_Algorithm</code> that calls several child functions.<a class="anchor-link" href="#Now-we-can-go-ahead-and-evaluate-the-performance-of-the-algorithm-against-the-dataset.-The-evaluation-will-be--implemented-using-the-function-Evaluate_kNN_Algorithm-that-calls-several-child-functions."> </a>
-</h3>
+<p>Now we can go ahead and evaluate the performance of the algorithm against the dataset. The evaluation will be  implemented using the function <code>Evaluate_kNN_Algorithm</code> that calls several child functions.</p>
+
 </div>
 </div>
 </div>
@@ -1163,23 +1022,45 @@
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We will try two popular methods for splitting the dataset in training and testing samples:</p>
 <ul>
 <li>
 <em>Test/Train Split</em>: The dataset is shuffled and a percentage is used for training and the rest for testing. The algorithm is then trained on the training sample and evaluated it's performance evalauted with the testing sample. This is implemented in the <code>_test_train_split()</code> function.</li>
 </ul>
-<p><a title="Credit: https://www.analyticsvidhya.com/blog/2021/05/importance-of-cross-validation-are-evaluation-metrics-enough/"><img align="center" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/07/15185319/blogs-15-7-2020-02-1024x565.jpg%20" style="height:300px;">&lt;/p&gt;
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a><img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/07/15185319/blogs-15-7-2020-02-1024x565.jpg" title="Credit: https://www.analyticsvidhya.com/blog/2021/05/importance-of-cross-validation-are-evaluation-metrics-enough/" style="height:300px;"></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>
 <em>Cross Validation Split</em>: The dataset is split into k groups. The algorithm is then trained and evaluated k times and the performance summarized by taking the mean performance score. During each training and evaluation step, one of the k groups is used as the testing sample and the remaining groups as the training sample.  This is implemented in the <code>_cross_validation_split()</code> function.</li>
 </ul>
-<p><a title="Credit: https://www.analyticsvidhya.com/blog/2021/05/importance-of-cross-validation-are-evaluation-metrics-enough/"><img align="center" src="https://zitaoshen.rbind.io/project/machine_learning/machine-learning-101-cross-vaildation/featured.png%20" style="height:350px;">&lt;/p&gt;
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a><img src="https://zitaoshen.rbind.io/project/machine_learning/machine-learning-101-cross-vaildation/featured.png" title="Credit: https://www.analyticsvidhya.com/blog/2021/05/importance-of-cross-validation-are-evaluation-metrics-enough/" style="height:300px;"></a></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1637,20 +1518,8 @@ This confirms the statement in the Iris Dataset description that:</p>
 </div>
 </div>
 </div>
-&lt;/div&gt;
- 
+</div>
 
-</a></p></a></p>
-</div>
-</div></div></a></p>
-</div>
-</div></div></a></p>
-</div>
-</div></div></a></p>
-</div>
-</div>
-</div></div>
-</div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
