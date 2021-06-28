@@ -89,6 +89,33 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 center { overflow: auto; /* width: -webkit-fill-available; */ }
 
+/* Button */
+input[type="submit"], input[type="reset"], input[type="button"], button, .button { -moz-appearance: none; -webkit-appearance: none; -ms-appearance: none; appearance: none; -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; border: 0; cursor: pointer; display: inline-block; font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 0.8rem; font-weight: 900; letter-spacing: 0.075em; height: 3rem; margin: 10px; line-height: 3rem; padding: 0 2rem; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+
+input.icon[type="submit"]:before, input.icon[type="reset"]:before, input.icon[type="button"]:before, button.icon:before, .button.icon:before { margin-right: 0.5rem; }
+
+input.icon.solo[type="submit"], input.icon.solo[type="reset"], input.icon.solo[type="button"], button.icon.solo, .button.icon.solo { position: relative; width: 4rem; height: 4rem; line-height: 4rem; border-radius: 4rem; text-indent: 4rem; overflow: hidden; padding: 0; white-space: nowrap; }
+
+input.icon.solo[type="submit"]:before, input.icon.solo[type="reset"]:before, input.icon.solo[type="button"]:before, button.icon.solo:before, .button.icon.solo:before { position: absolute; display: block; top: 0; left: 0; width: inherit; height: inherit; line-height: inherit; font-size: 1.25rem; margin-right: 0; text-align: center; text-indent: 0; }
+
+input.fit[type="submit"], input.fit[type="reset"], input.fit[type="button"], button.fit, .button.fit { display: block; margin: 0 0 1rem 0; width: 100%; }
+
+input.small[type="submit"], input.small[type="reset"], input.small[type="button"], button.small, .button.small { font-size: 0.7rem; height: 2.5rem; line-height: 2.5rem; padding: 0 1.5rem; }
+
+input.big[type="submit"], input.big[type="reset"], input.big[type="button"], button.big, .button.big { font-size: 0.9rem; height: 3.5rem; line-height: 3.5rem; padding: 0 2.75rem; }
+
+@media screen and (max-width: 980px) { input[type="submit"], input[type="reset"], input[type="button"], button, .button { font-size: 0.9rem; height: 3.25rem; line-height: 3.25rem; } input.big[type="submit"], input.big[type="reset"], input.big[type="button"], button.big, .button.big { font-size: 1rem; height: 3.75rem; line-height: 3.75rem; } }
+
+input.disabled[type="submit"], input[type="submit"]:disabled, input.disabled[type="reset"], input[type="reset"]:disabled, input.disabled[type="button"], input[type="button"]:disabled, button.disabled, button:disabled, .button.disabled, .button:disabled { -moz-pointer-events: none; -webkit-pointer-events: none; -ms-pointer-events: none; pointer-events: none; opacity: 0.25; }
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button { background-color: transparent; box-shadow: inset 0 0 0 2px #212931; color: #212931 !important; }
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover { box-shadow: inset 0 0 0 2px #18bfef; color: #18bfef !important; }
+
+input.special[type="submit"], input.special[type="reset"], input.special[type="button"], button.special, .button.special { background-color: #212931; box-shadow: none; color: #ffffff !important; }
+
+input.special[type="submit"]:hover, input.special[type="reset"]:hover, input.special[type="button"]:hover, button.special:hover, .button.special:hover { background-color: #18bfef; }
+
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
