@@ -18,6 +18,25 @@ permalink: /about/
     margin-right: 5px;
     margin-bottom: 10px;
   }
+
+  .custom-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%
+  }
+  .custom-row::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  .custom-about-list {
+  padding-left: 12px;
+  list-style-position: inside;
+  }
+  @media (min-width:200px) and (max-width:600px) {
+  .custom-column {width: 100% }
+  }
 </style>
 
 
@@ -36,9 +55,10 @@ permalink: /about/
 
 <hr>
 
-<div class="column">
-<h2>〰 Life so far...</h2>
-  <ul class="about-list">
+<div align="center">
+<h2><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heartbeat" role="img" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512" class="svg-inline--fa fa-heartbeat fa-w-16"><path fill="currentColor" d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z" class=""></path></svg>
+ Life so far...</h2>
+  <ul class="custom-about-list">
   <li>Breathing since 1995</li>
   <li>Started studying Mechanical Engineering in 2011</li>
   <li>Got Bachelors with honours in 2016</li>
@@ -47,19 +67,19 @@ permalink: /about/
   <li>Started studying Robotics in 2020</li></ul>
 </div>
 
-<div id="cols" class="row">
-  <div class="column">
-    <h2>〰 Passionate about...</h2>
-    <ul class="about-list">
+<div class="custom-row">
+  <div class="custom-column">
+    <h2><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heartbeat" role="img" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512" class="svg-inline--fa fa-heartbeat fa-w-16"><path fill="currentColor" d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z" class=""></path></svg> Passionate about...</h2>
+    <ul class="custom-about-list">
     <li>Books</li>
     <li>Coding</li>
     <li>CAD Design & Modelling</li>
     <li>Music</li>
     <li>Flaneuring & Tinkering</li></ul>
   </div>
-  <div class="column">
-  <h2>〰 Thinking about...</h2>
-    <ul class="about-list">
+  <div class="custom-column">
+  <h2><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heartbeat" role="img" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512" class="svg-inline--fa fa-heartbeat fa-w-16"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z" class=""></path></svg> Thinking about...</h2>
+    <ul class="custom-about-list">
     <li>Gesture Recognition</li>
     <li>SpaceX & Starship</li>
     <li>Evolutionary Psychology</li>
