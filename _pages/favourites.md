@@ -29,19 +29,22 @@ permalink: /favourites/
 <style>
     .card {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding: 10px 10px;
     border-radius: 10px;
     box-shadow: 15px 15px 70px rgba(0, 0, 0, .5);
+    border-top: 5px solid black;
     }
     details {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 20px;
     border-left: 5px solid #2ead58;
     border-right: 5px solid #d32a2a;
     }
     summary {
     outline: 0;
+    font-size: 2.5em;
+    font-weight: bold;
     cursor: pointer;
     margin-bottom: 0;
     list-style-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -49,7 +52,7 @@ permalink: /favourites/
     summary:hover {
         border-radius: 10px;
         background: #f0f0f0;
-        padding: 6px 0px 2px 5px;
+        padding: 5px 2px 2px 5px;
         outline: 0;
     }
     details[open] summary {
@@ -62,10 +65,9 @@ permalink: /favourites/
 
 <hr>
 
-<h2><strong>Music</strong></h2>
 <div class="card">
-    <details>
-    <summary></summary>
+    <details open>
+    <summary> Music</summary>
     <!-- summary begin -->
     <div class="custom-images-style" >
         <a href="https://music.apple.com/us/album/blue-neighbourhood-deluxe/1389111732" ><img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/3f/9d/c53f9d75-5755-77c1-7a1e-06d5da00c999/16UMGIM53730.rgb.jpg/600x600bb.webp" alt="" title="Blue Neighbourhood | Troye Sivan | Pop · 2015"></a>
@@ -90,13 +92,11 @@ permalink: /favourites/
     </details>
 </div>
 
-
 <hr>
 
-<h2><strong>Books</strong></h2>
 <div class="card">
     <details>
-    <summary></summary>
+    <summary> Books</summary>
     <!-- summary begin -->
     <div class="custom-images-style">
         <a href="https://www.jordanbpeterson.com/beyond-order/" class="no-underline"><img src="https://m.media-amazon.com/images/I/71xLmdLOQ0L.jpg" alt="Beyond Order: 12 More Rules for Life" loading="lazy" width="165" style="height:250px;" ></a>
@@ -116,10 +116,9 @@ permalink: /favourites/
 
 <hr>
 
-<h2><strong>Articles</strong></h2>
 <div class="card">
     <details>
-    <summary></summary>
+    <summary> Articles</summary>
     <!-- summary begin -->
     <!--  -->
     <!-- summary end -->
@@ -128,10 +127,9 @@ permalink: /favourites/
 
 <hr>
 
-<h2><strong>Podcasts</strong></h2>
 <div class="card">
     <details>
-    <summary></summary>
+    <summary> Podcasts</summary>
     <!-- summary begin -->
     <!--  -->
     <!-- summary end -->
