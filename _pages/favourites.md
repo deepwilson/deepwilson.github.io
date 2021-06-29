@@ -43,8 +43,7 @@ permalink: /favourites/
     }
     summary {
     outline: 0;
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2em;
     cursor: pointer;
     margin-bottom: 0;
     list-style-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -58,7 +57,7 @@ permalink: /favourites/
     details[open] summary {
         margin-bottom: 10px;
         list-style-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5 16.5L1.5 1.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 1.5L1.5 16.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-        font-weight: 700;
+        font-weight: bold;
     }
 </style>
 <!-- STYLES -->
@@ -66,7 +65,7 @@ permalink: /favourites/
 <hr>
 
 <div class="card">
-    <details open>
+    <details>
     <summary> Music</summary>
     <!-- summary begin -->
     <div class="custom-images-style" >
