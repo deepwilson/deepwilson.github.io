@@ -60,6 +60,11 @@
     opacity: 1;
     z-index:501;
 }
+.custom-bold {
+    color: white !important;
+    font-size: x-large;
+    font-weight: 900;
+}
 
 // styles for customized details and summary look
 .custom-details-card {
@@ -113,4 +118,22 @@ clear: both;
 .custom-list {
 padding-left: 12px;
 list-style-position: inside;
+}
+
+// styles for github badges; a variant of "custom-images-style";
+// the new "custom-images-style" breaks the dimensions of badges
+.custom-badges-style {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.custom-badges-style img {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    display: block;
+    width: auto;
+    border-radius: 5px;
 }
