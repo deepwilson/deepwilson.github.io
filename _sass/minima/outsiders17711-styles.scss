@@ -170,28 +170,27 @@ list-style-position: inside;
     opacity: 1;
 }
 .custom-q-bold {
-    font-size: large;
-    font-weight: 500;
+    font-size: medium;
+    font-weight: 700;
     text-align: right !important;
     font-style: italic;
 }
 .quotes-text {
     user-select: none; /* Standard */
     -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
     /*  */
     box-shadow: 0 2px 15px rgba(0,0,0,0.25);
     /*  */
     width: 350px;
     height: 150px;
     min-height: 100px;
-    font-size: medium;
+    font-size: small;
     overflow:hidden;
     /*  */
     border: 2px solid black;
     border-radius: 10px;
-    padding: 7.5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
     margin: 5px;
 }
 .quotes-text:hover  {
@@ -203,14 +202,23 @@ list-style-position: inside;
     cursor: pointer;
     z-index:500;
     /*  */
-    width: 400px;
+    // width: 400px;
     height: fit-content;
+    max-height: 500px;
     border-radius: 15px;
-    padding: 15px;
-    padding-bottom: 0px !important;
+    border: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
     overflow: scroll;
 }
 .custom-quotes-style:hover .quotes-text:not(:hover) {
 	opacity: 0.1;
     font-size: small;
+}
+::-webkit-scrollbar {
+    width: 9px !important;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 7px;
+    background-color: #000000 !important;
 }
