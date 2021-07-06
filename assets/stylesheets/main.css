@@ -123,11 +123,11 @@ input.special[type="submit"]:hover, input.special[type="reset"]:hover, input.spe
 
 .custom-overlay-container-blur { position: relative; }
 
-.custom-overlay-container-blur:hover img { border-radius: 15px; filter: blur(2px); transform: scale(1.25); transition: transform .75s, filter 1.5s ease-in-out; z-index: 500; }
+.custom-overlay-container-blur:hover img { border-radius: 15px; filter: blur(2px); transform: scale(1.2); transition: transform .75s, filter 1.25s ease-in-out; z-index: 500; }
 
 .custom-overlay-container { position: relative; }
 
-.custom-overlay-container:hover img { border-radius: 5px; transform: scale(1.35); transition: transform .75s, filter 1.5s ease-in-out; z-index: 500; }
+.custom-overlay-container:hover img { border-radius: 5px; transform: scale(1.2); transition: transform .75s, filter 1.25s ease-in-out; z-index: 500; }
 
 .custom-overlay-text { transition: 0.5s ease; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); width: 250px; /* background: gray; */ /* border-radius: 10px;  */ color: white; text-align: left; text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000; font-size: 20px; padding: 0px 32px; }
 
@@ -156,6 +156,14 @@ details[open] summary { margin-bottom: 10px; list-style-image: url("data:image/s
 .custom-badges-style { display: flex; justify-content: center; align-content: stretch; flex-wrap: wrap; flex-direction: row; }
 
 .custom-badges-style img { margin-left: 5px; margin-right: 5px; margin-bottom: 10px; display: block; width: auto; border-radius: 5px; }
+
+.custom-articles-style { border-radius: 15px; padding: 10px; width: fit-content; width: -webkit-fit-content; /* width: -moz-fit-content; */ }
+
+.custom-articles-style .cas-red { border-left: 6px solid red !important; border: 3px solid #ff000070; }
+
+.custom-articles-style .cas-blue { border: 4px solid #0000ff70; }
+
+.custom-articles-style .cas-green { border-right: 6px solid #00ae00 !important; border: 3px solid #00ae0070; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
