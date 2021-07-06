@@ -299,52 +299,52 @@ permalink: /favourites/
         <div>
             <p class="custom-articles-style cas-red">
             <a href="https://www.profgalloway.com/the-great-grift/" >
-            Professor Scott Galloway - The Great Grift
+            Professor Scott Galloway - <b>The Great Grift</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-blue">
             <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/" >
-            Paul Ford - What Is Code? If You Don't Know, You Need to Read This
+            Paul Ford - <b>What Is Code? If You Don't Know, You Need to Read This</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-green">
             <a href="https://thelastpsychiatrist.com/2012/10/whos_afraid_of_lil_wayne.html" >
-            The Last Psychiatrist - Who's Afraid Of Lil Wayne?
+            The Last Psychiatrist - <b>Who's Afraid Of Lil Wayne?</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-red">
             <a href="https://www.profgalloway.com/the-algebra-of-wealth" >
-            Scott Galloway - The Algebra of Wealth
+            Scott Galloway - <b>The Algebra of Wealth</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-blue">
             <a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition30/tryanny.html" >
-            NASA - The Tyranny of the Rocket Equation
+            NASA - <b>The Tyranny of the Rocket Equation</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-green">
             <a href="https://gizmodo.com/read-ken-lius-amazing-story-that-swept-the-hugo-nebula-5958919" >
-            Ken Liu - Paper Menagerie
+            Ken Liu - <b>Paper Menagerie</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-red">
             <a href="https://fs.blog/2014/05/hunter-s-thompson-to-hume-logan/" >
-            Hunter S. Thompson - Letter on Finding Your Purpose and Living a Meaningful Life
+            Hunter S. Thompson - <b>Letter on Finding Your Purpose and Living a Meaningful Life</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-blue">
             <a href="https://andersen.sdu.dk/vaerk/hersholt/TheEmperorsNewClothes_e.html" >
-            Hans Christian Andersen -  Kejserens Nye Klæder (The Emperor's New Clothes)
+            Hans Christian Andersen - <b>Kejserens Nye Klæder (The Emperor's New Clothes)</b>
         </a></p></div>
         <div>
             <p class="custom-articles-style cas-green">
             <a href="https://fs.blog/2012/04/david-foster-wallace-this-is-water/" >
-            David Foster Wallace - This is Water
+            David Foster Wallace - <b>This is Water</b>
         </a></p></div>
         <!-- <div>
             <p class="custom-articles-style cas-???">
             <a href="" >
-            ???
+             - <b></b>
         </a></p></div> -->
     </div>
     <!-- summary end -->
