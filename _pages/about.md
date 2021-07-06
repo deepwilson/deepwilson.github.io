@@ -97,10 +97,11 @@ permalink: /about/
   <p><strong>These are books I'm currently reading, courses/tutorials I'm currently taking and music I'm currently listening to.</strong></p>
 
 <div class="custom-details-card">
+
 <h3>Currently Learning:</h3>
   <div class="custom-images-style" style="justify-content:left;">
     <div class="custom-overlay-container">
-    <a href="https://course.fast.ai/" class="no-underline"><img src="https://i.ytimg.com/vi/0oyCUWLL_fU/maxresdefault.jpg" alt="Practical Deep Learning for Coders - Full Course from fast.ai and Jeremy Howard" loading="lazy" style="height:250px;display: flex;justify-content: left;" ></a>
+    <a href="https://www.computervision.zone/courses/advance-computer-vision-with-python/" class="no-underline"><img src="https://www.freecodecamp.org/news/content/images/2021/05/computervision.png" alt="Advance(d) Computer Vision with Python - Murtaza's Workshop" loading="lazy" style="height:250px;display: flex;justify-content: left;" ></a>
     </div>
     <!-- <div class="custom-overlay-container">
     <a href="" class="no-underline"><img src="" alt="" loading="lazy" width="165" style="height:250px;" ></a>
@@ -111,10 +112,10 @@ permalink: /about/
 <h3>Currently Reading:</h3>
   <div class="custom-images-style" style="justify-content:left;">
     <div class="custom-overlay-container">
-    <a href="https://www.jordanbpeterson.com/beyond-order/" class="no-underline"><img src="https://m.media-amazon.com/images/I/71xLmdLOQ0L.jpg" alt="Beyond Order: 12 More Rules for Life" loading="lazy" width="165" style="height:250px;" ></a>
+    <a href="https://dunenovels.com/" class="no-underline"><img src="https://images-na.ssl-images-amazon.com/images/I/81eFs0n6ioL.jpg" alt="Children Of Dune" loading="lazy" width="165" style="height:250px;" ></a>
     </div>
     <div class="custom-overlay-container">
-    <a href="https://dunenovels.com/" class="no-underline"><img src="https://m.media-amazon.com/images/I/41BVZ25iOGL.jpg" alt="Dune Messiah" loading="lazy" width="165" style="height:250px;" ></a>
+    <a href="https://www.jordanbpeterson.com/beyond-order/" class="no-underline"><img src="https://m.media-amazon.com/images/I/71xLmdLOQ0L.jpg" alt="Beyond Order: 12 More Rules for Life" loading="lazy" width="165" style="height:250px;" ></a>
     </div>
     <div class="custom-overlay-container">
     <a href="https://www.goodreads.com/book/show/242472.The_Black_Swan" class="no-underline"><img src="https://images1.penguinrandomhouse.com/cover/9781400063512" alt="The Black Swan" loading="lazy" width="165" style="height:250px;" ></a>
@@ -128,22 +129,22 @@ permalink: /about/
 <h3>Currently Listening To:</h3>
   <div class="custom-images-style" style="justify-content:left;">
     <div class="custom-overlay-container">
-      <a href="https://music.apple.com/us/album/ology/1109106508" ><img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/bb/e3/41bbe351-632a-b740-068f-303ffbc24786/093624919377.jpg/300x300bb.webp" title="Ology | Gallant | R&B/Soul · 2016" style="height:200px;"></a>
-    </div>
-    <div class="custom-overlay-container">
       <a href="https://music.apple.com/us/album/chemtrails-over-the-country-club/1545567745" ><img src="https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/74/79/c5/7479c518-a8ba-2054-b978-c87293194260/20UM1IM09851.rgb.jpg/300x300bb.webp" title="Chemtrails Over the Country Club | Lana Del Rey | Pop · 2021" style="height:200px;"></a>
-    </div>
-    <div class="custom-overlay-container">
-      <a href="https://music.apple.com/us/album/apart/1525538383" ><img src="https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/55/2b/93/552b9321-b3d3-3c05-e6d3-b0ffa0652004/4050538605532.jpg/600x600bb.webp" title="Apart | LÉON | Pop · 2020" style="height:200px;"></a>
-    </div>
-    <div class="custom-overlay-container">
-      <a href="https://music.apple.com/us/album/mud-mouth/1563056216" ><img src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/66/af/0d/66af0d7f-4362-2058-b561-fdf593d1f12e/0.jpg/600x600bb.webp" title="Mud Mouth | Yelawolf | Hip-Hop/Rap · 2021" style="height:200px;"></a>
     </div>
     <div class="custom-overlay-container">
       <a href="https://music.apple.com/us/album/6pc-hot-ep/1519060445" ><img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6d/a5/ef/6da5ef1d-7f45-fd1f-fd08-ff31efc39dae/20UMGIM44013.rgb.jpg/600x600bb.webp" title="6pc Hot EP | 6LACK | R&B/Soul · 2021" style="height:200px;"></a>
     </div>
     <div class="custom-overlay-container">
-      <a href="https://music.apple.com/us/album/shadows-in-my-home/1536498824" ><img src="https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/43/64/2d/43642d53-eff0-0fa9-ace4-218e84fa5026/859742814709_cover.jpg/600x600bb.webp" title="Shadows In My Home | Always Never | RR&B/Soul · 2020" style="height:200px;"></a>
+      <a href="https://music.apple.com/us/album/californian-soil/1533347002" ><img src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/cd/bb/48/cdbb48bc-f116-03c8-cd60-5f67046e4305/886448793243.jpg/300x300bb.webp" title="Californian Soil | London Grammar | Alternative · 2021" style="height:200px;"></a>
+    </div>
+    <div class="custom-overlay-container">
+      <a href="https://music.apple.com/us/album/the-thrill-of-it-all-special-edition/1440909285" ><img src="https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/99/06/82/9906827a-7f77-9b2f-327e-a4bc0659fb11/17UM1IM18858.rgb.jpg/300x300bb.webp" title="The Thrill Of It All | Sam Smith | Pop · 2017" style="height:200px;"></a>
+    </div>
+    <div class="custom-overlay-container">
+      <a href="https://music.apple.com/us/album/inlovingmemory/1572594345" ><img src="https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/bc/2b/57/bc2b576f-5b1e-3411-ed64-72dfddcfe6a0/194690539435_cover.jpg/300x300bb.webp" title="In Loving Memory | BONES | Hip-Hop/Rap · 2021" style="height:200px;"></a>
+    </div>
+    <div class="custom-overlay-container">
+      <a href="https://music.apple.com/us/album/mantic/1512267745" ><img src="https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/3e/bc/ff/3ebcff9f-3c78-8394-6f91-87b9d3d62de7/886448134688.jpg/300x300bb.webp" title="MANTIC | Ro James | R&B/Soul · 2020" style="height:200px;"></a>
     </div>
     <!-- <div class="custom-overlay-container">
       <a href="" ><img src="" alt="" title=" |  |  · 20" style="height:200px;"></a>

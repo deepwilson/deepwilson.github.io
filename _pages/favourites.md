@@ -8,6 +8,7 @@ permalink: /favourites/
 
 <hr>
 
+<!-- Music -->
 <div class="custom-details-card">
     <details>
     <summary> Music</summary>
@@ -139,6 +140,7 @@ permalink: /favourites/
 
 <hr>
 
+<!-- Books -->
 <div class="custom-details-card">
     <details>
     <summary> Books</summary>
@@ -168,7 +170,10 @@ permalink: /favourites/
         <div class="custom-overlay-container">
 		<a href="https://www.goodreads.com/book/show/36064445-skin-in-the-game" class="no-underline"><img src="https://images-na.ssl-images-amazon.com/images/I/71dlDoPPyyL.jpg" alt="Skin in the Game: The Hidden Asymmetries in Daily Life" loading="lazy" width="165" style="height:250px;" ></a>
 		</div>
-        <!-- <div class="custom-overlay-container">
+        <div class="custom-overlay-container">
+		<a href="https://www.goodreads.com/series/43493-malazan-book-of-the-fallen" class="no-underline"><img src="https://m.media-amazon.com/images/I/51fEdoux39L.jpg" alt="Malazan: Book Of The Fallen" loading="lazy" width="165" style="height:250px;" ></a>
+		<!-- </div>
+        <div class="custom-overlay-container">
 		<a href="" class="no-underline"><img src="" alt="" loading="lazy" width="165" style="height:250px;" ></a>
 		</div> -->
     </div>
@@ -179,10 +184,52 @@ permalink: /favourites/
 
 <hr>
 
+<!-- Movies -->
 <div class="custom-details-card">
     <details>
     <summary> Movies</summary>
     <!-- summary begin -->
+    <div class="custom-images-style">
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt2713180/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMjA4MDU0NTUyN15BMl5BanBnXkFtZTgwMzQxMzY4MjE@._V1_.jpg" title="Fury (2014)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt1611224/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BNjY2Mzc0MDA4NV5BMl5BanBnXkFtZTcwOTg5OTcxNw@@._V1_.jpg" title="Abraham Lincoln: Vampire Hunter (2012)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt5580390/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg" title="The Shape of Water (2017)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt2267998/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_.jpg" title="Gone Girl (2014)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt1371111/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMTczMTgxMjc4NF5BMl5BanBnXkFtZTcwNjM5MTA2OA@@._V1_.jpg" title="Cloud Atlas (2012)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt0119488/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMDQ2YzEyZGItYWRhOS00MjBmLTkzMDUtMTdjYzkyMmQxZTJlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY1200_CR94,0,630,1200_AL_.jpg" title="L.A. Confidential (1997)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt0396171/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMTg2Mzk2NjkzNl5BMl5BanBnXkFtZTYwMzIzOTc2._V1_.jpg" title="Perfume: The Story of a Murderer (2006)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt2397535/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMTAzODc3NjU1NzNeQTJeQWpwZ15BbWU4MDk5NTQ4NTMx._V1_UY1200_CR91,0,630,1200_AL_.jpg" title="Predestination (2014)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt4302938/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMTkzNzIyNzc5MF5BMl5BanBnXkFtZTgwNTcxMDQ4NzE@._V1_.jpg" title="Kubo and the Two Strings (2016)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt0364569/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@._V1_UY1200_CR90,0,630,1200_AL_.jpg" title="Oldboy (2003)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt8946378/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg" title="Knives Out (2019)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <div class="custom-overlay-container">
+		<a href="https://www.imdb.com/title/tt0482571/" class="no-underline"><img src="https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_.jpg" title="The Prestige (2006)" loading="lazy" width="200" style="height:300px;" ></a>
+		</div>
+        <!-- <div class="custom-overlay-container">
+		<a href="" class="no-underline"><img src="" title="" loading="lazy" width="200" style="height:300px;" ></a>
+		</div> -->
+    </div>
     <!--  -->
     <!-- summary end -->
     </details>
@@ -190,22 +237,119 @@ permalink: /favourites/
 
 <hr>
 
-<div class="custom-details-card">
-    <details>
-    <summary> Articles</summary>
-    <!-- summary begin -->
-    <!--  -->
-    <!-- summary end -->
-    </details>
-</div>
-
-<hr>
-
+<!-- Podcasts -->
 <div class="custom-details-card">
     <details>
     <summary> Podcasts</summary>
     <!-- summary begin -->
-    <!--  -->
+    <div class="custom-images-style" >
+        <div class="custom-overlay-container-blur">
+            <a href="https://www.reflectinghistory.com/" ><img src="https://m.media-amazon.com/images/I/51HXYMd5P4L._SL500_.jpg" alt="Reflecting History | Reflecting History"></a>
+            <p class="custom-overlay-text">
+            <b class="custom-bold">Reflecting History</b>
+            <br><br>
+            <i style="font-size:14px;">Reflecting History</i></p>
+        </div>
+        <div class="custom-overlay-container-blur">
+            <a href="https://samharris.org/podcast/making-sense-episodes/" ><img src="https://thepodcastplayground.com/wp-content/uploads/Making-Sense-with-Sam-Harris-Podcast-Playground--500x500.jpg" alt="Making Sense with Sam Harris | Sam Harris"></a>
+            <p class="custom-overlay-text">
+            <b class="custom-bold">Making Sense with Sam Harris</b>
+            <br><br>
+            <i style="font-size:14px;">Sam Harris</i></p>
+        </div>
+        <div class="custom-overlay-container-blur">
+            <a href="https://www.jordanbpeterson.com/podcast/" ><img src="https://i.scdn.co/image/ab6765630000ba8a836f01155730dc56f21b4e42" alt="The Jordan B. Peterson Podcast | Dr. Jordan B. Peterson"></a>
+            <p class="custom-overlay-text">
+            <b class="custom-bold">The Jordan B. Peterson Podcast</b>
+            <br><br>
+            <i style="font-size:14px;">Dr. Jordan B. Peterson</i></p>
+        </div>
+        <div class="custom-overlay-container-blur">
+            <a href="https://www.epsilontheory.com/podcasts/" ><img src="https://production.listennotes.com/podcasts/epsilon-theory-podcast-salient-426142-DMUAjwlG1yR.1399x1399.jpg" alt="Epsilon Theory Podcast | Ben Hunt"></a>
+            <p class="custom-overlay-text">
+            <b class="custom-bold">Epsilon Theory Podcast</b>
+            <br><br>
+            <i style="font-size:14px;">Ben Hunt</i></p>
+        </div>
+        <div class="custom-overlay-container-blur">
+            <a href="https://nav.al/" ><img src="https://is3-ssl.mzstatic.com/image/thumb/Podcasts123/v4/f5/fe/32/f5fe32e7-e38e-10c3-407f-a7abb4ce1fec/mza_3750381165976515065.jpg/1200x1200bb.jpg" alt="Naval | Naval Ravikant"></a>
+            <p class="custom-overlay-text">
+            <b class="custom-bold">Naval</b>
+            <br><br>
+            <i style="font-size:14px;">Naval Ravikant</i></p>
+        </div>
+        <!-- <div class="custom-overlay-container-blur">
+            <a href="" ><img src="" alt=" | "></a>
+            <p class="custom-overlay-text">
+            <b class="custom-bold"></b>
+            <br><br>
+            <i style="font-size:14px;"></i></p>
+        </div> -->
+    </div>
     <!-- summary end -->
     </details>
 </div>
+
+<hr>
+
+<!-- Articles -->
+<div class="custom-details-card">
+    <details>
+    <summary> Articles</summary>
+    <!-- summary begin -->
+    <div class="custom-articles-style">
+        <div>
+            <p class="custom-articles-style cas-red">
+            <a href="https://www.profgalloway.com/the-great-grift/" >
+            Professor Scott Galloway - The Great Grift
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-blue">
+            <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/" >
+            Paul Ford - What Is Code? If You Don't Know, You Need to Read This
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-green">
+            <a href="https://thelastpsychiatrist.com/2012/10/whos_afraid_of_lil_wayne.html" >
+            The Last Psychiatrist - Who's Afraid Of Lil Wayne?
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-red">
+            <a href="https://www.profgalloway.com/the-algebra-of-wealth" >
+            Scott Galloway - The Algebra of Wealth
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-blue">
+            <a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition30/tryanny.html" >
+            NASA - The Tyranny of the Rocket Equation
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-green">
+            <a href="https://gizmodo.com/read-ken-lius-amazing-story-that-swept-the-hugo-nebula-5958919" >
+            Ken Liu - Paper Menagerie
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-blue">
+            <a href="https://fs.blog/2014/05/hunter-s-thompson-to-hume-logan/" >
+            Hunter S. Thompson - Letter on Finding Your Purpose and Living a Meaningful Life
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-red">
+            <a href="https://andersen.sdu.dk/vaerk/hersholt/TheEmperorsNewClothes_e.html" >
+            Hans Christian Andersen -  Kejserens Nye Klæder (The Emperor's New Clothes)
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-blue">
+            <a href="https://fs.blog/2012/04/david-foster-wallace-this-is-water/" >
+            David Foster Wallace - This is Water
+        </a></p></div>
+        <!-- <div>
+            <p class="custom-articles-style cas-???">
+            <a href="" >
+            ???
+        </a></p></div> -->
+    </div>
+    <!-- summary end -->
+    </details>
+</div>
+
