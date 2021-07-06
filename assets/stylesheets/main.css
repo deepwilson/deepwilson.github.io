@@ -167,13 +167,17 @@ details[open] summary { margin-bottom: 10px; list-style-image: url("data:image/s
 
 .custom-quotes-style { display: flex; justify-content: center; align-items: center; align-content: stretch; flex-wrap: wrap; flex-direction: row; opacity: 1; }
 
-.custom-q-bold { font-size: large; font-weight: 500; text-align: right !important; font-style: italic; }
+.custom-q-bold { font-size: medium; font-weight: 700; text-align: right !important; font-style: italic; }
 
-.quotes-text { user-select: none; /* Standard */ -webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE10+/Edge */ /*  */ box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25); /*  */ width: 350px; height: 150px; min-height: 100px; font-size: medium; overflow: hidden; /*  */ border: 2px solid black; border-radius: 10px; padding: 7.5px; margin: 5px; }
+.quotes-text { user-select: none; /* Standard */ -webkit-user-select: none; /* Safari */ /*  */ box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25); /*  */ width: 350px; height: 150px; min-height: 100px; font-size: small; overflow: hidden; /*  */ border: 2px solid black; border-radius: 10px; padding-left: 7.5px; padding-right: 7.5px; margin: 5px; }
 
-.quotes-text:hover { transform: scale(1.25); transition: transform .5s; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7); transition: box-shadow 0.25s; /*  */ cursor: pointer; z-index: 500; /*  */ width: 400px; height: fit-content; border-radius: 15px; padding: 15px; padding-bottom: 0px !important; overflow: scroll; }
+.quotes-text:hover { transform: scale(1.25); transition: transform .5s; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7); transition: box-shadow 0.25s; /*  */ cursor: pointer; z-index: 500; /*  */ height: fit-content; max-height: 500px; border-radius: 15px; border: 0px; padding-left: 15px; padding-right: 15px; overflow: scroll; }
 
 .custom-quotes-style:hover .quotes-text:not(:hover) { opacity: 0.1; font-size: small; }
+
+::-webkit-scrollbar { width: 9px !important; }
+
+::-webkit-scrollbar-thumb { -webkit-border-radius: 7px; background-color: #000000 !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
