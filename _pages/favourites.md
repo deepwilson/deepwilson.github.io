@@ -4,8 +4,6 @@ title: My Favourites
 permalink: /favourites/
 ---
 
-
-
 <hr>
 
 <!-- Music -->
@@ -172,8 +170,8 @@ permalink: /favourites/
 		</div>
         <div class="custom-overlay-container">
 		<a href="https://www.goodreads.com/series/43493-malazan-book-of-the-fallen" class="no-underline"><img src="https://m.media-amazon.com/images/I/51fEdoux39L.jpg" alt="Malazan: Book Of The Fallen" loading="lazy" width="165" style="height:250px;" ></a>
-		<!-- </div>
-        <div class="custom-overlay-container">
+		</div>
+        <!-- <div class="custom-overlay-container">
 		<a href="" class="no-underline"><img src="" alt="" loading="lazy" width="165" style="height:250px;" ></a>
 		</div> -->
     </div>
@@ -329,17 +327,17 @@ permalink: /favourites/
             Ken Liu - Paper Menagerie
         </a></p></div>
         <div>
-            <p class="custom-articles-style cas-blue">
+            <p class="custom-articles-style cas-red">
             <a href="https://fs.blog/2014/05/hunter-s-thompson-to-hume-logan/" >
             Hunter S. Thompson - Letter on Finding Your Purpose and Living a Meaningful Life
         </a></p></div>
         <div>
-            <p class="custom-articles-style cas-red">
+            <p class="custom-articles-style cas-blue">
             <a href="https://andersen.sdu.dk/vaerk/hersholt/TheEmperorsNewClothes_e.html" >
             Hans Christian Andersen -  Kejserens Nye Klæder (The Emperor's New Clothes)
         </a></p></div>
         <div>
-            <p class="custom-articles-style cas-blue">
+            <p class="custom-articles-style cas-green">
             <a href="https://fs.blog/2012/04/david-foster-wallace-this-is-water/" >
             David Foster Wallace - This is Water
         </a></p></div>
