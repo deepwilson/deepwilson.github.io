@@ -341,11 +341,78 @@ permalink: /favourites/
             <a href="https://fs.blog/2012/04/david-foster-wallace-this-is-water/" >
             David Foster Wallace - <b>This is Water</b>
         </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-red">
+            <a href="https://bbs.pku.edu.cn/attach/80/a2/80a255d7a8fc70db/Ted_Chiang.pdf" >
+            Ted Chiang - <b>The Merchant and the Alchemist's Gate</b>
+        </a></p></div>
+        <div>
+            <p class="custom-articles-style cas-blue">
+            <a href="http://www.paulgraham.com/say.html" >
+            Paul Graham - <b>What You Can't Say</b>
+        </a></p></div>
         <!-- <div>
             <p class="custom-articles-style cas-???">
             <a href="" >
              - <b></b>
         </a></p></div> -->
+    </div>
+    <!-- summary end -->
+    </details>
+</div>
+
+<hr>
+
+<!-- Quotes -->
+<div class="custom-details-card">
+    <details open>
+    <summary> Quotes</summary>
+    <!-- summary begin -->
+    <div class="custom-quotes-style" >
+        <div class="quotes-text">
+            <p>“Once is happenstance. Twice is coincidence. Three times is enemy action.”</p>
+            <p class="custom-q-bold">― Ian Fleming</p>
+        </div>
+        <div class="quotes-text">
+            <p>“Tradition is a set of solutions for which we have forgotten the problems”</p>
+            <p class="custom-q-bold">― Donald Kingsbury</p>
+        </div>
+        <div class="quotes-text">
+            <p>“People fear death even more than pain. It's strange that they fear death. Life hurts a lot more than death. At the point of death, the pain is over. Yeah, I guess it is a friend.”</p>
+            <p class="custom-q-bold">― Jim Morrison</p>
+        </div>
+        <div class="quotes-text">
+            <p>“There is something profoundly cynical, my friends, in the notion of paradise after death. The lure is evasion. The promise is excusative. One need not accept responsibility for the world as it is, and by extension, one need do nothing about it. To strive for change, for true goodness in this mortal world, one must acknowledge and accept, within one's own soul, that this mortal reality has purpose in itself, that its greatest value is not for us, but for our children and their children. To view life as but a quick passage along a foul, tortured path - made foul and tortured by our own indifference - is to excuse all manner of misery and depravity, and to exact cruel punishment upon the innocent lives to come.<br><br>I defy this notion of paradise beyond the gates of bone. If the soul truly survives the passage, then it behooves us - each of us, my friends - to nurture a faith in similitude: what awaits us is a reflection of what we leave behind, and in the squandering of our mortal existence, we surrender the opportunity to learn the ways of goodness, the practice of sympathy, empathy, compassion and healing - all passed by in our rush to arrive at a place of glory and beauty, a place we did not earn, and most certainly do not deserve.”<br><br>The Apocryphal Teachings of Tanno Spiritwalker Kimloc; The Decade in Ehrlitan</p>
+            <p class="custom-q-bold">― Steven Erikson, The Bonehunters</p>
+        </div>
+        <div class="quotes-text">
+            <p>“If you're harmless, you're not virtuous. You're just harmless. You're like a rabbit. A rabbit isn't virtuous. It can't do anything but get eaten.<br>If you're a monster and you don't act monstrous, then you're virtuous. ”</p>
+            <p class="custom-q-bold">― Jordan B. Peterson</p>
+        </div>
+        <div class="quotes-text">
+            <p>“Pity those who want the perfect life! Break me, tear me apart, let me be beaten and altered by life, let my life be touched and touch in return for I will be Human, for there is no reason on earth to be scared of yourself.<br><br>Perfect is boring... let it be written in the sky, painted on buildings, read with your eyes, transcribed on your soul.”</p>
+            <p class="custom-q-bold">― Unknown</p>
+        </div>
+        <div class="quotes-text">
+            <p>“Just because fate has chosen something for you instead of you choosing it for yourself doesn’t mean it has to be bad. Even if it’s something you are sure you would never have chosen in a hundred years.”</p>
+            <p class="custom-q-bold">― Robert Jordan, The Dragon Reborn</p>
+        </div>
+        <div class="quotes-text">
+            <p>“The Wheel of Time turns, and ages come and pass, leaving memories that become legend. Legend fades to myth, and even myth is long forgotten when the Age that gave it birth comes again. In one Age, called the Third Age by some, an Age yet to come, an Age long past, a wind rose in the Mountains of Mist. The wind was not the beginning. There are neither beginnings nor endings to the turning of the Wheel of time. But it was a beginning.”</p>
+            <p class="custom-q-bold">― Robert Jordan, The Eye of the World</p>
+        </div>
+        <div class="quotes-text">
+            <p>“A young wolfhound must meet his first wolf someday, but if the wolf sees him as a puppy, if he acts the puppy, the wolf will surely kill him. The wolfhound must be a wolfhound in the wolf's eyes even more than in his own, if he is to survive.”</p>
+            <p class="custom-q-bold">― Robert Jordan, The Great Hunt</p>
+        </div>
+        <div class="quotes-text">
+            <p>“There are no atheists in foxholes. In the end, everyone prays.”</p>
+            <p class="custom-q-bold">― Unknown</p>
+        </div>
+        <!-- <div class="quotes-text">
+            <p>“”</p>
+            <p class="custom-q-bold">― </p>
+        </div> -->
     </div>
     <!-- summary end -->
     </details>
