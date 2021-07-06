@@ -194,7 +194,7 @@ list-style-position: inside;
     margin: 5px;
 }
 .quotes-text:hover  {
-    transform: scale(1.25);
+    transform: scale(1.15);
     transition: transform .5s;
     box-shadow: 0 2px 15px rgba(0,0,0,0.70);
     transition: box-shadow 0.25s;
@@ -203,14 +203,14 @@ list-style-position: inside;
     z-index:500;
     /*  */
     height: fit-content;
+    width: 400px;
     max-height: 350px;
     border-radius: 15px;
     border: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 7.5px;
+    padding-bottom: 0px;
     overflow: scroll;
 }
 .custom-quotes-style:hover .quotes-text:not(:hover) {
 	opacity: 0.1;
-    font-size: small;
 }
