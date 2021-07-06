@@ -365,7 +365,7 @@ permalink: /favourites/
 
 <!-- Quotes -->
 <div class="custom-details-card">
-    <details open>
+    <details>
     <summary> Quotes</summary>
     <!-- summary begin -->
     <div class="custom-quotes-style" >

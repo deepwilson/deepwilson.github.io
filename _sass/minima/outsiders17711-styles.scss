@@ -202,9 +202,8 @@ list-style-position: inside;
     cursor: pointer;
     z-index:500;
     /*  */
-    // width: 400px;
     height: fit-content;
-    max-height: 500px;
+    max-height: 350px;
     border-radius: 15px;
     border: 0px;
     padding-left: 15px;
@@ -214,11 +213,4 @@ list-style-position: inside;
 .custom-quotes-style:hover .quotes-text:not(:hover) {
 	opacity: 0.1;
     font-size: small;
-}
-::-webkit-scrollbar {
-    width: 9px !important;
-}
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 7px;
-    background-color: #000000 !important;
 }
