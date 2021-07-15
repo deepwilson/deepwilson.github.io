@@ -8,8 +8,8 @@ permalink: /favourites/
 
 <!-- Music -->
 <div class="custom-details-card">
-    <details>
-    <summary> Music</summary>
+    <details class="custom-details">
+    <summary class="custom-summary"> Music</summary>
     <!-- summary begin -->
     <div class="custom-images-style" >
         <div class="custom-overlay-container-blur">
@@ -140,8 +140,8 @@ permalink: /favourites/
 
 <!-- Books -->
 <div class="custom-details-card">
-    <details>
-    <summary> Books</summary>
+    <details class="custom-details">
+    <summary class="custom-summary"> Books</summary>
     <!-- summary begin -->
     <div class="custom-images-style">
         <div class="custom-overlay-container">
@@ -184,8 +184,8 @@ permalink: /favourites/
 
 <!-- Movies -->
 <div class="custom-details-card">
-    <details>
-    <summary> Movies</summary>
+    <details class="custom-details">
+    <summary class="custom-summary"> Movies</summary>
     <!-- summary begin -->
     <div class="custom-images-style">
         <div class="custom-overlay-container">
@@ -237,8 +237,8 @@ permalink: /favourites/
 
 <!-- Podcasts -->
 <div class="custom-details-card">
-    <details>
-    <summary> Podcasts</summary>
+    <details class="custom-details">
+    <summary class="custom-summary"> Podcasts</summary>
     <!-- summary begin -->
     <div class="custom-images-style" >
         <div class="custom-overlay-container-blur">
@@ -292,8 +292,8 @@ permalink: /favourites/
 
 <!-- Articles -->
 <div class="custom-details-card">
-    <details>
-    <summary> Articles</summary>
+    <details class="custom-details">
+    <summary class="custom-summary"> Articles</summary>
     <!-- summary begin -->
     <div class="custom-articles-style">
         <div>
@@ -365,8 +365,8 @@ permalink: /favourites/
 
 <!-- Quotes -->
 <div class="custom-details-card">
-    <details>
-    <summary> Quotes</summary>
+    <details class="custom-details">
+    <summary class="custom-summary"> Quotes</summary>
     <!-- summary begin -->
     <div class="custom-quotes-style" >
         <div class="quotes-text">
