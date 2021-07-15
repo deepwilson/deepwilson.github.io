@@ -167,15 +167,15 @@
 </li>
 <li class="toc-entry toc-h1"><a href="#Implementation:-Weapon-Target-Assignment-Problem-Using-Python">Implementation: Weapon-Target Assignment Problem Using Python </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Initialize-and-encode-the-weapon-and-target-parameters">Initialize and encode the weapon and target parameters </a></li>
-<li class="toc-entry toc-h2"><a href="#Initialize-a-population-of-firing-solutions-(parents):-populationGenerator()">Initialize a population of firing solutions (parents): populationGenerator() </a></li>
-<li class="toc-entry toc-h2"><a href="#Check-for-infeasible-solutions:-checkInfeasibleSolutions()">Check for infeasible solutions: checkInfeasibleSolutions() </a></li>
-<li class="toc-entry toc-h2"><a href="#Evaluate-the-performance-of-the-firing-solutions-(parents):-objectiveFunction()">Evaluate the performance of the firing solutions (parents): objectiveFunction() </a></li>
-<li class="toc-entry toc-h2"><a href="#Select-the-firing-solutions-(parents)-for-reproduction:-RouletteWheelSelection()">Select the firing solutions (parents) for reproduction: RouletteWheelSelection() </a></li>
-<li class="toc-entry toc-h2"><a href="#Mate-(crossover)-the-selected-firing-solutions-(parents):-Order1Crossover()">Mate (crossover) the selected firing solutions (parents): Order1Crossover() </a></li>
-<li class="toc-entry toc-h2"><a href="#Mutate-the-resulting-firing-solutions-(children):-SwapBitFlipMutation()">Mutate the resulting firing solutions (children): SwapBitFlipMutation() </a></li>
-<li class="toc-entry toc-h2"><a href="#Terminate-the-GA-evolutionary-process:-terminateAlgorithm()">Terminate the GA evolutionary process: terminateAlgorithm() </a></li>
-<li class="toc-entry toc-h2"><a href="#Helper-functions:-formatFiringSolution()-&-plotHistory()">Helper functions: formatFiringSolution() &amp; plotHistory() </a></li>
+<li class="toc-entry toc-h3"><a href="#Initialize-and-encode-the-weapon-and-target-parameters">Initialize and encode the weapon and target parameters </a></li>
+<li class="toc-entry toc-h3"><a href="#Initialize-a-population-of-firing-solutions-(parents):-populationGenerator()">Initialize a population of firing solutions (parents): populationGenerator() </a></li>
+<li class="toc-entry toc-h3"><a href="#Check-for-infeasible-solutions:-checkInfeasibleSolutions()">Check for infeasible solutions: checkInfeasibleSolutions() </a></li>
+<li class="toc-entry toc-h3"><a href="#Evaluate-the-performance-of-the-firing-solutions-(parents):-objectiveFunction()">Evaluate the performance of the firing solutions (parents): objectiveFunction() </a></li>
+<li class="toc-entry toc-h3"><a href="#Select-the-firing-solutions-(parents)-for-reproduction:-RouletteWheelSelection()">Select the firing solutions (parents) for reproduction: RouletteWheelSelection() </a></li>
+<li class="toc-entry toc-h3"><a href="#Mate-(crossover)-the-selected-firing-solutions-(parents):-Order1Crossover()">Mate (crossover) the selected firing solutions (parents): Order1Crossover() </a></li>
+<li class="toc-entry toc-h3"><a href="#Mutate-the-resulting-firing-solutions-(children):-SwapBitFlipMutation()">Mutate the resulting firing solutions (children): SwapBitFlipMutation() </a></li>
+<li class="toc-entry toc-h3"><a href="#Terminate-the-GA-evolutionary-process:-terminateAlgorithm()">Terminate the GA evolutionary process: terminateAlgorithm() </a></li>
+<li class="toc-entry toc-h3"><a href="#Helper-functions:-formatFiringSolution()-&-plotHistory()">Helper functions: formatFiringSolution() &amp; plotHistory() </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Putting-It-All-Together:-WEAPON_TARGET_ASSIGNMENT()">Putting It All Together: WEAPON_TARGET_ASSIGNMENT() </a></li>
@@ -380,18 +380,23 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The steps followed in this implementation are enumerated below, each within a child function. The function <code>WEAPON_TARGET_ASSIGNMENT()</code> wraps up the child functions, taking in the input variables and algorithm hyperparameters.</p>
-<blockquote>
-Weapon-Target Assignment Implementation: **`WEAPON_TARGET_ASSIGNMENT()`**
-
-1. Initialize a population of firing solutions (parents): *`populationGenerator()`*
-1. Check for infeasible solutions: *`checkInfeasibleSolutions()`*
-1. Evaluate the performance of the firing solutions (parents): *`objectiveFunction()`*
-1. Select the firing solutions (parents) for reproduction: *`RouletteWheelSelection()`*
-1. Mate (crossover) the selected firing solutions (parents): *`Order1Crossover()`*
-1. Mutate the resulting firing solutions (children): *`SwapBitFlipMutation()`*
-1. *`&lt;&lt;&lt; loop &gt;&gt;&gt;`*
-1. Terminate the GA evolutionary process: *`terminateAlgorithm()`*
-</blockquote>
+<ol>
+<li>Initialize a population of firing solutions (parents): <em><code>populationGenerator()</code></em>
+</li>
+<li>Check for infeasible solutions: <em><code>checkInfeasibleSolutions()</code></em>
+</li>
+<li>Evaluate the performance of the firing solutions (parents): <em><code>objectiveFunction()</code></em>
+</li>
+<li>Select the firing solutions (parents) for reproduction: <em><code>RouletteWheelSelection()</code></em>
+</li>
+<li>Mate (crossover) the selected firing solutions (parents): <em><code>Order1Crossover()</code></em>
+</li>
+<li>Mutate the resulting firing solutions (children): <em><code>SwapBitFlipMutation()</code></em>
+</li>
+<li><em><code>&lt;&lt;&lt; loop &gt;&gt;&gt;</code></em></li>
+<li>Terminate the GA evolutionary process: <em><code>terminateAlgorithm()</code></em>
+</li>
+</ol>
 <p>There will also be some helper functions unrelated to GA or WTA for displaying the output firing solution in a readable format <em><code>formatFiringSolution()</code></em> and plotting the historical performance of firing solutions <em><code>plotHistory()</code></em>.</p>
 
 </div>
@@ -504,9 +509,9 @@ copied list [1, 2, 3, 4, 5, 6]
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Initialize-and-encode-the-weapon-and-target-parameters">
+<h3 id="Initialize-and-encode-the-weapon-and-target-parameters">
 <a class="anchor" href="#Initialize-and-encode-the-weapon-and-target-parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initialize and encode the weapon and target parameters<a class="anchor-link" href="#Initialize-and-encode-the-weapon-and-target-parameters"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -530,7 +535,7 @@ copied list [1, 2, 3, 4, 5, 6]
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -604,7 +609,7 @@ copied list [1, 2, 3, 4, 5, 6]
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -642,9 +647,9 @@ copied list [1, 2, 3, 4, 5, 6]
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Initialize-a-population-of-firing-solutions-(parents):-populationGenerator()">
+<h3 id="Initialize-a-population-of-firing-solutions-(parents):-populationGenerator()">
 <a class="anchor" href="#Initialize-a-population-of-firing-solutions-(parents):-populationGenerator()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initialize a population of firing solutions (parents): <em><code>populationGenerator()</code></em><a class="anchor-link" href="#Initialize-a-population-of-firing-solutions-(parents):-populationGenerator()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -657,7 +662,7 @@ copied list [1, 2, 3, 4, 5, 6]
 <blockquote>
 <samp>[<br>{<br>	 weapon_type_1: [0, 1, 0, ... , 0],  <br>	 weapon_type_2: [1, 0, 0, ... , 0],  <br>	 ...  <br>	 weapon_type_n: [0, 0, 0, ... , 1]<br>}<br>]</samp>
 </blockquote>
-<p>Thus, weapon_type_1 is assigned the target at index 1, weapon_type_2 is assigned the target at index 0, and so on.</p>
+<p>Thus, <code>weapon_type_1</code> is assigned the target at <code>index 1</code>, <code>weapon_type_2</code> is assigned the target at <code>index 0</code>, and so on.</p>
 
 </div>
 </div>
@@ -685,7 +690,7 @@ copied list [1, 2, 3, 4, 5, 6]
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -795,9 +800,9 @@ Sample Firing Solution from Initial Population +--&gt;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Check-for-infeasible-solutions:-checkInfeasibleSolutions()">
+<h3 id="Check-for-infeasible-solutions:-checkInfeasibleSolutions()">
 <a class="anchor" href="#Check-for-infeasible-solutions:-checkInfeasibleSolutions()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Check for infeasible solutions: <em><code>checkInfeasibleSolutions()</code></em><a class="anchor-link" href="#Check-for-infeasible-solutions:-checkInfeasibleSolutions()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -819,7 +824,7 @@ Sample Firing Solution from Initial Population +--&gt;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -926,9 +931,9 @@ Sample Firing Solution from Initial Population +--&gt;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Evaluate-the-performance-of-the-firing-solutions-(parents):-objectiveFunction()">
+<h3 id="Evaluate-the-performance-of-the-firing-solutions-(parents):-objectiveFunction()">
 <a class="anchor" href="#Evaluate-the-performance-of-the-firing-solutions-(parents):-objectiveFunction()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evaluate the performance of the firing solutions (parents): <em><code>objectiveFunction()</code></em><a class="anchor-link" href="#Evaluate-the-performance-of-the-firing-solutions-(parents):-objectiveFunction()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -945,7 +950,7 @@ Sample Firing Solution from Initial Population +--&gt;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -1062,9 +1067,9 @@ survivingThreat: parent 4 &gt;&gt; [225.08, 45.0, 49.86, 2.0] &gt;&gt; 321.94
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Select-the-firing-solutions-(parents)-for-reproduction:-RouletteWheelSelection()">
+<h3 id="Select-the-firing-solutions-(parents)-for-reproduction:-RouletteWheelSelection()">
 <a class="anchor" href="#Select-the-firing-solutions-(parents)-for-reproduction:-RouletteWheelSelection()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Select the firing solutions (parents) for reproduction: <em><code>RouletteWheelSelection()</code></em><a class="anchor-link" href="#Select-the-firing-solutions-(parents)-for-reproduction:-RouletteWheelSelection()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -1085,7 +1090,7 @@ survivingThreat: parent 4 &gt;&gt; [225.08, 45.0, 49.86, 2.0] &gt;&gt; 321.94
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -1204,23 +1209,39 @@ selected population evaluations: [458.4, 458.4, 422.33, 321.94, 321.94] &gt;&gt;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mate-(crossover)-the-selected-firing-solutions-(parents):-Order1Crossover()">
+<h3 id="Mate-(crossover)-the-selected-firing-solutions-(parents):-Order1Crossover()">
 <a class="anchor" href="#Mate-(crossover)-the-selected-firing-solutions-(parents):-Order1Crossover()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mate (crossover) the selected firing solutions (parents): <em><code>Order1Crossover()</code></em><a class="anchor-link" href="#Mate-(crossover)-the-selected-firing-solutions-(parents):-Order1Crossover()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After the parent selection, the next step is mating/reproduction, called <em>'crossover'</em> in GA terminology. I will be using the <code>*Order-1 Crossover*</code> operator because I would like to preserve the relative order genes in the parents' chromosomes during the reproduction process. You can look at <a href="https://www.rubicite.com/Tutorials/GeneticAlgorithms/CrossoverOperators/Order1CrossoverOperator.aspx">this article</a> and <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.1898&amp;rep=rep1&amp;type=pdf">Pablo Moscato's paper</a> for more details.</p>
+<p>After the parent selection, the next step is mating/reproduction, called <em>'crossover'</em> in GA terminology. I will be using the <em><code>Order-1 Crossover</code></em> operator because I would like to preserve the relative order genes in the parents' chromosomes during the reproduction process. You can look at <a href="https://www.rubicite.com/Tutorials/GeneticAlgorithms/CrossoverOperators/Order1CrossoverOperator.aspx">this article</a> and <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.1898&amp;rep=rep1&amp;type=pdf">Pablo Moscato's paper</a> for more details.</p>
 <p><img src="https://www.researchgate.net/profile/Shuihua-Wang/publication/282998951/figure/fig4/AS:433588496801795@1480386961920/An-example-of-order-crossover.png" alt="Order-1 Crossover" title="Credit: https://www.researchgate.net/publication/282998951_Fitness-scaling_adaptive_genetic_algorithm_with_local_search_for_solving_the_Multiple_Depot_Vehicle_Routing_Problem"></p>
 <p>The basic idea is as follows (excerpt from <a href="https://www.rubicite.com/Tutorials/GeneticAlgorithms/CrossoverOperators/Order1CrossoverOperator.aspx">this article</a>):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <blockquote>
 <p><em>"Order 1 Crossover is a fairly simple permutation crossover. A swath of consecutive alleles from parent 1 drops down, and the remaining values are placed in the child in the order which they appear in parent 2....If you desire a second child from the two parents, flip parent 1 and parent 2..."</em></p>
 </blockquote>
-<p>Given that each parent is a dictionary where each key is a weapon instance and its value is a list of target assignments, we will approach the crossover step thus:1. Separate the parents' dictionaries <code>keys</code> and <code>values</code> into separate lists.1. Apply the Order-1 Crossover operator to the parents' <code>values</code> list to generate the children's <code>values</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Given that each parent is a dictionary where each key is a weapon instance and its value is a list of target assignments, we will approach the crossover step thus:</p>
 <ol>
+<li>Separate the parents' dictionaries <code>keys</code> and <code>values</code> into separate lists.</li>
+<li>Apply the Order-1 Crossover operator to the parents' <code>values</code> list to generate the children's <code>values</code>.</li>
 <li>Recombine the parents' <code>keys</code> and children <code>values</code> lists into dictionaries.</li>
 </ol>
 
@@ -1230,7 +1251,7 @@ selected population evaluations: [458.4, 458.4, 422.33, 321.94, 321.94] &gt;&gt;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -1411,9 +1432,9 @@ reproduced children evaluations: [326.2, 422.06, 444.54, 382.6, 321.94] &gt;&gt;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mutate-the-resulting-firing-solutions-(children):-SwapBitFlipMutation()">
+<h3 id="Mutate-the-resulting-firing-solutions-(children):-SwapBitFlipMutation()">
 <a class="anchor" href="#Mutate-the-resulting-firing-solutions-(children):-SwapBitFlipMutation()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mutate the resulting firing solutions (children): <em><code>SwapBitFlipMutation()</code></em><a class="anchor-link" href="#Mutate-the-resulting-firing-solutions-(children):-SwapBitFlipMutation()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -1424,18 +1445,30 @@ reproduced children evaluations: [326.2, 422.06, 444.54, 382.6, 321.94] &gt;&gt;
 <p>I intend to introduce two types of mutation to the percentage of the population set by the <code>_pM</code> hyperparameter, viz:</p>
 <ol>
 <li>swap mutation of weapons per firing solution: swapping target assignments between weapon instances in a firing solution (child).</li>
-<li>
-<p>bit-flip mutation of targets per weapon instance: altering the target assigned to a weapon instance within a firing solution (child).
-</p>
+<li>bit-flip mutation of targets per weapon instance: altering the target assigned to a weapon instance within a firing solution (child).</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
 <div class="flash">
     <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
     <strong>Note: </strong>The <code>_pM</code> percentage will be evenly divided between the swap and bit flip methods. Furthermore, only one mutation method will be carried out on a particular firing solution in the population.
 </div>
-<br>We will follow the same approach as in the crossover step i.e.:
-</li>
-<li>
-<p>Separate the children's dictionaries <code>keys</code> and <code>values</code> into separate lists.</p>
-</li>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We will follow the same approach as in the crossover step i.e.:</p>
+<ol>
+<li>Separate the children's dictionaries <code>keys</code> and <code>values</code> into separate lists.</li>
 <li>Carry out mutation on the <code>values</code> list.</li>
 <li>Recombine the <code>keys</code> and modified <code>values</code> lists into dictionaries.</li>
 </ol>
@@ -1446,7 +1479,7 @@ reproduced children evaluations: [326.2, 422.06, 444.54, 382.6, 321.94] &gt;&gt;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -1658,9 +1691,9 @@ mutated children evaluations: [326.2, 444.39, 444.54, 317.94, 321.94] &gt;&gt; a
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Terminate-the-GA-evolutionary-process:-terminateAlgorithm()">
+<h3 id="Terminate-the-GA-evolutionary-process:-terminateAlgorithm()">
 <a class="anchor" href="#Terminate-the-GA-evolutionary-process:-terminateAlgorithm()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Terminate the GA evolutionary process: <em><code>terminateAlgorithm()</code></em><a class="anchor-link" href="#Terminate-the-GA-evolutionary-process:-terminateAlgorithm()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -1682,7 +1715,7 @@ mutated children evaluations: [326.2, 444.39, 444.54, 317.94, 321.94] &gt;&gt; a
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
@@ -1734,9 +1767,9 @@ mutated children evaluations: [326.2, 444.39, 444.54, 317.94, 321.94] &gt;&gt; a
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Helper-functions:-formatFiringSolution()-&amp;-plotHistory()">
+<h3 id="Helper-functions:-formatFiringSolution()-&amp;-plotHistory()">
 <a class="anchor" href="#Helper-functions:-formatFiringSolution()-&amp;-plotHistory()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Helper functions: <em><code>formatFiringSolution()</code></em> &amp; <em><code>plotHistory()</code></em><a class="anchor-link" href="#Helper-functions:-formatFiringSolution()-&amp;-plotHistory()"> </a>
-</h2>
+</h3>
 </div>
 </div>
 </div>
@@ -1805,6 +1838,14 @@ mutated children evaluations: [326.2, 444.39, 444.54, 317.94, 321.94] &gt;&gt; a
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1869,7 +1910,7 @@ mutated children evaluations: [326.2, 444.39, 444.54, 317.94, 321.94] &gt;&gt; a
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description" open="">
+<details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p></p>
 <div class="input">
