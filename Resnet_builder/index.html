@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="twitter:card" content="summary" /><title>Resnet builder from scratch | Deep Wilson</title>
+<meta name="description" content="Building a resnet from scratch">
+
+<!-- SEO and meta information for twitter/whatsupp cards --><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Resnet builder from scratch | Deep Wilson</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Resnet builder from scratch" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Building a resnet from scratch" />
+<meta property="og:description" content="Building a resnet from scratch" />
+<link rel="canonical" href="https://deepwilson.github.io/repository/Resnet_builder/" />
+<meta property="og:url" content="https://deepwilson.github.io/repository/Resnet_builder/" />
+<meta property="og:site_name" content="Deep Wilson" />
+<meta property="og:image" content="https://deepwilson.github.io/repository/images/resnet.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-26T00:00:00-05:00" />
+<script type="application/ld+json">
+{"headline":"Resnet builder from scratch","dateModified":"2021-07-26T00:00:00-05:00","description":"Building a resnet from scratch","datePublished":"2021-07-26T00:00:00-05:00","@type":"BlogPosting","image":"https://deepwilson.github.io/repository/images/resnet.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://deepwilson.github.io/repository/Resnet_builder/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://deepwilson.github.io/repository/images/logo.png"}},"url":"https://deepwilson.github.io/repository/Resnet_builder/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Feed --><link type="application/atom+xml" rel="alternate" href="https://deepwilson.github.io/repository/feed.xml" title="Deep Wilson" /><!-- CSS --><link rel="shortcut icon" type="image/x-icon" href="/repository/images/favicon.ico"><link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://deepwilson.github.io/repository/assets/css/main.css" />
+<noscript><link rel="stylesheet" href="https://deepwilson.github.io/repository/assets/css/noscript.css" /></noscript>
+<link rel="stylesheet" href="https://deepwilson.github.io/repository/assets/stylesheets/main.css" />
+<link rel="stylesheet" href="https://deepwilson.github.io/repository/assets/css/academicons.min.css"/>
+
+<!-- Analytics --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1S8ZDTWYBX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1S8ZDTWYBX');
+</script>
+<!-- google search -->
+<meta name="google-site-verification" content="eo4A8Z3U5MisXvF1etpKMZu-ipYw7wVckqVlSnnFzMw" />
+
+<!-- Math -->
+
+
+  </head>
+  <body class="is-loading">
+
+    <!-- Wrapper -->
+      <div id="wrapper" class="fade-in">
+
+        <!-- Header -->
+        <header id="header">
+          <a href="https://deepwilson.github.io/repository/" class="logo">Deep Wilson</a>
+        </header>
+
+        <!-- Nav -->
+          <nav id="nav">
+
+            <ul class="links">
+  <li class=""><a href="https://deepwilson.github.io/repository/">Home</a></li>
+  <li class=""><a href="https://deepwilson.github.io/repository/blog/">Blog</a></li>
+  <li class=""><a href="https://deepwilson.github.io/repository/tags/">Tags</a></li>
+  <li class=""><a href="https://deepwilson.github.io/repository/categories/">Categories</a></li>
+  <li class=""><a href="https://deepwilson.github.io/repository/arts/">Arts</a></li>
+  <li class=""><a href="https://deepwilson.github.io/repository/resume/">Resume</a></li>
+  <li class=""><a href="https://deepwilson.github.io/repository/about/">About Me</a></li>
+</ul>
+
+<ul class="icons">
+  <li class=""><a href="https://deepwilson.github.io/repository/search" class="icon fa-search"><span class="label">Search</span></a></li>
+  <li><a href="https://github.com/deepwilson" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+  <!-- <li><a href="https://twitter.com/Twitter" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li> -->
+<!--   <li>
+    
+      <a href="/repository/feed.xml" title="Atom Feed" class="icon fa-rss">
+        <span class="label">Subscribe</span>
+      </a>
+    
+  </li> -->
+</ul>
+
+
+          </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+          <!-- Post -->
+          <section class="post">
+            
+            <p><article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Resnet builder from scratch</h1><p class="page-description">Building a resnet from scratch</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-07-26T00:00:00-05:00" itemprop="datePublished">
+        Jul 26, 2021
+      </time>• 
+
+
+
+<span class="read-time" title="Estimated read time">
+
+  7 min read
+
+</span>
+
+    </p>
+
+    
+      <p class="category-tags"><i class="fa fa-folder category-tags-icon"></i></i>
+      
+        <a class="category-tags-link" href="/repository/categories/#deep_learning">deep_learning</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/repository/categories/#resnet">resnet</a>
+        
+      
+      </p>
+    
+
+    
+
+    
+      
+        <div class="nb-badges" style="display: flex; justify-content: flex-end">
+          <div class="px-2">
+
+    <a href="https://github.com/deepwilson/repository/tree/master/_notebooks/2021-07-26-Resnet_builder.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/repository/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/deepwilson/repository/master?filepath=_notebooks%2F2021-07-26-Resnet_builder.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/repository/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/deepwilson/repository/blob/master/_notebooks/2021-07-26-Resnet_builder.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/repository/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Resnet-builder-from-scratch">Resnet builder from scratch </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Building-blocks">Building blocks </a></li>
+<li class="toc-entry toc-h2"><a href="#Resnet-model-zoo">Resnet model zoo </a></li>
+<li class="toc-entry toc-h2"><a href="#Example">Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Modifying-as-per-usecase">Modifying as per usecase </a></li>
+<li class="toc-entry toc-h2"><a href="#Copy-the-weights-from-pre-trained-model">Copy the weights from pre-trained model </a></li>
+<li class="toc-entry toc-h2"><a href="#References:">References: </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-07-26-Resnet_builder.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Resnet-builder-from-scratch">
+<a class="anchor" href="#Resnet-builder-from-scratch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resnet builder from scratch<a class="anchor-link" href="#Resnet-builder-from-scratch"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When building custom object detection pipelines, there is often a need to build/modify existing backbone networks.</p>
+<p>Resnet is a network that is commonly used in such models.</p>
+<p>However, once you modify the structure it gets difficult to use pre-trained weights.</p>
+<p>In this article I'll try to make the process easier by building a resnet from scratch.</p>
+<p>I use the naming convention of pre-trained keras networks to make the transfer easier.</p>
+<p>Once the model has been modified as per the usecase, we can copy the remaining weights from a pre-trained model(whichever applicable)</p>
+<p>Features:</p>
+<ul>
+<li>Concise code</li>
+<li>Simple Architecture</li>
+<li>Customizable</li>
+<li>Keras pre-trained weights can be pasted to custom build</li>
+<li><strong>Modify a resnet as you wish (cut down etc) and still be able to paste weights from a pre-trained resnet on remaining applicable layers!</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://iq.opengenus.org/content/images/2020/03/Screenshot-from-2020-03-20-15-49-54.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://cdn-5f733ed3c1ac190fbc56ef88.closte.com/wp-content/uploads/2019/07/ResNet50_architecture-1.png" alt=""></p>
+<!-- <img src="https://cdn-5f733ed3c1ac190fbc56ef88.closte.com/wp-content/uploads/2019/07/ResNet50_architecture-1.png" alt="drawing" height="400" width=100/> -->
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">tensorflow.keras.layers</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.applications</span> <span class="kn">import</span> <span class="n">ResNet50</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Building-blocks">
+<a class="anchor" href="#Building-blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building blocks<a class="anchor-link" href="#Building-blocks"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Basic_Block</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Layer</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">        X</span>
+<span class="sd">        |</span>
+<span class="sd">        |--skip_block</span>
+<span class="sd">        |     |</span>
+<span class="sd">        |     conv(3x3)-&gt;bn-&gt;relu </span>
+<span class="sd">        |     |</span>
+<span class="sd">        |     conv(3x3)-&gt;bn-&gt;relu</span>
+<span class="sd">        |- + -|</span>
+<span class="sd">        |</span>
+<span class="sd">        v</span>
+<span class="sd">    RELU( X(residual) + skip_block )</span>
+
+<span class="sd">    Basic_Block: resnet-18,34 -&gt; shortcut connections skips 2 layers (skip_block)</span>
+<span class="sd">    Bottleneck_Block: resnet 50,101 etc -&gt;  shortcut connections skips 3 layers (skip_block)</span>
+<span class="sd">    </span>
+<span class="sd">    yet to implement</span>
+<span class="sd">    """</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Bottleneck_Block</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Layer</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">        X</span>
+<span class="sd">        |</span>
+<span class="sd">        |--skip_block</span>
+<span class="sd">        |     |</span>
+<span class="sd">        |     conv(1x1)-&gt;bn-&gt;relu </span>
+<span class="sd">        |     |</span>
+<span class="sd">        |     conv(3x3)-&gt;bn-&gt;relu</span>
+<span class="sd">        |     |</span>
+<span class="sd">        |     conv(1x1)-&gt;bn</span>
+<span class="sd">        |- + -|</span>
+<span class="sd">        |</span>
+<span class="sd">        v</span>
+<span class="sd">    RELU( X(residual) + skip_block )</span>
+
+<span class="sd">    Basic_Block: resnet-18,34 -&gt; shortcut connections skips 2 layers (skip_block)</span>
+<span class="sd">    Bottleneck_Block: resnet 50,101 etc -&gt;  shortcut connections skips 3 layers (skip_block)</span>
+
+<span class="sd">    """</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_filters</span><span class="p">,</span> <span class="n">modify_conv</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">idx</span><span class="o">=</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">]):</span>
+        <span class="n">stage_idx</span><span class="p">,</span> <span class="n">block_idx</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">idx</span><span class="p">]</span> 
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">'RESNET_BLOCK_</span><span class="si">{</span><span class="n">stage_idx</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">block_idx</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span> <span class="c1">#name=f'resnet_block_{stage_idx}_{block_idx}'</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_filters</span> <span class="o">=</span> <span class="n">num_filters</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">conv_name_base</span> <span class="o">=</span>  <span class="sa">f</span><span class="s1">'conv</span><span class="si">{</span><span class="n">stage_idx</span><span class="si">}</span><span class="s1">_block</span><span class="si">{</span><span class="n">block_idx</span><span class="si">}</span><span class="s1">_'</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">bn_name_base</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'conv</span><span class="si">{</span><span class="n">stage_idx</span><span class="si">}</span><span class="s1">_block</span><span class="si">{</span><span class="n">block_idx</span><span class="si">}</span><span class="s1">_'</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">conv1</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">num_filters</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">"same"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conv_name_base</span><span class="o">+</span><span class="s1">'1_conv'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bn1</span> <span class="o">=</span> <span class="n">BatchNormalization</span><span class="p">(</span><span class="n">epsilon</span><span class="o">=</span><span class="mf">1.001e-5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bn_name_base</span><span class="o">+</span><span class="s1">'1_bn'</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">conv2</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">num_filters</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="n">stride</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">"same"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conv_name_base</span><span class="o">+</span><span class="s1">'2_conv'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bn2</span> <span class="o">=</span> <span class="n">BatchNormalization</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bn_name_base</span><span class="o">+</span><span class="s1">'2_bn'</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">conv3</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">num_filters</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">"same"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conv_name_base</span><span class="o">+</span><span class="s1">'3_conv'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bn3</span> <span class="o">=</span> <span class="n">BatchNormalization</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bn_name_base</span><span class="o">+</span><span class="s1">'3_bn'</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">relu</span> <span class="o">=</span> <span class="n">ReLU</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">modify_conv</span> <span class="o">=</span> <span class="n">modify_conv</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">modify_conv</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">modify_conv_block</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
+                            <span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">num_filters</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="n">stride</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bn_name_base</span><span class="o">+</span><span class="s1">'0_conv'</span><span class="p">),</span>
+                            <span class="n">BatchNormalization</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bn_name_base</span><span class="o">+</span><span class="s1">'0_bn'</span><span class="p">)</span>
+                            <span class="p">])</span>
+
+                
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="n">residual</span> <span class="o">=</span> <span class="n">x</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">modify_conv</span><span class="p">:</span>
+            <span class="n">residual</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">modify_conv_block</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">conv1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bn1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="n">training</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">conv2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bn2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="n">training</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">conv3</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bn3</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="n">training</span><span class="p">)</span>
+
+        <span class="n">out</span> <span class="o">=</span> <span class="n">Add</span><span class="p">()([</span><span class="n">residual</span><span class="p">,</span> <span class="n">x</span><span class="p">])</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+
+        
+        <span class="k">return</span> <span class="n">out</span>
+    
+    <span class="k">def</span> <span class="nf">get_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cfg</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">cfg</span> 
+
+    <span class="k">def</span> <span class="nf">summary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">224</span><span class="p">,</span><span class="mi">224</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">num_filters</span><span class="o">*</span><span class="mi">4</span><span class="p">))</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="n">outputs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Build_ResNet</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">block_type</span><span class="p">,</span> <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">],</span> <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="p">,</span><span class="n">num_classes</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">expansion_factor</span> <span class="o">=</span> <span class="mi">4</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_filters_pre_block</span> <span class="o">=</span> <span class="mi">64</span>
+        
+
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
+                            <span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">"valid"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"conv1_conv"</span><span class="p">),</span>
+                            <span class="n">BatchNormalization</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"conv1_bn"</span><span class="p">),</span>
+                            <span class="n">ReLU</span><span class="p">(),</span>
+                            <span class="n">MaxPool2D</span><span class="p">(</span><span class="n">pool_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">"same"</span><span class="p">)</span>
+                            <span class="p">])</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_resnet_stage</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span><span class="n">num_filters_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">num_blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">stage_idx</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_3</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_resnet_stage</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span><span class="n">num_filters_list</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">num_blocks</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">stage_idx</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_4</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_resnet_stage</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span><span class="n">num_filters_list</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">num_blocks</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">stage_idx</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_5</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_resnet_stage</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span><span class="n">num_filters_list</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">num_blocks</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">stage_idx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">avgpool</span> <span class="o">=</span> <span class="n">GlobalAveragePooling2D</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="n">num_classes</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">activations</span><span class="o">.</span><span class="n">softmax</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"predictions"</span><span class="p">)</span>
+        
+    
+    <span class="k">def</span> <span class="nf">_make_resnet_stage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">block_type</span><span class="p">,</span> <span class="n">num_filters</span><span class="p">,</span> <span class="n">num_blocks</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">stage_idx</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">modify_conv</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># tf.print(f"stride:{stride},num_filters:{num_filters},num_filters_pre_block:{self.num_filters_pre_block},modify_conv:{modify_conv}")</span>
+        <span class="c1"># if stride==2 or num_filters!= self.num_filters_pre_block*self.expansion_factor:</span>
+        <span class="k">if</span> <span class="n">stride</span><span class="o">==</span><span class="mi">2</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_filters_pre_block</span> <span class="o">!=</span> <span class="n">num_filters</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">expansion_factor</span><span class="p">:</span>
+            <span class="n">modify_conv</span><span class="o">=</span><span class="kc">True</span>
+            
+
+        <span class="n">residual_blocks</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">residual_blocks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">block_type</span><span class="p">(</span><span class="n">num_filters</span><span class="p">,</span> <span class="n">modify_conv</span><span class="p">,</span> <span class="n">stride</span><span class="p">,</span> <span class="n">idx</span><span class="o">=</span><span class="p">[</span><span class="n">stage_idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+        <span class="c1"># tf.print(stage_idx,1, f"num_filters:{num_filters}, modify_conv:{modify_conv}, stride:{stride}")</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_filters_pre_block</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">expansion_factor</span> 
+
+
+        <span class="n">modify_conv</span><span class="o">=</span><span class="kc">False</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">num_blocks</span><span class="p">):</span>
+
+            <span class="n">residual_blocks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">block_type</span><span class="p">(</span><span class="n">num_filters</span><span class="p">,</span> <span class="n">modify_conv</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">idx</span><span class="o">=</span><span class="p">[</span><span class="n">stage_idx</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="c1"># tf.print(stage_idx,i+1, f"num_filters:{num_filters}, modify_conv:{modify_conv}, stride:{stride}")</span>
+
+        <span class="n">resnet_stage</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">residual_blocks</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">resnet_stage</span>
+        
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_3</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_4</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">resnet_stage_5</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">avgpool</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">output</span>
+
+    <span class="k">def</span> <span class="nf">get_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cfg</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">cfg</span> 
+        
+    <span class="k">def</span> <span class="nf">summary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="n">outputs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Resnet-model-zoo">
+<a class="anchor" href="#Resnet-model-zoo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resnet model zoo<a class="anchor-link" href="#Resnet-model-zoo"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">ResnetModels</span><span class="p">():</span>
+    <span class="sd">"""https://github1s.com/keras-team/keras-applications/blob/bc89834ed36935ab4a4994446e34ff81c0d8e1b7/keras_applications/resnet_common.py#L463"""</span>
+    <span class="n">basic_block</span> <span class="o">=</span> <span class="n">Basic_Block</span>
+    <span class="n">bottleneck_block</span> <span class="o">=</span> <span class="n">Bottleneck_Block</span>
+    <span class="n">bottleneck_block_v2</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">num_classes</span> <span class="o">=</span> <span class="mi">1000</span>
+
+    <span class="k">def</span> <span class="nf">ResNet50</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+            
+        <span class="k">return</span> <span class="n">Build_ResNet</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span> 
+                      <span class="n">num_filters_list</span><span class="o">=</span><span class="n">num_filters_list</span><span class="p">,</span> 
+                      <span class="n">num_blocks</span><span class="o">=</span><span class="n">num_blocks</span><span class="p">,</span> 
+                      <span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">ResNet101</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        
+        <span class="k">return</span> <span class="n">Build_ResNet</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span> 
+                      <span class="n">num_filters_list</span><span class="o">=</span><span class="n">num_filters_list</span><span class="p">,</span> 
+                      <span class="n">num_blocks</span><span class="o">=</span><span class="n">num_blocks</span><span class="p">,</span> 
+                      <span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">ResNet152</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">36</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        
+        <span class="k">return</span> <span class="n">Build_ResNet</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span> 
+                      <span class="n">num_filters_list</span><span class="o">=</span><span class="n">num_filters_list</span><span class="p">,</span> 
+                      <span class="n">num_blocks</span><span class="o">=</span><span class="n">num_blocks</span><span class="p">,</span> 
+                      <span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">ResNet50V2</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block_v2</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        
+        <span class="k">return</span> <span class="n">Build_ResNet</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span> 
+                      <span class="n">num_filters_list</span><span class="o">=</span><span class="n">num_filters_list</span><span class="p">,</span> 
+                      <span class="n">num_blocks</span><span class="o">=</span><span class="n">num_blocks</span><span class="p">,</span> 
+                      <span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">ResNet101V2</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        
+
+    <span class="k">def</span> <span class="nf">ResNet152V2</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">36</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        
+        <span class="k">return</span> <span class="n">Build_ResNet</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span> 
+                      <span class="n">num_filters_list</span><span class="o">=</span><span class="n">num_filters_list</span><span class="p">,</span> 
+                      <span class="n">num_blocks</span><span class="o">=</span><span class="n">num_blocks</span><span class="p">,</span> 
+                      <span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">ResNeXt50</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">,</span> <span class="mi">1024</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        
+        <span class="k">return</span> <span class="n">Build_ResNet</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span> 
+                      <span class="n">num_filters_list</span><span class="o">=</span><span class="n">num_filters_list</span><span class="p">,</span> 
+                      <span class="n">num_blocks</span><span class="o">=</span><span class="n">num_blocks</span><span class="p">,</span> 
+                      <span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">ResNeXt101</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">):</span>
+        <span class="n">block_type</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">bottleneck_block</span>
+        <span class="n">num_filters_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">512</span><span class="p">]</span>
+        <span class="n">num_blocks</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        
+        <span class="k">return</span> <span class="n">Build_ResNet</span><span class="p">(</span><span class="n">block_type</span><span class="p">,</span> 
+                        <span class="n">num_filters_list</span><span class="o">=</span><span class="n">num_filters_list</span><span class="p">,</span> 
+                        <span class="n">num_blocks</span><span class="o">=</span><span class="n">num_blocks</span><span class="p">,</span> 
+                        <span class="n">num_classes</span><span class="o">=</span><span class="n">num_classes</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example">
+<a class="anchor" href="#Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example<a class="anchor-link" href="#Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">ResnetModels</span><span class="o">.</span><span class="n">ResNet50</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span> <span class="c1">#please ensure to run this line to build the model</span>
+<span class="n">pre_trained_model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">applications</span><span class="o">.</span><span class="n">ResNet50</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Model: "model_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_8 (InputLayer)         [(None, 224, 224, 3)]     0         
+_________________________________________________________________
+sequential_46 (Sequential)   (None, 55, 55, 64)        9728      
+_________________________________________________________________
+sequential_48 (Sequential)   (None, 55, 55, 256)       220032    
+_________________________________________________________________
+sequential_50 (Sequential)   (None, 28, 28, 512)       1230336   
+_________________________________________________________________
+sequential_52 (Sequential)   (None, 14, 14, 1024)      7129088   
+_________________________________________________________________
+sequential_54 (Sequential)   (None, 7, 7, 2048)        14998528  
+_________________________________________________________________
+global_average_pooling2d_4 ( (None, 2048)              0         
+_________________________________________________________________
+predictions (Dense)          (None, 1000)              2049000   
+=================================================================
+Total params: 25,636,712
+Trainable params: 25,583,592
+Non-trainable params: 53,120
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">pre_trained_model</span><span class="o">.</span><span class="n">get_weights</span><span class="p">())</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">get_weights</span><span class="p">()),</span> <span class="s2">"dim_check"</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Modifying-as-per-usecase">
+<a class="anchor" href="#Modifying-as-per-usecase" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modifying as per usecase<a class="anchor-link" href="#Modifying-as-per-usecase"> </a>
+</h2>
+<p>Let us use only 1st 2 sequential blocks of the resnet-50</p>
+<p>The remaming layers are discarded.</p>
+<p>After the modification, we will copy the weights of 1st 2 blocks from pre-trained n/w automatically</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">layers</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&lt;tensorflow.python.keras.engine.sequential.Sequential at 0x7f506cf9b810&gt;,
+ &lt;tensorflow.python.keras.engine.sequential.Sequential at 0x7f506d9d5b10&gt;,
+ &lt;tensorflow.python.keras.engine.sequential.Sequential at 0x7f506ad5d510&gt;,
+ &lt;tensorflow.python.keras.engine.sequential.Sequential at 0x7f506d88fb50&gt;,
+ &lt;tensorflow.python.keras.engine.sequential.Sequential at 0x7f506ad7f910&gt;,
+ &lt;tensorflow.python.keras.layers.pooling.GlobalAveragePooling2D at 0x7f506ad66ed0&gt;,
+ &lt;tensorflow.python.keras.layers.core.Dense at 0x7f506ad75350&gt;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">model</span><span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">convert_to_tensor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">model</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Model: "sequential_55"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+sequential_46 (Sequential)   (None, 55, 55, 64)        9728      
+_________________________________________________________________
+sequential_48 (Sequential)   (None, 55, 55, 256)       220032    
+=================================================================
+Total params: 229,760
+Trainable params: 226,816
+Non-trainable params: 2,944
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice the number of parameters have reduced</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">dict_1</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">pre_trained_model</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
+    <span class="c1"># print(layer.name)</span>
+    <span class="c1"># print("*"*80)</span>
+    <span class="k">for</span> <span class="n">weight</span> <span class="ow">in</span> <span class="p">(</span><span class="n">layer</span><span class="o">.</span><span class="n">weights</span><span class="p">):</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">weight</span><span class="o">.</span><span class="n">name</span>
+        <span class="c1"># layer_type = name.split('/')[-1][:-2]</span>
+        <span class="c1"># print(name, weight.numpy().shape)</span>
+        <span class="n">dict_1</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span> <span class="n">name</span><span class="p">,</span> <span class="n">weight</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span> <span class="p">)</span>
+
+<span class="c1"># for key,value in dict_1.items():</span>
+<span class="c1">#     print(key, len(value))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">dict_2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"kernel"</span><span class="p">:[],</span>
+         <span class="s2">"bias"</span><span class="p">:[],</span>
+         <span class="s2">"gamma"</span><span class="p">:[],</span>
+         <span class="s2">"beta"</span><span class="p">:[],</span>
+         <span class="s2">"moving_mean"</span><span class="p">:[],</span>
+         <span class="s2">"moving_variance"</span><span class="p">:[],</span>
+         <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
+    <span class="c1"># print(layer.name)</span>
+    <span class="c1"># print("*"*80)</span>
+    <span class="k">for</span> <span class="n">weight</span> <span class="ow">in</span> <span class="p">(</span><span class="n">layer</span><span class="o">.</span><span class="n">weights</span><span class="p">):</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">weight</span><span class="o">.</span><span class="n">name</span>
+        <span class="n">layer_type</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">][:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+        <span class="c1"># print(name, weight.shape)</span>
+        <span class="n">dict_2</span><span class="p">[</span><span class="n">layer_type</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="n">weight</span><span class="p">))</span>
+
+<span class="c1"># for key,value in dict_2.items():</span>
+<span class="c1">#     print(key, len(value))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Copy-the-weights-from-pre-trained-model">
+<a class="anchor" href="#Copy-the-weights-from-pre-trained-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Copy the weights from pre-trained model<a class="anchor-link" href="#Copy-the-weights-from-pre-trained-model"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
+    <span class="c1"># print(layer.name)</span>
+    <span class="c1"># print("*"*80)</span>
+    <span class="k">for</span> <span class="n">weight</span> <span class="ow">in</span> <span class="p">(</span><span class="n">layer</span><span class="o">.</span><span class="n">weights</span><span class="p">):</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">weight</span><span class="o">.</span><span class="n">name</span>
+
+        <span class="k">if</span> <span class="s2">"RESNET_BLOCK"</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="s2">"/"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="mi">1</span><span class="p">:])</span> <span class="c1"># residual_block_v2_49/conv5_block1_2_bn/gamma:0 -&gt; conv5_block1_2_bn/gamma:0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="c1"># print(key, dict_1[key][1].shape)</span>
+        <span class="n">pretrained_weight</span> <span class="o">=</span> <span class="n">dict_1</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="c1"># print(pretrained_weight)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">weight</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">pretrained_weight</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">weight</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">pretrained_weight</span><span class="p">)</span>
+        <span class="c1"># dict_2[layer_type].append((name, weight))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(7, 7, 3, 64) (7, 7, 3, 64)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(1, 1, 64, 64) (1, 1, 64, 64)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(3, 3, 64, 64) (3, 3, 64, 64)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(1, 1, 64, 256) (1, 1, 64, 256)
+(256,) (256,)
+(256,) (256,)
+(256,) (256,)
+(1, 1, 64, 256) (1, 1, 64, 256)
+(256,) (256,)
+(256,) (256,)
+(256,) (256,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(256,) (256,)
+(256,) (256,)
+(256,) (256,)
+(256,) (256,)
+(1, 1, 256, 64) (1, 1, 256, 64)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(3, 3, 64, 64) (3, 3, 64, 64)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(1, 1, 64, 256) (1, 1, 64, 256)
+(256,) (256,)
+(256,) (256,)
+(256,) (256,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(256,) (256,)
+(256,) (256,)
+(1, 1, 256, 64) (1, 1, 256, 64)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(3, 3, 64, 64) (3, 3, 64, 64)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(1, 1, 64, 256) (1, 1, 64, 256)
+(256,) (256,)
+(256,) (256,)
+(256,) (256,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(64,) (64,)
+(256,) (256,)
+(256,) (256,)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Model: "sequential_55"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+sequential_46 (Sequential)   (None, 55, 55, 64)        9728      
+_________________________________________________________________
+sequential_48 (Sequential)   (None, 55, 55, 256)       220032    
+=================================================================
+Total params: 229,760
+Trainable params: 226,816
+Non-trainable params: 2,944
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="References:">
+<a class="anchor" href="#References:" aria-hidden="true"><span class="octicon octicon-link"></span></a>References:<a class="anchor-link" href="#References:"> </a>
+</h2>
+<ul>
+<li><a href="https://iq.opengenus.org/resnet50-architecture/">https://iq.opengenus.org/resnet50-architecture/</a></li>
+<li><a href="https://i.stack.imgur.com/gI4zT.png">https://i.stack.imgur.com/gI4zT.png</a></li>
+<li><a href="https://arxiv.org/pdf/1512.03385.pdf">https://arxiv.org/pdf/1512.03385.pdf</a></li>
+<li><a href="https://github.com/dyhan0920/PyramidNet-PyTorch/blob/master/resnet.py">https://github.com/dyhan0920/PyramidNet-PyTorch/blob/master/resnet.py</a></li>
+<li><a href="https://github1s.com/keras-team/keras-applications/blob/bc89834ed36935ab4a4994446e34ff81c0d8e1b7/keras_applications/resnet_common.py#L463">https://github1s.com/keras-team/keras-applications/blob/bc89834ed36935ab4a4994446e34ff81c0d8e1b7/keras_applications/resnet_common.py#L463</a></li>
+<li><a href="https://colab.research.google.com/github/puneetsingla17/Resnet50-from-Scratch/blob/master/Residual%2BNetworks%2B-%2Bv2%20(1).ipynb">https://colab.research.google.com/github/puneetsingla17/Resnet50-from-Scratch/blob/master/Residual%2BNetworks%2B-%2Bv2%20(1).ipynb</a></li>
+<li><a href="https://github.com/calmisential/TensorFlow2.0_ResNet/blob/master/models/residual_block.py">https://github.com/calmisential/TensorFlow2.0_ResNet/blob/master/models/residual_block.py</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="deepwilson/repository"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/repository/Resnet_builder/" hidden></a>
+</article>
+
+</p>
+          </section>
+
+          <!-- Footer -->
+            <footer>
+              <ul class="actions">
+                <li><a href="https://deepwilson.github.io/repository/" class="button">Home</a></li>
+                <li><a href="https://deepwilson.github.io/repository/blog/" class="button">Blog</a></li>
+              </ul>
+            </footer>
+          </div>
+
+        <!-- Footer -->
+        <!-- Copyright -->
+<div id="copyright">
+  <ul>
+    <li>&copy; Deep Wilson   
+      <a href="https://github.com/deepwilson" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a>  
+      <!-- <a href="https://twitter.com/Twitter" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a> -->
+<!--       <a href="https://orcid.org/" class="ai ai-orcid" rel="nofollow"><span class="label">ORCID</span></a> | -->
+<!--       <a href="https://scholar.google.es/citations?user=" class="ai ai-google-scholar" rel="nofollow"><span class="label">Google Scholar</span></a> | -->
+<!--       
+      <a href="/repository/feed.xml" title="Atom Feed" class="icon fa-rss" rel="nofollow">
+        <span class="label">Subscribe</span>
+      </a>
+       -->
+    </li> 
+    <li>Powered by <a href="https://github.com/Outsiders17711/Mein.Platz/">Oluwaleke Umar Yusuf</a>  &
+      <a href="https://fastpages.fast.ai/">fastpages</a> &
+      <a href="https://github.com/OriolAbril">Oriol Abril Pla</a></li>
+    <li>Design by <a href="https://html5up.net" rel="nofollow">HTML5 UP</a> &
+      <a href="https://github.com/mmistakes/jekyll-theme-basically-basic">Basically Basic</a> &
+      <a href="https://jekyllup.com/">JekyllUp</a> </li>
+    <!-- <li><a href="https://github.com/Outsiders17711/Mein.Platz">Mein.Platz</a> /
+      <a href="https://github.com/Outsiders17711/Mein.Platz/actions">@actions</a> </li> -->
+  </ul>
+</div>
+
+
+      </div>
+
+    <!-- Scripts -->
+    <!-- DYN -->
+<script src="https://deepwilson.github.io/repository/assets/js/jquery.min.js"></script>
+<script src="https://deepwilson.github.io/repository/assets/js/jquery.scrollex.min.js"></script>
+<script src="https://deepwilson.github.io/repository/assets/js/jquery.scrolly.min.js"></script>
+<script src="https://deepwilson.github.io/repository/assets/js/skel.min.js"></script>
+<script src="https://deepwilson.github.io/repository/assets/js/util.js"></script>
+<script src="https://deepwilson.github.io/repository/assets/js/main.js"></script>
+
+
+  </body>
+</html>
