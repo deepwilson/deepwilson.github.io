@@ -5,17 +5,20 @@ permalink: /about/
 ---
 
 
-
+<!-- 
 <div class="custom-badges-style">
   <img src="https://badges.pufler.dev/years/Outsiders17711/?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />
   <img src="https://badges.pufler.dev/repos/Outsiders17711/?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />
   <img src="https://badges.pufler.dev/commits/all/Outsiders17711?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />
-</div>
+</div> -->
 <br>
 
 <div style="font-family:Oxygen,monospace;">
 <div>
-<p>My name is Oluwaleke Umar Yusuf and I'm a mechanical engineer. I'm a highly resourceful mechanical engineer with over three years of industry experience in construction and telecommunications. I'm from Nigeria, living in Egypt and currently studying Robotics, Control and Smart Systems at the American University In Cairo. You can find me on <a href="https://github.com/{{site.github_username}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a> or on <a href="https://twitter.com/{{site.twitter_username}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a>. </p>
+<p>My name is Oluwaleke Umar Yusuf and I'm a mechanical engineer. I'm a highly resourceful mechanical engineer with over three years of industry experience in construction and telecommunications. I'm from Nigeria, living in Egypt and currently studying Robotics, Control and Smart Systems at the American University In Cairo. You can find me on <a href="https://github.com/{{site.github_username}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a> 
+
+<!-- or on <a href="https://twitter.com/{{site.twitter_username}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a>.  -->
+</p>
 
 <p> On this page you can find some information about me and my blog. My blog posts ate mainly geared towards detail my experiences and development with <code>Machine Learning</code>, <code>Computer Vision</code> and <code>Gesture Recognition</code> as I work on my masters. However, there are also posts about topics that I'm most interested in and my opinions or reviews of books I've read. </p>
 
@@ -34,30 +37,31 @@ permalink: /about/
   <li>Started studying Robotics in 2020</li></ul>
 </div>
 
-<div class="custom-row">
-  <div class="custom-column">
+<!-- <div class="custom-row"> -->
+<div align="center">
     <h2><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heartbeat" role="img" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512" class="svg-inline--fa fa-heartbeat fa-w-16"><path fill="currentColor" d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z" class=""></path></svg> Passionate about...</h2>
     <ul class="custom-list">
     <li>Books</li>
     <li>Coding</li>
-    <li>CAD Design & Modelling</li>
     <li>Music</li>
-    <li>Flaneuring & Tinkering</li></ul>
-  </div>
-  <div class="custom-column">
+    <li>Poetry</li>
+    <!-- <li>Flaneuring & Tinkering</li></ul> -->
+</div>
+
+  <!-- <div class="custom-column">
   <h2><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heartbeat" role="img" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512" class="svg-inline--fa fa-heartbeat fa-w-16"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z" class=""></path></svg> Thinking about...</h2>
     <ul class="custom-list">
     <li>Gesture Recognition</li>
     <li>SpaceX & Starship</li>
     <li>Evolutionary Psychology</li>
     </ul>
-  </div>
+  </div> -->
 </div>
 </div>
 
 <hr>
 
-<h2 align="left"> 🔭 Software Tools</h2>
+<!-- <h2 align="left"> 🔭 Software Tools</h2>
 
 <h3 align="center"> 🛠 Programming</h3>
 <div class="custom-badges-style">
@@ -90,7 +94,7 @@ permalink: /about/
     <img alt="Raspberry Pi" src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi"/>
 </div>
 
-<hr>
+<hr> -->
 
 <section>
 <h2>Learning & Reading & Listening</h2>
@@ -112,7 +116,7 @@ permalink: /about/
 <h3>Currently Reading:</h3>
   <div class="custom-images-style" style="justify-content:left;">
     <div class="custom-overlay-container">
-    <a href="https://dunenovels.com/" class="no-underline"><img src="https://images-na.ssl-images-amazon.com/images/I/81eFs0n6ioL.jpg" alt="Children Of Dune" loading="lazy" width="165" style="height:250px;" ></a>
+    <a href="https://en.wikipedia.org/wiki/The_Revenant_(novel)" class="no-underline"><img src="https://m.media-amazon.com/images/I/51LcacfDnuL.jpg" alt="The Revenant" loading="lazy" width="165" style="height:250px;" ></a>
     </div>
     <div class="custom-overlay-container">
     <a href="https://www.jordanbpeterson.com/beyond-order/" class="no-underline"><img src="https://m.media-amazon.com/images/I/71xLmdLOQ0L.jpg" alt="Beyond Order: 12 More Rules for Life" loading="lazy" width="165" style="height:250px;" ></a>
@@ -126,7 +130,7 @@ permalink: /about/
   </div>
 <br>
 
-<h3>Currently Listening To:</h3>
+<!-- <h3>Currently Listening To:</h3>
   <div class="custom-images-style" style="justify-content:left;">
     <div class="custom-overlay-container">
       <a href="https://music.apple.com/us/album/chemtrails-over-the-country-club/1545567745" ><img src="https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/74/79/c5/7479c518-a8ba-2054-b978-c87293194260/20UM1IM09851.rgb.jpg/300x300bb.webp" title="Chemtrails Over the Country Club | Lana Del Rey | Pop · 2021" style="height:200px;"></a>
@@ -149,18 +153,18 @@ permalink: /about/
     <!-- <div class="custom-overlay-container">
       <a href="" ><img src="" alt="" title=" |  |  · 20" style="height:200px;"></a>
     </div> -->
-  </div>
+  </div> -->
 </div>
 </section>
 
 <hr>
 
-<h2>My Favourites</h2>
+<!-- <h2>My Favourites</h2>
 <p><strong>You can check out my <code style="font-family:Oxygen,monospace;">favourites page</code> for content that appeals to me personally. This includes music, books, movies, podcasts, links, all and everything. My review and opinion about some of them can be found in blog posts.</strong></p>
 
 <br/><div align="center">
   <a href="https://outsiders17711.github.io/Mein.Platz/favourites/" class="button special fit">FAVOURITES</a>
-</div><br/>
+</div><br/> -->
 
 <!-- end of div style="font-family:Oxygen,monospace;" -->
 </div>
