@@ -60,8 +60,8 @@ If you’d like to learn more about how my services can help your company, pleas
     <li>Evolutionary Psychology</li>
     </ul>
   </div> -->
-</div>
-</div>
+<!-- </div>
+</div> -->
 
 <hr>
 
@@ -98,7 +98,7 @@ If you’d like to learn more about how my services can help your company, pleas
     <img alt="Raspberry Pi" src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi"/>
 </div>
 
-<hr> -->
+<hr> 
 
 <section>
 <h2>Learning & Reading & Listening</h2>
@@ -114,7 +114,7 @@ If you’d like to learn more about how my services can help your company, pleas
     <!-- <div class="custom-overlay-container">
     <a href="" class="no-underline"><img src="" alt="" loading="lazy" width="165" style="height:250px;" ></a>
     </div> -->
-  </div>
+  <!-- </div> -->
 <br>
 
 <h3>Currently Reading:</h3>
@@ -157,11 +157,11 @@ If you’d like to learn more about how my services can help your company, pleas
     <!-- <div class="custom-overlay-container">
       <a href="" ><img src="" alt="" title=" |  |  · 20" style="height:200px;"></a>
     </div> -->
-  </div> -->
-</div>
+  <!-- </div>  -->
+<!-- </div> -->
 </section>
 
-<hr>
+<!-- <hr> -->
 
 <!-- <h2>My Favourites</h2>
 <p><strong>You can check out my <code style="font-family:Oxygen,monospace;">favourites page</code> for content that appeals to me personally. This includes music, books, movies, podcasts, links, all and everything. My review and opinion about some of them can be found in blog posts.</strong></p>
