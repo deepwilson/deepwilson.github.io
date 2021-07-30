@@ -159,7 +159,7 @@ If you’d like to learn more about how my services can help your company, pleas
     </div> -->
   <!-- </div>  -->
 <!-- </div> -->
-</section>
+<!-- </section> -->
 
 <!-- <hr> -->
 
@@ -171,4 +171,4 @@ If you’d like to learn more about how my services can help your company, pleas
 </div><br/> -->
 
 <!-- end of div style="font-family:Oxygen,monospace;" -->
-</div>
+<!-- </div> -->
