@@ -1,6 +1,5 @@
 ---
-layout: page 
-# poetry
+layout: poetry
 permalink: /poetry/
 title: Poetry
 sitemap:
