@@ -28,8 +28,8 @@
           <!-- Post -->
           <section class="posts">
             {% for poem in site.categories.poems %}
-            {% include entry_square.html %} <!--https://github.com/jekyll/jekyll/issues/1819-->>
-            <!-- {{ poem.output }} -->
+            <!-- {% include entry_square.html %} https://github.com/jekyll/jekyll/issues/1819> -->
+                {{ poem.output }}
             {% endfor %}
                         
 
