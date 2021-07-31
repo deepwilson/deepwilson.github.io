@@ -131,7 +131,7 @@ If you’d like to learn more about how my services can help your company, pleas
     <!-- <div class="custom-overlay-container">
     <a href="" class="no-underline"><img src="" alt="" loading="lazy" width="165" style="height:250px;" ></a>
     </div> -->
-  </div>
+<!--   </div> -->
 <br>
 
 <!-- <h3>Currently Listening To:</h3>
