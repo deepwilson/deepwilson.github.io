@@ -17,7 +17,7 @@ github_repo: "repository"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value.
-url: "https://deepwilson.github.io" # "https://Outsiders17711.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://deepwilson.github.io"  # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -53,7 +53,7 @@ show_image: false
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics: G-Q8QVC01BMZ #G-1S8ZDTWYBX
+google_analytics: G-Q8QVC01BMZ 
 
 exclude:
   - docker-compose.yml

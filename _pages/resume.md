@@ -71,7 +71,7 @@ Engineering)
 - [Machine Learning for Engineering and Science Applications (NPTEL)](https://nptel.ac.in/noc/E_Certificate/noc19-cs14/NPTEL19CS14S61780504191043545.jpg)
 - [Programming, Data structures and algorithms using Python  (NPTEL)](https://nptel.ac.in/noc/E_Certificate/noc18-cs21/NPTEL18CS21S26301391810070334.jpg)
 - [Foundations of Wavelets and Multirate Digital Signal Processing (NPTEL)](https://drive.google.com/file/d/1Nn_GW9V5xa90c6IwOp7SrreNX1IKzXb2/view)
-- Sparse Optimization for Signals & Systems (Indian Institute of Technology, Madras)
+- [Sparse Optimization for Signals & Systems (Indian Institute of Technology, Madras)](https://drive.google.com/file/d/1EDzU3t1dMLPOqWpxqoFXOZjj_hryUJNM/view?usp=sharing)
 
 
 
