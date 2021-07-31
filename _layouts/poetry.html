@@ -28,11 +28,11 @@
           <!-- Post -->
           <section class="poems">
             {% for poem in site.categories.poems %}
-                {% if poem.hide != true %}
-                    {% include entry_square.html %} 
+                <!-- {% if poem.hide != true %} -->
+              {% include entry_square.html %} 
                 <!-- https://github.com/jekyll/jekyll/issues/1819> -->
                 <!-- {{ post.output }} -->
-                {% endif %}
+                <!-- {% endif %} -->
             {% endfor %}
                         
 
