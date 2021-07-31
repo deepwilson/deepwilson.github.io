@@ -26,12 +26,19 @@
         <div id="main">
 
           <!-- Post -->
-          <section class="poems">
-            {% for post in site.poems %}
+          <section class="posts">
+            {% for poem in site.categories.poems %}
+            {% include entry_square.html %} <!--https://github.com/jekyll/jekyll/issues/1819-->>
+            <!-- {{ poem.output }} -->
+            {% endfor %}
+                        
+
+
+            <!-- {% for post in site.poems %}
               {% if post.hide != true %}
                 {% include entry_square.html %}
               {% endif %}
-            {% endfor %}
+            {% endfor %} -->
 
           </section>
 
