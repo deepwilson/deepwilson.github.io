@@ -26,7 +26,18 @@
         <div id="main">
 
           <!-- Post -->
-          <section class="poems">
+          <section class="posts">
+            {% for post in site.posts %}
+            {% if post.hide != true %}
+                {% if post.poem == true %}
+                {% include entry_square.html %}
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+        </section>
+
+
+          <!-- <section class="poems">
             {% for post in site.categories.poems %}
                 <!-- {% if post.hide != true %} -->
               {% include entry_square.html %} 
@@ -43,7 +54,7 @@
               {% endif %}
             {% endfor %} -->
 
-          </section>
+          </section> -->
 
           </div>
 

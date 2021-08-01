@@ -28,12 +28,22 @@
           <!-- Post -->
           <section class="posts">
             {% for post in site.posts %}
+            {% if post.hide != true %}
+                {% if post.poem != true %}
+                {% include entry_square.html %}
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+            </section>
+
+          <!-- <section class="posts">
+            {% for post in site.posts %}
               {% if post.hide != true %}
                 {% include entry_square.html %}
               {% endif %}
             {% endfor %}
 
-          </section>
+          </section> -->
 
           </div>
 
