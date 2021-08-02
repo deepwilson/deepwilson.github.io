@@ -67,6 +67,7 @@ Engineering)
 
 ## Certifications
 
+- [State Estimation and Localization for Self-Driving Cars](https://www.coursera.org/account/accomplishments/verify/8NHL8R5JQX5B)
 - [Practical Machine Learning with Tensorflow 2.0](https://drive.google.com/file/d/1ifuvzyexahZIOTsx6jXtpuhV_4bWYu3f/view)
 - [Machine Learning for Engineering and Science Applications (NPTEL)](https://nptel.ac.in/noc/E_Certificate/noc19-cs14/NPTEL19CS14S61780504191043545.jpg)
 - [Programming, Data structures and algorithms using Python  (NPTEL)](https://nptel.ac.in/noc/E_Certificate/noc18-cs21/NPTEL18CS21S26301391810070334.jpg)
