@@ -11,19 +11,23 @@ p {
 }
 <div> -->
 
-# Deep Wilson Aricatt
+# [Deep Wilson Aricatt](https://deepwilson.github.io/repository/)
 deep.16wilson@gmail.com | +91 8767102424
 <br>
 **[GitHub](https://github.com/deepwilson)**  | **[LinkedIn](https://www.linkedin.com/in/deep-wilson-aricatt-7a20a173/)** |
 **[StackOverflow](https://stackoverflow.com/users/7677793/dewil)** 
+
+## About myself
+- Passionate computer vision developer with proven experience of creating and deploying models related to ***object detection, instance segmentation, face recognition/detection*** from scratch along with active contribution to [open-source projects](https://github.com/deepwilson/Universal-Data-Augmentation-for-Bounding-Boxes)
 
 
 ## Work Experience
 
 ### **Siemens**
 *Sr. Machine learning Engineer* (*May 2021 - Present*)
-- Currently working on 3D object detection algorithms
-- Worked on building object detection pipelines for various use cases
+
+- Currently working on building object detection pipelines for various use cases
+- Worked on 3D object detection algorithms
 - Worked on image segmentation problems
 - Implemented anomaly detection algorithms for time series data
 
@@ -108,7 +112,7 @@ Engineering)
 - Speaker at DevOps India Summit-21 *Topic-“Chaos engineering for Artificial Intelligence using MLOps approach”*
 - Keyboardist, song writer @ [Keyband](https://www.youtube.com/channel/UCd0RBs6FM0Vvvvy1C_t_4GQ) - Official band of Kalyan Eparchy Youth (Performed with artists including [Alphonse Joseph](https://www.youtube.com/watch?v=SjuB5TtFsuw) and Rexband)
 - Trinity Guildhall certified Keyboardist
-- Serving as Choirmaster for St. Joseph's Church, MC Road since 2018
+- Served as Choirmaster for St. Joseph's Church, MC Road (2018-2022)
 - Invited by Don Bosco Institute of Technology, Mumbai to conduct a session on "Machine Learning - Current Trends & Avenues"
 - Secured 1st prize in "Instrumental Event" at CREXTAL 2014
 - Led the St. Joseph's Church, MC Road Church Choir to victory at Fr. Sunny Memorial Church Choir Competition in the year 2018
