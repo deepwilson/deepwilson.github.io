@@ -11,15 +11,12 @@ p {
 }
 <div> -->
 
-# [Deep Wilson Aricatt](https://deepwilson.github.io/repository/)
-deep.16wilson@gmail.com | +91 8767102424
+# Deep Wilson Aricatt
+
+deep.16wilson@gmail.com | +44 7818803276
 <br>
-**[GitHub](https://github.com/deepwilson)**  | **[LinkedIn](https://www.linkedin.com/in/deep-wilson-aricatt-7a20a173/)** |
-**[StackOverflow](https://stackoverflow.com/users/7677793/dewil)** 
-
-## About myself
-- Passionate computer vision developer with proven experience of creating and deploying models related to ***object detection, instance segmentation, face recognition/detection*** from scratch along with active contribution to [open-source projects](https://github.com/deepwilson/Universal-Data-Augmentation-for-Bounding-Boxes)
-
+**[GitHub](https://github.com/deepwilson)**  | **[LinkedIn](https://www.linkedin.com/in/deep-w-7a20a173/)** |
+**[StackOverflow](https://stackoverflow.com/users/7677793/dewil)**
 
 ## Work Experience
 
@@ -84,7 +81,6 @@ Master's degree (Computer Vision, Robotics and Machine Learning)
 
 ## Certifications
 
-- [State Estimation and Localization for Self-Driving Cars](https://www.coursera.org/account/accomplishments/verify/8NHL8R5JQX5B)
 - [Practical Machine Learning with Tensorflow 2.0](https://drive.google.com/file/d/1ifuvzyexahZIOTsx6jXtpuhV_4bWYu3f/view)
 - [Machine Learning for Engineering and Science Applications (NPTEL)](https://nptel.ac.in/noc/E_Certificate/noc19-cs14/NPTEL19CS14S61780504191043545.jpg)
 - [Programming, Data structures and algorithms using Python  (NPTEL)](https://nptel.ac.in/noc/E_Certificate/noc18-cs21/NPTEL18CS21S26301391810070334.jpg)
@@ -122,7 +118,7 @@ Master's degree (Computer Vision, Robotics and Machine Learning)
 - Speaker at DevOps India Summit-21 *Topic-“Chaos engineering for Artificial Intelligence using MLOps approach”*
 - Keyboardist, song writer @ [Keyband](https://www.youtube.com/channel/UCd0RBs6FM0Vvvvy1C_t_4GQ) - Official band of Kalyan Eparchy Youth (Performed with artists including [Alphonse Joseph](https://www.youtube.com/watch?v=SjuB5TtFsuw) and Rexband)
 - Trinity Guildhall certified Keyboardist
-- Served as Choirmaster for St. Joseph's Church, MC Road (2018-2022)
+- Serving as Choirmaster for St. Joseph's Church, MC Road since 2018
 - Invited by Don Bosco Institute of Technology, Mumbai to conduct a session on "Machine Learning - Current Trends & Avenues"
 - Secured 1st prize in "Instrumental Event" at CREXTAL 2014
 - Led the St. Joseph's Church, MC Road Church Choir to victory at Fr. Sunny Memorial Church Choir Competition in the year 2018
