@@ -30,17 +30,11 @@ deep.16wilson@gmail.com | +44 7818803276
 - Worked on 3D object detection algorithms
 - Worked on image segmentation problems
 - Implemented anomaly detection algorithms for time series data
-=======
-=======
->>>>>>> parent of 9e0659c (resume changes)
+
 *Sr. Machine learning Engineer* (*May 2021 - Present*)
 - Currently working on contamination prevention at vaccine production workbench by detecting 3D Human Pose from Lidar feeds and restricting human movement on the basis of speed and co-worker proximity. (Client - GSK)
 - Custom object detection pipeline to detect faulty clip placements on automotive dashboards (Client - Faurecia)
 - Attention based U-Net to detect alpha-numeric text from drum-disks (Client - Munjal)
-<<<<<<< HEAD
->>>>>>> parent of 9e0659c (resume changes)
-=======
->>>>>>> parent of 9e0659c (resume changes)
 
 ### **Orbo.ai**
 
