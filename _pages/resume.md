@@ -21,8 +21,6 @@ deep.16wilson@gmail.com | +44 7818803276
 ## Work Experience
 
 ### **Siemens**
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 *Sr. Machine learning Engineer* (*May 2021 - January 2023*)
 
