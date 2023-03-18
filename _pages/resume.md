@@ -24,7 +24,7 @@ deep.16wilson@gmail.com | +44 7818803276
 
 *Sr. Machine learning Engineer* (*May 2021 - January 2023*)
 
-- Worked on building object detection pipelines for various use cases
+- Worked on building object detection pipelines for various use cases (aerial imagery, machine vision etc.)
 - Worked on 3D object detection algorithms
 - Worked on image segmentation problems
 - Implemented anomaly detection algorithms for time series data
