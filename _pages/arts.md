@@ -39,7 +39,7 @@ TEST
 <center>
  <iframe width="560" 
          height="315" 
-         src="[YOUTUBE_LINK](http://www.youtube.com/watch?v=SjuB5TtFsuw)" 
+         src="http://www.youtube.com/watch?v=SjuB5TtFsuw" 
          title="YouTube video player" 
          frameborder="0" 
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
