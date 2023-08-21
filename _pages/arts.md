@@ -18,8 +18,10 @@ I play the keyboards for [Keyband](https://www.youtube.com/channel/UCd0RBs6FM0Vv
 
 
 
-"Melancholy" is an original composition I composed using FL Studio
-[![IMAGE ALT TEXT](https://i1.sndcdn.com/artworks-o11fuCTj0NezvKO8-zOyWsw-t240x240.jpg)](https://soundcloud.com/deep-wilson/bellzs-with-vocals "Melancholy")
+"Melancholy" is an original composition I composed using FL Studio:
+<div class="custom-images-style" style="justify-content:center;">
+  <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=4baea3dc-949c-ed11-994c-000d3a3f87df" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Keyband did have the wonderful opportunity to perform alongside [Alphonse Joseph](https://en.wikipedia.org/wiki/Alphons_Joseph)
 
@@ -38,11 +40,6 @@ Keyband did have the wonderful opportunity to perform alongside [Alphonse Joseph
   <!-- You can add more video containers here -->
 </div>
 <br>
-
-
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/SjuB5TtFsuw/0.jpg)](http://www.youtube.com/watch?v=SjuB5TtFsuw)
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/yaxYKm48q1M/0.jpg)](http://www.youtube.com/watch?v=yaxYKm48q1M)
 
 <!-- > youtube: https://www.youtube.com/embed/SjuB5TtFsuw -->
 
