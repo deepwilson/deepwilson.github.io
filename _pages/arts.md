@@ -22,13 +22,13 @@ Keyband did have the wonderful opportunity to perform alongside [Alphonse Joseph
 <h3 class="color">Some of our performances with him...</h3>
 <div class="custom-images-style" style="justify-content:center;">
   <div class="custom-overlay-container">
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/SjuB5TtFsuw" frameborder="10" allowfullscreen></iframe>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/SjuB5TtFsuw" frameborder="100" allowfullscreen></iframe>
   </div>
   <div class="custom-overlay-container">
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/yaxYKm48q1M" frameborder="10" allowfullscreen></iframe>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/yaxYKm48q1M" frameborder="100" allowfullscreen></iframe>
   </div>
   <div class="custom-overlay-container">
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/GMF4UTodYSA" frameborder="10" allowfullscreen></iframe>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/GMF4UTodYSA" frameborder="100" allowfullscreen></iframe>
   </div>
   <!-- You can add more video containers here -->
 </div>
