@@ -23,7 +23,24 @@ I play the keyboards for [Keyband](https://www.youtube.com/channel/UCd0RBs6FM0Vv
 
 Keyband did have the wonderful opportunity to perform alongside [Alphonse Joseph](https://en.wikipedia.org/wiki/Alphons_Joseph)
 
-Some of our performances with him...
+
+<h3 class="color">Some of our performances with him...</h3>
+<div class="custom-images-style" style="justify-content:center;">
+  <div class="custom-overlay-container">
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/SjuB5TtFsuw" frameborder="10" allowfullscreen></iframe>
+  </div>
+  <div class="custom-overlay-container">
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/yaxYKm48q1M" frameborder="10" allowfullscreen></iframe>
+  </div>
+  <div class="custom-overlay-container">
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="10" allowfullscreen></iframe>
+  </div>
+  <!-- You can add more video containers here -->
+</div>
+<br>
+
+
+
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/SjuB5TtFsuw/0.jpg)](http://www.youtube.com/watch?v=SjuB5TtFsuw)
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/yaxYKm48q1M/0.jpg)](http://www.youtube.com/watch?v=yaxYKm48q1M)
 
@@ -46,3 +63,5 @@ TEST
          allowfullscreen>
  </iframe>
 </center>
+
+
