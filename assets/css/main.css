@@ -628,7 +628,7 @@ body.is-loading #intro:not(.hidden) + #header + #nav { -moz-transform: translate
 @media screen and (max-width: 736px) { #intro { padding: 3rem 2rem 1rem 2rem ; min-height: 80vh; } #intro h1 { font-size: 3.25rem; line-height: 1.1; margin-bottom: 1rem; } #intro p { font-size: 1rem; margin-top: 0rem; } #intro .actions { display: none; } }
 
 /* Header */
-#header { color: #ffffff; -moz-align-items: center; -webkit-align-items: center; -ms-align-items: center; align-items: center; display: -moz-flex; display: -webkit-flex; display: -ms-flex; display: flex; -moz-flex-direction: column; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -moz-justify-content: -moz-flex-end; -webkit-justify-content: -webkit-flex-end; -ms-justify-content: -ms-flex-end; justify-content: flex-end; -moz-pointer-events: none; -webkit-pointer-events: none; -ms-pointer-events: none; pointer-events: none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; height: 20rem; padding-bottom: 8rem; position: relative; text-align: center; z-index: 2; }
+#header { color: #ffffff; -moz-align-items: center; -webkit-align-items: center; -ms-align-items: center; align-items: center; display: -moz-flex; display: -webkit-flex; display: -ms-flex; display: flex; -moz-flex-direction: column; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -moz-justify-content: -moz-flex-end; -webkit-justify-content: -webkit-flex-end; -ms-justify-content: -ms-flex-end; justify-content: flex-end; -moz-pointer-events: none; -webkit-pointer-events: none; -ms-pointer-events: none; pointer-events: none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; height: 10rem; padding-bottom: 8rem; position: relative; text-align: center; z-index: 2; }
 
 #header input, #header select, #header textarea { color: #ffffff; }
 
@@ -644,7 +644,7 @@ body.is-loading #intro:not(.hidden) + #header + #nav { -moz-transform: translate
 
 #header hr { border-bottom-color: #ffffff; }
 
-#header .logo { -moz-pointer-events: auto; -webkit-pointer-events: auto; -ms-pointer-events: auto; pointer-events: auto; border-style: solid; border-color: #ffffff; border-width: 5px !important; font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 2.25rem; font-weight: 900; letter-spacing: 0.075em; line-height: 1; padding: 0.5rem 1.75rem; text-transform: uppercase; visibility: visible; }
+#header .logo { -moz-pointer-events: auto; -webkit-pointer-events: auto; -ms-pointer-events: auto; pointer-events: auto; border-style: solid; border-color: #ffffff; border-width: 5px !important; font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 2.25rem; font-weight: 900; letter-spacing: 0.075em; line-height: 1; padding: 0.5rem 1.75rem; text-transform: lowercase; visibility: visible; }
 
 #header .logo:hover { border-color: #18bfef !important; color: #18bfef !important; }
 
